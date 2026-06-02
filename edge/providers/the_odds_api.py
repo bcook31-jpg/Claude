@@ -128,3 +128,29 @@ class TheOddsApiProvider(OddsProvider):
             payload = self._get_json(f"{BASE_URL}/sports/{sport}/odds/?{params}")
             events.extend(event_from_dict(e) for e in payload)
         return events
+
+    def get_historical_odds(
+        self,
+        sport_key: str,
+        date: str,
+        regions: Optional[str] = None,
+        markets: Optional[str] = None,
+    ) -> dict:
+        """Odds snapshot at a past timestamp (paid plans only).
+
+        ``date`` is ISO 8601 (e.g. ``2025-09-14T18:00:00Z``); the API returns
+        the closest snapshot at or before it. The result is the raw envelope
+        ``{"timestamp", "previous_timestamp", "next_timestamp", "data": [...]}``
+        where ``data`` is a list of event dicts in the same shape as ``/odds``.
+        ``previous_timestamp`` / ``next_timestamp`` let you walk through time.
+        Quota cost is 10 x markets x regions, so use sparingly.
+        """
+        params = urllib.parse.urlencode({
+            "apiKey": self.api_key,
+            "regions": regions or self.regions,
+            "markets": markets or "h2h,spreads,totals",
+            "oddsFormat": self.odds_format,
+            "date": date,
+        })
+        return self._get_json(
+            f"{BASE_URL}/historical/sports/{sport_key}/odds/?{params}")

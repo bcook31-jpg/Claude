@@ -5,6 +5,7 @@ De-vig bookmaker odds, estimate fair probabilities from the market, and surface
 layer" for bettors.
 """
 
+from .dataset import build_settled_events
 from .engine import ValueBet, find_model_value_bets, find_value_bets
 from .model import EloModel, TeamModel, results_from_scores
 from .models import Event, Outcome
@@ -15,6 +16,7 @@ __version__ = "0.1.0"
 __all__ = [
     "find_value_bets",
     "find_model_value_bets",
+    "build_settled_events",
     "ValueBet",
     "EloModel",
     "TeamModel",

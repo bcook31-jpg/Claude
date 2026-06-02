@@ -24,6 +24,7 @@ from pathlib import Path
 from typing import Optional
 
 from .backtest import run_backtest
+from .dataset import build_settled_events
 from .engine import ValueBet, find_model_value_bets, find_value_bets
 from .journal import Journal
 from .model import EloModel, TeamModel, load_results, results_from_scores
@@ -60,6 +61,7 @@ def main(argv: Optional[list[str]] = None) -> int:
     _add_train_parser(sub)
     _add_sports_parser(sub)
     _add_backtest_parser(sub)
+    _add_build_dataset_parser(sub)
 
     args = parser.parse_args(argv)
     return args.func(args)
@@ -466,6 +468,60 @@ def _print_backtest(s, num_events: int, basis: str, stake: str) -> None:
     if s.clv_count:
         print(f"CLV: {s.avg_clv * 100:+.1f}% avg over {s.clv_count} bet(s), "
               f"beat the close {s.beat_close_rate * 100:.0f}% of the time")
+
+
+# -- build-dataset --------------------------------------------------------
+def _add_build_dataset_parser(sub) -> None:
+    p = sub.add_parser("build-dataset",
+                       help="build a real backtest dataset from historical odds "
+                            "+ results (requires a paid Odds API plan)")
+    p.add_argument("--sport", required=True,
+                   help="sport (nfl/nba/mlb/nhl or a full key)")
+    p.add_argument("--open-date", required=True,
+                   help="ISO 8601 timestamp for the opening odds snapshot, "
+                        "e.g. 2025-09-14T12:00:00Z")
+    p.add_argument("--close-date",
+                   help="ISO 8601 timestamp for the closing odds snapshot "
+                        "(optional, enables CLV)")
+    p.add_argument("--out", type=Path, required=True,
+                   help="where to write the settled-events JSON")
+    p.add_argument("--regions", default="us", help="bookmaker regions (default us)")
+    p.add_argument("--market", help="comma-separated markets (default "
+                                    "h2h,spreads,totals)")
+    p.add_argument("--days", type=int, default=3,
+                   help="/scores results window in days (1-3, default 3)")
+    p.set_defaults(func=_run_build_dataset)
+
+
+def _run_build_dataset(args) -> int:
+    sport = SPORT_ALIASES.get(args.sport.lower(), args.sport)
+    try:
+        provider = TheOddsApiProvider(regions=args.regions)
+        opening = provider.get_historical_odds(
+            sport, args.open_date, markets=args.market)["data"]
+        closing = None
+        if args.close_date:
+            closing = provider.get_historical_odds(
+                sport, args.close_date, markets=args.market)["data"]
+        scores = provider.get_scores(sport, days_from=args.days)
+    except Exception as exc:  # missing key / network / API / plan errors
+        print(f"Failed to build dataset: {exc}", file=sys.stderr)
+        return 1
+
+    settled = build_settled_events(opening, scores, closing)
+    if not settled:
+        print("No settled events built: no opening events had a matching "
+              "completed result. Note /scores only covers the last 3 days, so "
+              "the snapshot dates must be recent.", file=sys.stderr)
+        _print_quota(provider)
+        return 1
+
+    args.out.parent.mkdir(parents=True, exist_ok=True)
+    args.out.write_text(json.dumps(settled, indent=2))
+    print(f"Wrote {len(settled)} settled event(s) to {args.out}")
+    print(f"Backtest it with:  edge backtest --data {args.out}")
+    _print_quota(provider)
+    return 0
 
 
 # -- formatting helpers ----------------------------------------------------

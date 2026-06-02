@@ -184,6 +184,28 @@ CLV: +6.5% avg over 11 bet(s), beat the close 100% of the time
 That 7-5 record with positive ROI and consistent +CLV is the point: a +EV
 strategy wins long-term even when individual bets lose.
 
+### Building a real dataset
+
+`edge build-dataset` assembles settled events from **real** data by joining two
+historical odds snapshots (opening + closing) to results, keyed by event id
+(consistent across The Odds API's `/odds`, `/scores` and historical endpoints):
+
+```bash
+edge build-dataset --sport nfl \
+    --open-date 2025-09-14T12:00:00Z \
+    --close-date 2025-09-14T17:00:00Z \
+    --out nfl_week2.json
+edge backtest --data nfl_week2.json --stake kelly
+```
+
+Requirements and limits:
+
+- The historical-odds endpoint needs a **paid** Odds API plan (and costs
+  10 × markets × regions per snapshot — quota usage is printed after the run).
+- Results come from `/scores`, which only covers the **last 3 days**, so the
+  snapshot dates must be recent. For older history you'd need to capture scores
+  at the time.
+
 ## Library
 
 ```python
@@ -236,8 +258,9 @@ edge/
   engine.py           # de-vig → fair value → +EV finder (market + model)
   model.py            # predictive models: Elo + Gaussian team scoring model
   backtest.py         # bet grader + strategy replay (ROI / CLV)
+  dataset.py          # join historical odds + results into a backtest dataset
   journal.py          # CSV bet journal (record / profit / ROI / CLV)
-  cli.py              # scan, journal, train, sports, backtest
+  cli.py              # scan, journal, train, sports, backtest, build-dataset
   providers/          # MockProvider, TheOddsApiProvider (pluggable seam)
   data/               # sample_odds.json, historical_results.csv, backtest_events.json
 tests/                # pytest suite (math, engine, model, journal, loader, backtest, cli, live)
