@@ -16,7 +16,7 @@ from . import odds_math as om
 
 FIELDNAMES = [
     "id", "placed_at", "event", "market", "selection", "point",
-    "book", "price", "stake", "status", "profit",
+    "book", "price", "stake", "status", "profit", "closing_price",
 ]
 
 VALID_STATUS = {"pending", "win", "loss", "push"}
@@ -35,6 +35,14 @@ class Bet:
     stake: float
     status: str = "pending"
     profit: float = 0.0
+    closing_price: Optional[int] = None  # American odds at market close
+
+    @property
+    def clv(self) -> Optional[float]:
+        """Closing line value as a fraction, or None if no close recorded."""
+        if self.closing_price is None:
+            return None
+        return om.closing_line_value(self.price, self.closing_price)
 
 
 class Journal:
@@ -61,6 +69,11 @@ class Journal:
                         stake=float(row["stake"]),
                         status=row["status"],
                         profit=float(row["profit"]),
+                        closing_price=(
+                            int(row["closing_price"])
+                            if row.get("closing_price")
+                            else None
+                        ),
                     )
                 )
         return bets
@@ -112,6 +125,16 @@ class Journal:
                 return b
         raise KeyError(f"No bet with id {bet_id!r}")
 
+    def close(self, bet_id: str, closing_price: int) -> Bet:
+        """Record the closing line for a bet so its CLV can be measured."""
+        bets = self._read()
+        for b in bets:
+            if b.id == bet_id:
+                b.closing_price = closing_price
+                self._write(bets)
+                return b
+        raise KeyError(f"No bet with id {bet_id!r}")
+
     def list(self) -> list[Bet]:
         return self._read()
 
@@ -120,6 +143,7 @@ class Journal:
         settled = [b for b in bets if b.status in {"win", "loss", "push"}]
         staked = sum(b.stake for b in settled)
         profit = sum(b.profit for b in settled)
+        clvs = [b.clv for b in bets if b.clv is not None]
         return {
             "total_bets": len(bets),
             "pending": sum(1 for b in bets if b.status == "pending"),
@@ -129,6 +153,11 @@ class Journal:
             "staked": staked,
             "profit": profit,
             "roi": (profit / staked) if staked > 0 else 0.0,
+            "with_closing": len(clvs),
+            "avg_clv": (sum(clvs) / len(clvs)) if clvs else 0.0,
+            "beat_close_rate": (
+                sum(1 for c in clvs if c > 0) / len(clvs) if clvs else 0.0
+            ),
         }
 
 

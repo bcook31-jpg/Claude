@@ -74,11 +74,23 @@ EV%   Sport  Matchup                             Market     Selection      Book 
 edge journal add --event "Bills @ Chiefs" --market h2h \
     --selection "Buffalo Bills" --book Caesars --price 135 --stake 50
 edge journal settle 1 win
+edge journal close 1 120    # record the closing line to measure CLV
 edge journal list
-edge journal summary        # record, profit, ROI
+edge journal summary        # record, profit, ROI, and CLV
 ```
 
 The journal is a plain CSV (default `~/.edge/journal.csv`).
+
+**Closing line value (CLV)** is the strongest signal that a bet was placed at
+value: `CLV = your_decimal / closing_decimal - 1`. Beating the close
+consistently is a better long-run indicator of skill than short-term win/loss.
+`edge journal summary` reports your average CLV and how often you beat the
+close:
+
+```
+Staked: 95.00   Profit: +22.50   ROI: +23.7%
+CLV: +2.1% avg over 12 bet(s), beat the close 75% of the time
+```
 
 ## Library
 

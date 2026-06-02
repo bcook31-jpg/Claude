@@ -137,6 +137,10 @@ def _add_journal_parser(sub) -> None:
     settle.add_argument("id")
     settle.add_argument("status", choices=["win", "loss", "push"])
 
+    close = jsub.add_parser("close", help="record the closing line to measure CLV")
+    close.add_argument("id")
+    close.add_argument("price", type=int, help="closing American odds for the selection")
+
     jsub.add_parser("list", help="list all bets")
     jsub.add_parser("summary", help="show record, profit and ROI")
 
@@ -155,6 +159,11 @@ def _run_journal(args) -> int:
         bet = journal.settle(args.id, args.status)
         print(f"Bet #{bet.id} settled {bet.status}: profit {bet.profit:+.2f}")
         return 0
+    if args.action == "close":
+        bet = journal.close(args.id, args.price)
+        print(f"Bet #{bet.id} closing line {_fmt_american(bet.price)} -> "
+              f"{_fmt_american(args.price)}: CLV {bet.clv * 100:+.1f}%")
+        return 0
     if args.action == "list":
         _print_journal(journal)
         return 0
@@ -169,11 +178,14 @@ def _print_journal(journal: Journal) -> None:
     if not bets:
         print("No bets logged yet.")
         return
-    header = ["ID", "Placed", "Event", "Selection", "Book", "Odds", "Stake", "Status", "Profit"]
+    header = ["ID", "Placed", "Event", "Selection", "Book", "Odds", "Stake",
+              "Status", "Profit", "Close", "CLV%"]
     rows = [
         [b.id, b.placed_at, b.event,
          b.selection + (f" {b.point:+g}" if b.point is not None else ""),
-         b.book, _fmt_american(b.price), f"{b.stake:g}", b.status, f"{b.profit:+.2f}"]
+         b.book, _fmt_american(b.price), f"{b.stake:g}", b.status, f"{b.profit:+.2f}",
+         _fmt_american(b.closing_price) if b.closing_price is not None else "-",
+         f"{b.clv * 100:+.1f}" if b.clv is not None else "-"]
         for b in bets
     ]
     _print_table(header, rows)
@@ -185,6 +197,9 @@ def _print_summary(journal: Journal) -> None:
     print(f"Record: {s['wins']}-{s['losses']}-{s['pushes']} (W-L-P)")
     print(f"Staked: {s['staked']:.2f}   Profit: {s['profit']:+.2f}   "
           f"ROI: {s['roi'] * 100:+.1f}%")
+    if s["with_closing"]:
+        print(f"CLV: {s['avg_clv'] * 100:+.1f}% avg over {s['with_closing']} bet(s), "
+              f"beat the close {s['beat_close_rate'] * 100:.0f}% of the time")
 
 
 # -- formatting helpers ----------------------------------------------------

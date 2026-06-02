@@ -56,6 +56,22 @@ def test_kelly_zero_when_no_edge():
     assert om.kelly_fraction(0.5, 1.9) == 0.0
 
 
+def test_closing_line_value():
+    # Got +135 (2.35), closed at +120 (2.20) -> beat the close.
+    clv = om.closing_line_value(135, 120)
+    assert clv == pytest.approx(2.35 / 2.20 - 1.0, abs=1e-9)
+    assert clv > 0
+
+
+def test_closing_line_value_negative_when_worse_than_close():
+    # Got +110, closed at +135 -> you got a worse price than the close.
+    assert om.closing_line_value(110, 135) < 0
+
+
+def test_closing_line_value_zero_at_same_price():
+    assert om.closing_line_value(-110, -110) == pytest.approx(0.0)
+
+
 def test_zero_odds_rejected():
     with pytest.raises(ValueError):
         om.american_to_decimal(0)

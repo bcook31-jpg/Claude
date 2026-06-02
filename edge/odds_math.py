@@ -75,6 +75,16 @@ def expected_value(true_prob: float, decimal: float) -> float:
     return true_prob * decimal - 1.0
 
 
+def closing_line_value(your_price: int, closing_price: int) -> float:
+    """Closing line value (CLV) as a fraction.
+
+    CLV = your_decimal / closing_decimal - 1. A positive value means you got a
+    better price than the market's closing line (you "beat the close"), which
+    is the strongest available signal that a bet was made at value.
+    """
+    return american_to_decimal(your_price) / american_to_decimal(closing_price) - 1.0
+
+
 def kelly_fraction(true_prob: float, decimal: float) -> float:
     """Full-Kelly stake as a fraction of bankroll.
 
