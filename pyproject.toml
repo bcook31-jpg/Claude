@@ -25,3 +25,4 @@ edge = ["data/*.json", "data/*.csv"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+pythonpath = ["."]
