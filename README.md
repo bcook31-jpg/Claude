@@ -118,8 +118,12 @@ edge scan --model team --min-ev 0.03     # model-vs-market edges, all markets
 edge scan --model elo                    # moneyline only
 ```
 
-`--results` expects a CSV with columns
-`sport_key,date,home_team,away_team,home_score,away_score`.
+`--results` columns are **auto-detected** from common aliases (canonical
+`sport_key,date,home_team,away_team,home_score,away_score`, but also
+`HomeTeam`/`AwayTeam`/`FTHG`/`FTAG` and similar, so real exports like
+football-data.co.uk load as-is). Override detection with `--map
+home_team=Home` (repeatable) and stamp a constant sport with `--sport-key`
+when the file has no sport column. Malformed rows are skipped.
 
 **Precision safeguards.** The team model regresses each team's scoring rate
 toward the league average (empirical-Bayes shrinkage), so teams with few games
@@ -134,6 +138,42 @@ more confident than the sport's real-world variance allows.
 > opinion, and train on a full season of real results before trusting the
 > numbers. The `outcome_probability` interface is the seam where a stronger
 > model (logistic regression, gradient boosting, ...) can be dropped in.
+
+## Backtesting
+
+Replay a strategy over historical odds + results to see how it would actually
+have performed — including **CLV**, the best long-run skill signal.
+
+```bash
+edge backtest                          # market consensus, flat stake, sample data
+edge backtest --min-ev 0.02 --devig shin
+edge backtest --stake kelly --bankroll 1000
+edge backtest --model team --stake kelly   # backtest a trained model
+edge backtest --data my_settled_events.json
+```
+
+Each settled event supplies the odds that were available, the final score, and
+(optionally) the closing lines:
+
+```json
+{
+  "event":   { "...": "The Odds API shape — odds when betting" },
+  "result":  {"home_score": 27, "away_score": 24},
+  "closing": { "...": "The Odds API shape — closing lines (optional, for CLV)" }
+}
+```
+
+The runner places every bet the strategy recommends, grades it against the
+result (moneyline / spread / total, including pushes), and reports:
+
+```
+Bets: 12   Record: 7-5-0 (W-L-P)
+Staked: 12.00   Profit: +3.55   ROI: +29.6%
+CLV: +6.5% avg over 11 bet(s), beat the close 100% of the time
+```
+
+That 7-5 record with positive ROI and consistent +CLV is the point: a +EV
+strategy wins long-term even when individual bets lose.
 
 ## Library
 
@@ -178,11 +218,12 @@ edge/
   models.py           # Event / Bookmaker / Outcome (The Odds API shape)
   engine.py           # de-vig → fair value → +EV finder (market + model)
   model.py            # predictive models: Elo + Gaussian team scoring model
+  backtest.py         # bet grader + strategy replay (ROI / CLV)
   journal.py          # CSV bet journal (record / profit / ROI / CLV)
-  cli.py              # `edge scan`, `edge journal`, `edge train`, `edge sports`
+  cli.py              # scan, journal, train, sports, backtest
   providers/          # MockProvider, TheOddsApiProvider (pluggable seam)
-  data/               # sample_odds.json, historical_results.csv
-tests/                # pytest suite (math, engine, model, journal, live)
+  data/               # sample_odds.json, historical_results.csv, backtest_events.json
+tests/                # pytest suite (math, engine, model, journal, loader, backtest, cli, live)
 ```
 
 ## Tests

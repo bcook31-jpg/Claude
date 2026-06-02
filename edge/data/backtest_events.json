@@ -1,0 +1,231 @@
+[
+  {
+    "event": {
+      "id": "bt-nfl-1", "sport_key": "americanfootball_nfl", "sport_title": "NFL",
+      "commence_time": "2025-09-14T20:25:00Z",
+      "home_team": "Kansas City Chiefs", "away_team": "Buffalo Bills",
+      "bookmakers": [
+        {"key": "draftkings", "title": "DraftKings", "markets": [
+          {"key": "h2h", "outcomes": [{"name": "Kansas City Chiefs", "price": -130}, {"name": "Buffalo Bills", "price": 110}]},
+          {"key": "spreads", "outcomes": [{"name": "Kansas City Chiefs", "price": -110, "point": -2.5}, {"name": "Buffalo Bills", "price": -110, "point": 2.5}]},
+          {"key": "totals", "outcomes": [{"name": "Over", "price": -110, "point": 47.5}, {"name": "Under", "price": -110, "point": 47.5}]}
+        ]},
+        {"key": "pinnacle", "title": "Pinnacle", "markets": [
+          {"key": "h2h", "outcomes": [{"name": "Kansas City Chiefs", "price": -132}, {"name": "Buffalo Bills", "price": 118}]},
+          {"key": "spreads", "outcomes": [{"name": "Kansas City Chiefs", "price": -105, "point": -2.5}, {"name": "Buffalo Bills", "price": -105, "point": 2.5}]},
+          {"key": "totals", "outcomes": [{"name": "Over", "price": -105, "point": 47.5}, {"name": "Under", "price": -105, "point": 47.5}]}
+        ]},
+        {"key": "caesars", "title": "Caesars", "markets": [
+          {"key": "h2h", "outcomes": [{"name": "Kansas City Chiefs", "price": -150}, {"name": "Buffalo Bills", "price": 135}]},
+          {"key": "spreads", "outcomes": [{"name": "Kansas City Chiefs", "price": -125, "point": -2.5}, {"name": "Buffalo Bills", "price": 105, "point": 2.5}]},
+          {"key": "totals", "outcomes": [{"name": "Over", "price": 106, "point": 47.5}, {"name": "Under", "price": -126, "point": 47.5}]}
+        ]}
+      ]
+    },
+    "result": {"home_score": 24, "away_score": 27},
+    "closing": {
+      "id": "bt-nfl-1", "sport_key": "americanfootball_nfl", "sport_title": "NFL",
+      "commence_time": "2025-09-14T20:25:00Z",
+      "home_team": "Kansas City Chiefs", "away_team": "Buffalo Bills",
+      "bookmakers": [
+        {"key": "draftkings", "title": "DraftKings", "markets": [
+          {"key": "h2h", "outcomes": [{"name": "Kansas City Chiefs", "price": -140}, {"name": "Buffalo Bills", "price": 118}]},
+          {"key": "spreads", "outcomes": [{"name": "Kansas City Chiefs", "price": -112, "point": -2.5}, {"name": "Buffalo Bills", "price": -108, "point": 2.5}]},
+          {"key": "totals", "outcomes": [{"name": "Over", "price": -115, "point": 47.5}, {"name": "Under", "price": -105, "point": 47.5}]}
+        ]},
+        {"key": "pinnacle", "title": "Pinnacle", "markets": [
+          {"key": "h2h", "outcomes": [{"name": "Kansas City Chiefs", "price": -138}, {"name": "Buffalo Bills", "price": 120}]},
+          {"key": "totals", "outcomes": [{"name": "Over", "price": -112, "point": 47.5}, {"name": "Under", "price": -108, "point": 47.5}]}
+        ]}
+      ]
+    }
+  },
+  {
+    "event": {
+      "id": "bt-nba-1", "sport_key": "basketball_nba", "sport_title": "NBA",
+      "commence_time": "2025-11-01T02:10:00Z",
+      "home_team": "Los Angeles Lakers", "away_team": "Boston Celtics",
+      "bookmakers": [
+        {"key": "draftkings", "title": "DraftKings", "markets": [
+          {"key": "h2h", "outcomes": [{"name": "Los Angeles Lakers", "price": -150}, {"name": "Boston Celtics", "price": 130}]},
+          {"key": "totals", "outcomes": [{"name": "Over", "price": -110, "point": 220.5}, {"name": "Under", "price": -110, "point": 220.5}]}
+        ]},
+        {"key": "pinnacle", "title": "Pinnacle", "markets": [
+          {"key": "h2h", "outcomes": [{"name": "Los Angeles Lakers", "price": -155}, {"name": "Boston Celtics", "price": 138}]},
+          {"key": "totals", "outcomes": [{"name": "Over", "price": -105, "point": 220.5}, {"name": "Under", "price": -105, "point": 220.5}]}
+        ]},
+        {"key": "caesars", "title": "Caesars", "markets": [
+          {"key": "h2h", "outcomes": [{"name": "Los Angeles Lakers", "price": -160}, {"name": "Boston Celtics", "price": 145}]},
+          {"key": "totals", "outcomes": [{"name": "Over", "price": -125, "point": 220.5}, {"name": "Under", "price": 106, "point": 220.5}]}
+        ]}
+      ]
+    },
+    "result": {"home_score": 118, "away_score": 121},
+    "closing": {
+      "id": "bt-nba-1", "sport_key": "basketball_nba", "sport_title": "NBA",
+      "commence_time": "2025-11-01T02:10:00Z",
+      "home_team": "Los Angeles Lakers", "away_team": "Boston Celtics",
+      "bookmakers": [
+        {"key": "draftkings", "title": "DraftKings", "markets": [
+          {"key": "h2h", "outcomes": [{"name": "Los Angeles Lakers", "price": -150}, {"name": "Boston Celtics", "price": 128}]},
+          {"key": "totals", "outcomes": [{"name": "Over", "price": -110, "point": 220.5}, {"name": "Under", "price": -110, "point": 220.5}]}
+        ]},
+        {"key": "pinnacle", "title": "Pinnacle", "markets": [
+          {"key": "h2h", "outcomes": [{"name": "Los Angeles Lakers", "price": -152}, {"name": "Boston Celtics", "price": 130}]},
+          {"key": "totals", "outcomes": [{"name": "Over", "price": -110, "point": 220.5}, {"name": "Under", "price": -110, "point": 220.5}]}
+        ]}
+      ]
+    }
+  },
+  {
+    "event": {
+      "id": "bt-mlb-1", "sport_key": "baseball_mlb", "sport_title": "MLB",
+      "commence_time": "2025-06-01T23:05:00Z",
+      "home_team": "Boston Red Sox", "away_team": "New York Yankees",
+      "bookmakers": [
+        {"key": "draftkings", "title": "DraftKings", "markets": [
+          {"key": "h2h", "outcomes": [{"name": "New York Yankees", "price": -135}, {"name": "Boston Red Sox", "price": 115}]},
+          {"key": "totals", "outcomes": [{"name": "Over", "price": -110, "point": 8.5}, {"name": "Under", "price": -110, "point": 8.5}]}
+        ]},
+        {"key": "pinnacle", "title": "Pinnacle", "markets": [
+          {"key": "h2h", "outcomes": [{"name": "New York Yankees", "price": -138}, {"name": "Boston Red Sox", "price": 120}]},
+          {"key": "totals", "outcomes": [{"name": "Over", "price": -105, "point": 8.5}, {"name": "Under", "price": -105, "point": 8.5}]}
+        ]},
+        {"key": "caesars", "title": "Caesars", "markets": [
+          {"key": "h2h", "outcomes": [{"name": "New York Yankees", "price": -150}, {"name": "Boston Red Sox", "price": 132}]},
+          {"key": "totals", "outcomes": [{"name": "Over", "price": 104, "point": 8.5}, {"name": "Under", "price": -124, "point": 8.5}]}
+        ]}
+      ]
+    },
+    "result": {"home_score": 2, "away_score": 5},
+    "closing": {
+      "id": "bt-mlb-1", "sport_key": "baseball_mlb", "sport_title": "MLB",
+      "commence_time": "2025-06-01T23:05:00Z",
+      "home_team": "Boston Red Sox", "away_team": "New York Yankees",
+      "bookmakers": [
+        {"key": "draftkings", "title": "DraftKings", "markets": [
+          {"key": "h2h", "outcomes": [{"name": "New York Yankees", "price": -145}, {"name": "Boston Red Sox", "price": 122}]},
+          {"key": "totals", "outcomes": [{"name": "Over", "price": -108, "point": 8.5}, {"name": "Under", "price": -112, "point": 8.5}]}
+        ]},
+        {"key": "pinnacle", "title": "Pinnacle", "markets": [
+          {"key": "h2h", "outcomes": [{"name": "New York Yankees", "price": -148}, {"name": "Boston Red Sox", "price": 125}]},
+          {"key": "totals", "outcomes": [{"name": "Over", "price": -110, "point": 8.5}, {"name": "Under", "price": -110, "point": 8.5}]}
+        ]}
+      ]
+    }
+  },
+  {
+    "event": {
+      "id": "bt-nhl-1", "sport_key": "icehockey_nhl", "sport_title": "NHL",
+      "commence_time": "2025-12-01T02:00:00Z",
+      "home_team": "Colorado Avalanche", "away_team": "Edmonton Oilers",
+      "bookmakers": [
+        {"key": "draftkings", "title": "DraftKings", "markets": [
+          {"key": "h2h", "outcomes": [{"name": "Colorado Avalanche", "price": -140}, {"name": "Edmonton Oilers", "price": 118}]},
+          {"key": "spreads", "outcomes": [{"name": "Colorado Avalanche", "price": 160, "point": -1.5}, {"name": "Edmonton Oilers", "price": -180, "point": 1.5}]},
+          {"key": "totals", "outcomes": [{"name": "Over", "price": -110, "point": 6.5}, {"name": "Under", "price": -110, "point": 6.5}]}
+        ]},
+        {"key": "pinnacle", "title": "Pinnacle", "markets": [
+          {"key": "h2h", "outcomes": [{"name": "Colorado Avalanche", "price": -145}, {"name": "Edmonton Oilers", "price": 122}]},
+          {"key": "spreads", "outcomes": [{"name": "Colorado Avalanche", "price": 165, "point": -1.5}, {"name": "Edmonton Oilers", "price": -185, "point": 1.5}]},
+          {"key": "totals", "outcomes": [{"name": "Over", "price": -105, "point": 6.5}, {"name": "Under", "price": -105, "point": 6.5}]}
+        ]},
+        {"key": "caesars", "title": "Caesars", "markets": [
+          {"key": "h2h", "outcomes": [{"name": "Colorado Avalanche", "price": -155}, {"name": "Edmonton Oilers", "price": 135}]},
+          {"key": "spreads", "outcomes": [{"name": "Colorado Avalanche", "price": 180, "point": -1.5}, {"name": "Edmonton Oilers", "price": -210, "point": 1.5}]},
+          {"key": "totals", "outcomes": [{"name": "Over", "price": -130, "point": 6.5}, {"name": "Under", "price": 110, "point": 6.5}]}
+        ]}
+      ]
+    },
+    "result": {"home_score": 4, "away_score": 2},
+    "closing": {
+      "id": "bt-nhl-1", "sport_key": "icehockey_nhl", "sport_title": "NHL",
+      "commence_time": "2025-12-01T02:00:00Z",
+      "home_team": "Colorado Avalanche", "away_team": "Edmonton Oilers",
+      "bookmakers": [
+        {"key": "draftkings", "title": "DraftKings", "markets": [
+          {"key": "h2h", "outcomes": [{"name": "Colorado Avalanche", "price": -150}, {"name": "Edmonton Oilers", "price": 125}]},
+          {"key": "totals", "outcomes": [{"name": "Over", "price": -115, "point": 6.5}, {"name": "Under", "price": -105, "point": 6.5}]}
+        ]},
+        {"key": "pinnacle", "title": "Pinnacle", "markets": [
+          {"key": "h2h", "outcomes": [{"name": "Colorado Avalanche", "price": -148}, {"name": "Edmonton Oilers", "price": 124}]},
+          {"key": "totals", "outcomes": [{"name": "Over", "price": -112, "point": 6.5}, {"name": "Under", "price": -108, "point": 6.5}]}
+        ]}
+      ]
+    }
+  },
+  {
+    "event": {
+      "id": "bt-nfl-2", "sport_key": "americanfootball_nfl", "sport_title": "NFL",
+      "commence_time": "2025-09-21T17:00:00Z",
+      "home_team": "Dallas Cowboys", "away_team": "Philadelphia Eagles",
+      "bookmakers": [
+        {"key": "draftkings", "title": "DraftKings", "markets": [
+          {"key": "h2h", "outcomes": [{"name": "Dallas Cowboys", "price": 110}, {"name": "Philadelphia Eagles", "price": -130}]},
+          {"key": "totals", "outcomes": [{"name": "Over", "price": -110, "point": 45.5}, {"name": "Under", "price": -110, "point": 45.5}]}
+        ]},
+        {"key": "pinnacle", "title": "Pinnacle", "markets": [
+          {"key": "h2h", "outcomes": [{"name": "Dallas Cowboys", "price": 114}, {"name": "Philadelphia Eagles", "price": -134}]},
+          {"key": "totals", "outcomes": [{"name": "Over", "price": -105, "point": 45.5}, {"name": "Under", "price": -105, "point": 45.5}]}
+        ]},
+        {"key": "caesars", "title": "Caesars", "markets": [
+          {"key": "h2h", "outcomes": [{"name": "Dallas Cowboys", "price": 125}, {"name": "Philadelphia Eagles", "price": -150}]},
+          {"key": "totals", "outcomes": [{"name": "Over", "price": -126, "point": 45.5}, {"name": "Under", "price": 106, "point": 45.5}]}
+        ]}
+      ]
+    },
+    "result": {"home_score": 31, "away_score": 17},
+    "closing": {
+      "id": "bt-nfl-2", "sport_key": "americanfootball_nfl", "sport_title": "NFL",
+      "commence_time": "2025-09-21T17:00:00Z",
+      "home_team": "Dallas Cowboys", "away_team": "Philadelphia Eagles",
+      "bookmakers": [
+        {"key": "draftkings", "title": "DraftKings", "markets": [
+          {"key": "h2h", "outcomes": [{"name": "Dallas Cowboys", "price": 104}, {"name": "Philadelphia Eagles", "price": -124}]},
+          {"key": "totals", "outcomes": [{"name": "Over", "price": -112, "point": 45.5}, {"name": "Under", "price": -108, "point": 45.5}]}
+        ]},
+        {"key": "pinnacle", "title": "Pinnacle", "markets": [
+          {"key": "h2h", "outcomes": [{"name": "Dallas Cowboys", "price": 106}, {"name": "Philadelphia Eagles", "price": -126}]},
+          {"key": "totals", "outcomes": [{"name": "Over", "price": -110, "point": 45.5}, {"name": "Under", "price": -110, "point": 45.5}]}
+        ]}
+      ]
+    }
+  },
+  {
+    "event": {
+      "id": "bt-nba-2", "sport_key": "basketball_nba", "sport_title": "NBA",
+      "commence_time": "2025-11-08T03:30:00Z",
+      "home_team": "Golden State Warriors", "away_team": "Denver Nuggets",
+      "bookmakers": [
+        {"key": "draftkings", "title": "DraftKings", "markets": [
+          {"key": "h2h", "outcomes": [{"name": "Golden State Warriors", "price": -120}, {"name": "Denver Nuggets", "price": 100}]},
+          {"key": "totals", "outcomes": [{"name": "Over", "price": -110, "point": 228.5}, {"name": "Under", "price": -110, "point": 228.5}]}
+        ]},
+        {"key": "pinnacle", "title": "Pinnacle", "markets": [
+          {"key": "h2h", "outcomes": [{"name": "Golden State Warriors", "price": -122}, {"name": "Denver Nuggets", "price": 104}]},
+          {"key": "totals", "outcomes": [{"name": "Over", "price": -105, "point": 228.5}, {"name": "Under", "price": -105, "point": 228.5}]}
+        ]},
+        {"key": "caesars", "title": "Caesars", "markets": [
+          {"key": "h2h", "outcomes": [{"name": "Golden State Warriors", "price": -135}, {"name": "Denver Nuggets", "price": 115}]},
+          {"key": "totals", "outcomes": [{"name": "Over", "price": 104, "point": 228.5}, {"name": "Under", "price": -124, "point": 228.5}]}
+        ]}
+      ]
+    },
+    "result": {"home_score": 110, "away_score": 124},
+    "closing": {
+      "id": "bt-nba-2", "sport_key": "basketball_nba", "sport_title": "NBA",
+      "commence_time": "2025-11-08T03:30:00Z",
+      "home_team": "Golden State Warriors", "away_team": "Denver Nuggets",
+      "bookmakers": [
+        {"key": "draftkings", "title": "DraftKings", "markets": [
+          {"key": "h2h", "outcomes": [{"name": "Golden State Warriors", "price": -118}, {"name": "Denver Nuggets", "price": 100}]},
+          {"key": "totals", "outcomes": [{"name": "Over", "price": -112, "point": 228.5}, {"name": "Under", "price": -108, "point": 228.5}]}
+        ]},
+        {"key": "pinnacle", "title": "Pinnacle", "markets": [
+          {"key": "h2h", "outcomes": [{"name": "Golden State Warriors", "price": -120}, {"name": "Denver Nuggets", "price": 102}]},
+          {"key": "totals", "outcomes": [{"name": "Over", "price": -110, "point": 228.5}, {"name": "Under", "price": -110, "point": 228.5}]}
+        ]}
+      ]
+    }
+  }
+]

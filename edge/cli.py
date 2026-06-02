@@ -18,10 +18,12 @@ Examples
 from __future__ import annotations
 
 import argparse
+import json
 import sys
 from pathlib import Path
 from typing import Optional
 
+from .backtest import run_backtest
 from .engine import ValueBet, find_model_value_bets, find_value_bets
 from .journal import Journal
 from .model import EloModel, TeamModel, load_results
@@ -41,6 +43,7 @@ MODEL_PATHS = {
     "team": Path.home() / ".edge" / "team.json",
 }
 BUNDLED_RESULTS = Path(__file__).resolve().parent / "data" / "historical_results.csv"
+BUNDLED_BACKTEST = Path(__file__).resolve().parent / "data" / "backtest_events.json"
 
 
 def _default_model_path(model: Optional[str]) -> Path:
@@ -56,6 +59,7 @@ def main(argv: Optional[list[str]] = None) -> int:
     _add_journal_parser(sub)
     _add_train_parser(sub)
     _add_sports_parser(sub)
+    _add_backtest_parser(sub)
 
     args = parser.parse_args(argv)
     return args.func(args)
@@ -244,8 +248,15 @@ def _add_train_parser(sub) -> None:
                    help="elo: moneyline ratings; team: all-markets scoring model "
                         "(default)")
     p.add_argument("--results", type=Path, default=BUNDLED_RESULTS,
-                   help="CSV of results (sport_key,date,home_team,away_team,"
-                        "home_score,away_score); default uses bundled sample data")
+                   help="CSV of results; columns are auto-detected (sport_key,"
+                        "date,home_team,away_team,home_score,away_score and "
+                        "common aliases). Default uses bundled sample data")
+    p.add_argument("--map", action="append", default=[], metavar="FIELD=COLUMN",
+                   help="map a canonical field to a source column when "
+                        "auto-detection fails, e.g. --map home_team=Home "
+                        "(repeatable)")
+    p.add_argument("--sport-key", default=None,
+                   help="stamp every row with this sport_key if the file lacks one")
     p.add_argument("--out", type=Path, default=None,
                    help="where to save the model (default ~/.edge/<model>.json)")
     p.add_argument("--k", type=float, default=20.0, help="Elo update step (default 20)")
@@ -256,9 +267,22 @@ def _add_train_parser(sub) -> None:
 
 def _run_train(args) -> int:
     try:
-        games = load_results(args.results)
+        mapping = dict(pair.split("=", 1) for pair in args.map)
+    except ValueError:
+        print("Invalid --map; use FIELD=COLUMN, e.g. --map home_team=Home",
+              file=sys.stderr)
+        return 1
+    try:
+        games = load_results(args.results, mapping=mapping or None,
+                             default_sport=args.sport_key)
     except FileNotFoundError:
         print(f"Results file not found: {args.results}", file=sys.stderr)
+        return 1
+    except ValueError as exc:
+        print(str(exc), file=sys.stderr)
+        return 1
+    if not games:
+        print(f"No usable rows found in {args.results}", file=sys.stderr)
         return 1
 
     out = args.out or _default_model_path(args.model)
@@ -332,6 +356,77 @@ def _run_sports(args) -> int:
         rows.append(row)
     _print_table(header, rows)
     return 0
+
+
+# -- backtest -------------------------------------------------------------
+def _add_backtest_parser(sub) -> None:
+    p = sub.add_parser("backtest", help="replay a strategy over historical "
+                                        "odds + results and report ROI / CLV")
+    p.add_argument("--data", type=Path, default=BUNDLED_BACKTEST,
+                   help="settled-events JSON (default uses bundled sample data)")
+    p.add_argument("--market", choices=["h2h", "spreads", "totals"],
+                   help="restrict to one market (default: all)")
+    p.add_argument("--min-ev", type=float, default=0.0,
+                   help="minimum EV for the strategy to place a bet (default 0)")
+    p.add_argument("--sharp", help="use this book as fair value (market path)")
+    p.add_argument("--devig", choices=["proportional", "shin"], default="proportional",
+                   help="de-vig method for the market path (default proportional)")
+    p.add_argument("--model", choices=["elo", "team"],
+                   help="bet a trained model instead of the market")
+    p.add_argument("--ratings", type=Path, default=None,
+                   help="model file for --model (default ~/.edge/<model>.json)")
+    p.add_argument("--stake", choices=["flat", "kelly"], default="flat",
+                   help="flat unit per bet, or Kelly fraction of bankroll")
+    p.add_argument("--unit", type=float, default=1.0, help="flat stake size (default 1)")
+    p.add_argument("--bankroll", type=float, default=1000.0,
+                   help="starting bankroll for Kelly staking (default 1000)")
+    p.set_defaults(func=_run_backtest)
+
+
+def _run_backtest(args) -> int:
+    try:
+        settled = json.loads(Path(args.data).read_text())
+    except FileNotFoundError:
+        print(f"Backtest data not found: {args.data}", file=sys.stderr)
+        return 1
+
+    markets = [args.market] if args.market else None
+    if args.model:
+        ratings_path = args.ratings or _default_model_path(args.model)
+        if not ratings_path.exists():
+            print(f"No trained model at {ratings_path}. Run 'edge train "
+                  f"--model {args.model}' first.", file=sys.stderr)
+            return 1
+        model = (EloModel if args.model == "elo" else TeamModel).load(ratings_path)
+        strategy = lambda evs: find_model_value_bets(  # noqa: E731
+            evs, model, markets=markets, min_ev=args.min_ev)
+        basis = f"model '{args.model}'"
+    else:
+        strategy = lambda evs: find_value_bets(  # noqa: E731
+            evs, markets=markets, sharp_book=args.sharp,
+            min_ev=args.min_ev, method=args.devig)
+        basis = f"sharp '{args.sharp}'" if args.sharp else "market consensus"
+
+    summary = run_backtest(settled, strategy, stake=args.stake,
+                           unit=args.unit, bankroll=args.bankroll)
+    _print_backtest(summary, len(settled), basis, args.stake)
+    return 0
+
+
+def _print_backtest(s, num_events: int, basis: str, stake: str) -> None:
+    print(f"Backtest over {num_events} event(s)  |  strategy: {basis}, "
+          f"stake: {stake}\n")
+    if s.bets == 0:
+        print("No bets placed (no qualifying edges).")
+        return
+    print(f"Bets: {s.bets}   Record: {s.wins}-{s.losses}-{s.pushes} (W-L-P)")
+    print(f"Staked: {s.staked:.2f}   Profit: {s.profit:+.2f}   "
+          f"ROI: {s.roi * 100:+.1f}%")
+    if stake == "kelly":
+        print(f"Bankroll: {s.start_bankroll:.2f} -> {s.end_bankroll:.2f}")
+    if s.clv_count:
+        print(f"CLV: {s.avg_clv * 100:+.1f}% avg over {s.clv_count} bet(s), "
+              f"beat the close {s.beat_close_rate * 100:.0f}% of the time")
 
 
 # -- formatting helpers ----------------------------------------------------

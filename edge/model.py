@@ -324,12 +324,81 @@ def _expected_scores(
     return eh, ea
 
 
-def load_results(path: Path) -> list[dict]:
-    """Load historical game results from a CSV.
+# Common header aliases so real-world result files load without manual mapping
+# (covers e.g. football-data.co.uk's HomeTeam/FTHG style and generic exports).
+_FIELD_ALIASES: dict[str, tuple[str, ...]] = {
+    "sport_key": ("sport_key", "sport", "league", "competition"),
+    "date": ("date", "datetime", "commence_time", "game_date", "kickoff"),
+    "home_team": ("home_team", "hometeam", "home", "home_name", "home_club"),
+    "away_team": ("away_team", "awayteam", "away", "away_name", "away_club"),
+    "home_score": ("home_score", "homescore", "home_goals", "fthg", "hg", "score_home"),
+    "away_score": ("away_score", "awayscore", "away_goals", "ftag", "ag", "score_away"),
+}
+_REQUIRED = ("home_team", "away_team", "home_score", "away_score")
 
-    Expected columns: sport_key, date, home_team, away_team, home_score,
-    away_score. ``sport_key`` is optional for the Elo model but required by the
-    TeamModel to group per-sport scoring rates.
+
+def load_results(
+    path: Path,
+    mapping: Optional[dict[str, str]] = None,
+    default_sport: Optional[str] = None,
+) -> list[dict]:
+    """Load historical game results from a CSV into canonical row dicts.
+
+    Canonical fields are ``sport_key, date, home_team, away_team, home_score,
+    away_score``. Source columns are matched case-insensitively against a set
+    of common aliases (so e.g. ``HomeTeam``/``FTHG`` style files load as-is);
+    ``mapping`` overrides this per field (canonical -> source column).
+
+    ``sport_key`` may be absent from the file -- supply ``default_sport`` to
+    stamp every row with one (required by the TeamModel, optional for Elo).
+    Rows missing a required field or with non-integer scores are skipped.
     """
+    mapping = mapping or {}
     with Path(path).open(newline="") as f:
-        return list(csv.DictReader(f))
+        reader = csv.DictReader(f)
+        headers = reader.fieldnames or []
+        resolved = _resolve_columns(headers, mapping, default_sport)
+        rows = []
+        for raw in reader:
+            row = _canonicalise(raw, resolved, default_sport)
+            if row is not None:
+                rows.append(row)
+    return rows
+
+
+def _resolve_columns(
+    headers: list[str], mapping: dict[str, str], default_sport: Optional[str]
+) -> dict[str, str]:
+    """Map each canonical field to an actual source column name."""
+    lower = {h.lower(): h for h in headers}
+    resolved: dict[str, str] = {}
+    for field, aliases in _FIELD_ALIASES.items():
+        if field in mapping:
+            resolved[field] = mapping[field]
+        else:
+            for alias in aliases:
+                if alias in lower:
+                    resolved[field] = lower[alias]
+                    break
+    missing = [f for f in _REQUIRED if f not in resolved]
+    if missing:
+        raise ValueError(
+            f"Could not find column(s) for {missing} in {headers}. "
+            f"Pass an explicit mapping, e.g. home_team=Home."
+        )
+    return resolved
+
+
+def _canonicalise(
+    raw: dict, resolved: dict[str, str], default_sport: Optional[str]
+) -> Optional[dict]:
+    row = {field: (raw.get(col) or "").strip() for field, col in resolved.items()}
+    if not row.get("sport_key"):
+        row["sport_key"] = default_sport or ""
+    if not all(row.get(f) for f in _REQUIRED):
+        return None
+    try:
+        int(row["home_score"]); int(row["away_score"])
+    except ValueError:
+        return None
+    return row
