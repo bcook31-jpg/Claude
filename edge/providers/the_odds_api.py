@@ -46,6 +46,27 @@ class TheOddsApiProvider(OddsProvider):
         self.regions = regions
         self.odds_format = odds_format
         self.timeout = timeout
+        # Updated after every request from the API's quota response headers.
+        self.requests_remaining: Optional[int] = None
+        self.requests_used: Optional[int] = None
+        self.last_cost: Optional[int] = None
+
+    def _get_json(self, url: str):
+        """Fetch JSON and record quota usage from the response headers."""
+        with urllib.request.urlopen(url, timeout=self.timeout) as resp:
+            body = json.loads(resp.read().decode())
+            self._record_quota(resp.headers)
+        return body
+
+    def _record_quota(self, headers) -> None:
+        def as_int(value) -> Optional[int]:
+            try:
+                return int(value)
+            except (TypeError, ValueError):
+                return None
+        self.requests_remaining = as_int(headers.get("x-requests-remaining"))
+        self.requests_used = as_int(headers.get("x-requests-used"))
+        self.last_cost = as_int(headers.get("x-requests-last"))
 
     def get_sports(self, all_sports: bool = False) -> list[dict]:
         """List available sports.
@@ -58,9 +79,7 @@ class TheOddsApiProvider(OddsProvider):
         params = {"apiKey": self.api_key}
         if all_sports:
             params["all"] = "true"
-        url = f"{BASE_URL}/sports/?{urllib.parse.urlencode(params)}"
-        with urllib.request.urlopen(url, timeout=self.timeout) as resp:
-            return json.loads(resp.read().decode())
+        return self._get_json(f"{BASE_URL}/sports/?{urllib.parse.urlencode(params)}")
 
     def get_events(self, sport_key: str) -> list[dict]:
         """Upcoming/live events for a sport, without odds.
@@ -70,9 +89,7 @@ class TheOddsApiProvider(OddsProvider):
         ``commence_time``, ``home_team`` and ``away_team``.
         """
         params = urllib.parse.urlencode({"apiKey": self.api_key})
-        url = f"{BASE_URL}/sports/{sport_key}/events/?{params}"
-        with urllib.request.urlopen(url, timeout=self.timeout) as resp:
-            return json.loads(resp.read().decode())
+        return self._get_json(f"{BASE_URL}/sports/{sport_key}/events/?{params}")
 
     def get_scores(self, sport_key: str, days_from: Optional[int] = 3) -> list[dict]:
         """Scores for live and recently-completed games.
@@ -87,9 +104,8 @@ class TheOddsApiProvider(OddsProvider):
         params = {"apiKey": self.api_key}
         if days_from is not None:
             params["daysFrom"] = str(days_from)
-        url = f"{BASE_URL}/sports/{sport_key}/scores/?{urllib.parse.urlencode(params)}"
-        with urllib.request.urlopen(url, timeout=self.timeout) as resp:
-            return json.loads(resp.read().decode())
+        return self._get_json(
+            f"{BASE_URL}/sports/{sport_key}/scores/?{urllib.parse.urlencode(params)}")
 
     def get_odds(
         self,
@@ -109,8 +125,6 @@ class TheOddsApiProvider(OddsProvider):
                     "oddsFormat": self.odds_format,
                 }
             )
-            url = f"{BASE_URL}/sports/{sport}/odds/?{params}"
-            with urllib.request.urlopen(url, timeout=self.timeout) as resp:
-                payload = json.loads(resp.read().decode())
+            payload = self._get_json(f"{BASE_URL}/sports/{sport}/odds/?{params}")
             events.extend(event_from_dict(e) for e in payload)
         return events

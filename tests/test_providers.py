@@ -20,3 +20,22 @@ def test_the_odds_api_requires_key(monkeypatch):
     monkeypatch.delenv("ODDS_API_KEY", raising=False)
     with pytest.raises(ValueError):
         TheOddsApiProvider()
+
+
+def test_records_quota_headers():
+    provider = TheOddsApiProvider(api_key="x")
+    provider._record_quota({
+        "x-requests-remaining": "487",
+        "x-requests-used": "13",
+        "x-requests-last": "3",
+    })
+    assert provider.requests_remaining == 487
+    assert provider.requests_used == 13
+    assert provider.last_cost == 3
+
+
+def test_quota_headers_default_to_none_when_absent():
+    provider = TheOddsApiProvider(api_key="x")
+    provider._record_quota({})
+    assert provider.requests_remaining is None
+    assert provider.last_cost is None

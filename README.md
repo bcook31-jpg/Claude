@@ -202,6 +202,14 @@ only the standard library. Drop in an `ODDS_API_KEY` and the exact same engine
 runs on real lines — the data model mirrors that API's response shape, so the
 mock and live providers are interchangeable.
 
+Every live command prints your remaining **quota** (from the API's
+`x-requests-remaining` / `x-requests-last` headers), so you can see what each
+call cost — handy because `/odds` is billed *markets × regions* per sport:
+
+```
+(quota remaining: 487, last call cost: 3, used: 13)
+```
+
 List which sports are currently in season (handy because off-season sports
 return no odds). This hits the free `/sports` endpoint and costs no quota:
 

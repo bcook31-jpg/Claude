@@ -123,6 +123,8 @@ def _run_scan(args) -> int:
             basis += f" ({args.devig} de-vig)"
 
     _print_value_bets(bets, bankroll=args.bankroll, basis=basis)
+    if args.live:
+        _print_quota(provider)
     return 0
 
 
@@ -339,6 +341,7 @@ def _fetch_live_results(args) -> Optional[list[dict]]:
         print("No completed games returned (try a longer --days window, or a "
               "sport that is in season).", file=sys.stderr)
         return None
+    _print_quota(provider)
     return games
 
 
@@ -390,6 +393,7 @@ def _run_sports(args) -> int:
             row.append("?" if c is None else str(c))
         rows.append(row)
     _print_table(header, rows)
+    _print_quota(provider)
     return 0
 
 
@@ -465,6 +469,19 @@ def _print_backtest(s, num_events: int, basis: str, stake: str) -> None:
 
 
 # -- formatting helpers ----------------------------------------------------
+def _print_quota(provider) -> None:
+    """Print The Odds API quota usage (to stderr) if the provider tracked it."""
+    remaining = getattr(provider, "requests_remaining", None)
+    if remaining is None:
+        return
+    parts = [f"quota remaining: {remaining}"]
+    if getattr(provider, "last_cost", None) is not None:
+        parts.append(f"last call cost: {provider.last_cost}")
+    if getattr(provider, "requests_used", None) is not None:
+        parts.append(f"used: {provider.requests_used}")
+    print("(" + ", ".join(parts) + ")", file=sys.stderr)
+
+
 def _fmt_american(price: int) -> str:
     return f"+{price}" if price > 0 else str(price)
 
