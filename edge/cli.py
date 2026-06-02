@@ -26,7 +26,7 @@ from typing import Optional
 from .backtest import run_backtest
 from .engine import ValueBet, find_model_value_bets, find_value_bets
 from .journal import Journal
-from .model import EloModel, TeamModel, load_results
+from .model import EloModel, TeamModel, load_results, results_from_scores
 from .providers import MockProvider, TheOddsApiProvider
 
 # Friendly aliases -> The Odds API sport keys.
@@ -257,6 +257,14 @@ def _add_train_parser(sub) -> None:
                         "(repeatable)")
     p.add_argument("--sport-key", default=None,
                    help="stamp every row with this sport_key if the file lacks one")
+    p.add_argument("--live", action="store_true",
+                   help="fetch completed results from The Odds API instead of a "
+                        "--results CSV (requires ODDS_API_KEY)")
+    p.add_argument("--sport", help="--live: limit to one sport (nfl/nba/mlb/nhl "
+                                   "or a full key); default all four majors")
+    p.add_argument("--days", type=int, default=3,
+                   help="--live: include completed games from up to N days ago "
+                        "(1-3, default 3)")
     p.add_argument("--out", type=Path, default=None,
                    help="where to save the model (default ~/.edge/<model>.json)")
     p.add_argument("--k", type=float, default=20.0, help="Elo update step (default 20)")
@@ -266,24 +274,29 @@ def _add_train_parser(sub) -> None:
 
 
 def _run_train(args) -> int:
-    try:
-        mapping = dict(pair.split("=", 1) for pair in args.map)
-    except ValueError:
-        print("Invalid --map; use FIELD=COLUMN, e.g. --map home_team=Home",
-              file=sys.stderr)
-        return 1
-    try:
-        games = load_results(args.results, mapping=mapping or None,
-                             default_sport=args.sport_key)
-    except FileNotFoundError:
-        print(f"Results file not found: {args.results}", file=sys.stderr)
-        return 1
-    except ValueError as exc:
-        print(str(exc), file=sys.stderr)
-        return 1
-    if not games:
-        print(f"No usable rows found in {args.results}", file=sys.stderr)
-        return 1
+    if args.live:
+        games = _fetch_live_results(args)
+        if games is None:
+            return 1
+    else:
+        try:
+            mapping = dict(pair.split("=", 1) for pair in args.map)
+        except ValueError:
+            print("Invalid --map; use FIELD=COLUMN, e.g. --map home_team=Home",
+                  file=sys.stderr)
+            return 1
+        try:
+            games = load_results(args.results, mapping=mapping or None,
+                                 default_sport=args.sport_key)
+        except FileNotFoundError:
+            print(f"Results file not found: {args.results}", file=sys.stderr)
+            return 1
+        except ValueError as exc:
+            print(str(exc), file=sys.stderr)
+            return 1
+        if not games:
+            print(f"No usable rows found in {args.results}", file=sys.stderr)
+            return 1
 
     out = args.out or _default_model_path(args.model)
     if args.model == "elo":
@@ -305,6 +318,28 @@ def _run_train(args) -> int:
                 for sport, s in sorted(model.sports.items())]
         _print_table(["Sport", "HomeAdv", "SigMargin", "SigTotal", "Teams"], rows)
     return 0
+
+
+def _fetch_live_results(args) -> Optional[list[dict]]:
+    """Fetch completed results from The Odds API for training. None on failure."""
+    if args.sport:
+        sports = [SPORT_ALIASES.get(args.sport.lower(), args.sport)]
+    else:
+        sports = list(SPORT_ALIASES.values())
+    try:
+        provider = TheOddsApiProvider()
+        games: list[dict] = []
+        for sport_key in sports:
+            payload = provider.get_scores(sport_key, days_from=args.days)
+            games.extend(results_from_scores(payload))
+    except Exception as exc:  # missing key / network / API errors
+        print(f"Failed to fetch results: {exc}", file=sys.stderr)
+        return None
+    if not games:
+        print("No completed games returned (try a longer --days window, or a "
+              "sport that is in season).", file=sys.stderr)
+        return None
+    return games
 
 
 # -- sports ---------------------------------------------------------------

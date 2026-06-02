@@ -50,3 +50,40 @@ def test_scan_offline_runs(capsys):
     rc = cli.main(["scan", "--min-ev", "0.05"])
     assert rc == 0
     assert "+EV bet" in capsys.readouterr().out
+
+
+def test_train_live_uses_scores(monkeypatch, tmp_path, capsys):
+    payload = [
+        {"sport_key": "americanfootball_nfl", "completed": True,
+         "commence_time": "2025-09-14T20:25:00Z",
+         "home_team": "Chiefs", "away_team": "Bills",
+         "scores": [{"name": "Chiefs", "score": "24"}, {"name": "Bills", "score": "27"}]},
+    ]
+
+    class FakeProvider:
+        def __init__(self, *a, **k):
+            pass
+
+        def get_scores(self, sport_key, days_from=3):
+            return payload if sport_key == "americanfootball_nfl" else []
+
+    monkeypatch.setattr(cli, "TheOddsApiProvider", FakeProvider)
+    out = tmp_path / "elo.json"
+    rc = cli.main(["train", "--model", "elo", "--live", "--sport", "nfl", "--out", str(out)])
+    assert rc == 0
+    assert out.exists()
+    assert "Trained Elo on 1 games" in capsys.readouterr().out
+
+
+def test_train_live_handles_no_games(monkeypatch, capsys):
+    class FakeProvider:
+        def __init__(self, *a, **k):
+            pass
+
+        def get_scores(self, sport_key, days_from=3):
+            return []
+
+    monkeypatch.setattr(cli, "TheOddsApiProvider", FakeProvider)
+    rc = cli.main(["train", "--live", "--sport", "nfl"])
+    assert rc == 1
+    assert "No completed games" in capsys.readouterr().err

@@ -125,6 +125,15 @@ football-data.co.uk load as-is). Override detection with `--map
 home_team=Home` (repeatable) and stamp a constant sport with `--sport-key`
 when the file has no sport column. Malformed rows are skipped.
 
+Or skip CSVs entirely and **train on real results pulled live** from The Odds
+API's `/scores` endpoint:
+
+```bash
+export ODDS_API_KEY=your_key
+edge train --model team --live                 # all four majors, last 3 days
+edge train --model team --live --sport nfl --days 3
+```
+
 **Precision safeguards.** The team model regresses each team's scoring rate
 toward the league average (empirical-Bayes shrinkage), so teams with few games
 are not treated as confidently as those with many; and the margin/total

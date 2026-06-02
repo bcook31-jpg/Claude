@@ -1,6 +1,6 @@
 import pytest
 
-from edge.model import load_results
+from edge.model import load_results, results_from_scores
 
 
 def _write(tmp_path, name, text):
@@ -59,3 +59,49 @@ def test_missing_required_column_raises(tmp_path):
     path = _write(tmp_path, "r.csv", "home_team,home_score\nA,21\n")
     with pytest.raises(ValueError):
         load_results(path)
+
+
+# -- results_from_scores (The Odds API /scores payload) -------------------
+def test_results_from_scores_keeps_completed_games():
+    payload = [
+        {
+            "sport_key": "americanfootball_nfl", "completed": True,
+            "commence_time": "2025-09-14T20:25:00Z",
+            "home_team": "Kansas City Chiefs", "away_team": "Buffalo Bills",
+            "scores": [
+                {"name": "Kansas City Chiefs", "score": "24"},
+                {"name": "Buffalo Bills", "score": "27"},
+            ],
+        },
+    ]
+    rows = results_from_scores(payload)
+    assert rows == [{
+        "sport_key": "americanfootball_nfl", "date": "2025-09-14",
+        "home_team": "Kansas City Chiefs", "away_team": "Buffalo Bills",
+        "home_score": "24", "away_score": "27",
+    }]
+
+
+def test_results_from_scores_skips_incomplete_and_null():
+    payload = [
+        {"completed": False, "home_team": "A", "away_team": "B", "scores": None},
+        {"completed": True, "home_team": "C", "away_team": "D", "scores": None},
+        {"completed": True, "home_team": "E", "away_team": "F",
+         "scores": [{"name": "E", "score": "x"}, {"name": "F", "score": "2"}]},
+    ]
+    assert results_from_scores(payload) == []
+
+
+def test_results_from_scores_feeds_model_training():
+    from edge.model import TeamModel
+    payload = [
+        {"sport_key": "x", "completed": True, "commence_time": "2025-01-01T00:00:00Z",
+         "home_team": "A", "away_team": "B",
+         "scores": [{"name": "A", "score": "5"}, {"name": "B", "score": "1"}]},
+        {"sport_key": "x", "completed": True, "commence_time": "2025-01-02T00:00:00Z",
+         "home_team": "B", "away_team": "A",
+         "scores": [{"name": "B", "score": "0"}, {"name": "A", "score": "3"}]},
+    ]
+    rows = results_from_scores(payload)
+    model = TeamModel().train(rows)
+    assert "x" in model.sports

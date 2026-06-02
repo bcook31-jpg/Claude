@@ -74,6 +74,23 @@ class TheOddsApiProvider(OddsProvider):
         with urllib.request.urlopen(url, timeout=self.timeout) as resp:
             return json.loads(resp.read().decode())
 
+    def get_scores(self, sport_key: str, days_from: Optional[int] = 3) -> list[dict]:
+        """Scores for live and recently-completed games.
+
+        ``days_from`` (1-3) includes completed games from up to N days ago;
+        omit it to get only live and upcoming games. Each item has ``id``,
+        ``sport_key``, ``commence_time``, ``home_team``, ``away_team``,
+        ``completed`` and a ``scores`` list of ``{"name", "score"}`` (null until
+        the game has data). Hits the free ``/scores`` endpoint -- completed
+        games cost a small amount of quota, upcoming ones are free.
+        """
+        params = {"apiKey": self.api_key}
+        if days_from is not None:
+            params["daysFrom"] = str(days_from)
+        url = f"{BASE_URL}/sports/{sport_key}/scores/?{urllib.parse.urlencode(params)}"
+        with urllib.request.urlopen(url, timeout=self.timeout) as resp:
+            return json.loads(resp.read().decode())
+
     def get_odds(
         self,
         sport_keys: Optional[Iterable[str]] = None,

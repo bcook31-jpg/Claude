@@ -337,6 +337,38 @@ _FIELD_ALIASES: dict[str, tuple[str, ...]] = {
 _REQUIRED = ("home_team", "away_team", "home_score", "away_score")
 
 
+def results_from_scores(payload: Iterable[dict], default_sport: Optional[str] = None) -> list[dict]:
+    """Convert a The Odds API ``/scores`` payload to canonical result rows.
+
+    Only completed games with numeric scores for both teams are kept; live or
+    upcoming games (``completed`` false or ``scores`` null) are skipped. The
+    output matches :func:`load_results`, so it feeds straight into model
+    training.
+    """
+    rows = []
+    for g in payload:
+        if not g.get("completed") or not g.get("scores"):
+            continue
+        by_name = {s.get("name"): s.get("score") for s in g["scores"]}
+        home, away = g.get("home_team"), g.get("away_team")
+        home_score, away_score = by_name.get(home), by_name.get(away)
+        if home_score is None or away_score is None:
+            continue
+        try:
+            int(home_score); int(away_score)
+        except (TypeError, ValueError):
+            continue
+        rows.append({
+            "sport_key": g.get("sport_key") or default_sport or "",
+            "date": (g.get("commence_time") or "")[:10],
+            "home_team": home,
+            "away_team": away,
+            "home_score": str(home_score),
+            "away_score": str(away_score),
+        })
+    return rows
+
+
 def load_results(
     path: Path,
     mapping: Optional[dict[str, str]] = None,
