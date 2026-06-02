@@ -1,0 +1,178 @@
+[
+  {
+    "id": "nfl-buf-kc-2026",
+    "sport_key": "americanfootball_nfl",
+    "sport_title": "NFL",
+    "commence_time": "2026-09-13T20:25:00Z",
+    "home_team": "Kansas City Chiefs",
+    "away_team": "Buffalo Bills",
+    "bookmakers": [
+      {
+        "key": "draftkings", "title": "DraftKings",
+        "markets": [
+          {"key": "h2h", "outcomes": [{"name": "Kansas City Chiefs", "price": -130}, {"name": "Buffalo Bills", "price": 110}]},
+          {"key": "spreads", "outcomes": [{"name": "Kansas City Chiefs", "price": -110, "point": -2.5}, {"name": "Buffalo Bills", "price": -110, "point": 2.5}]},
+          {"key": "totals", "outcomes": [{"name": "Over", "price": -110, "point": 47.5}, {"name": "Under", "price": -110, "point": 47.5}]}
+        ]
+      },
+      {
+        "key": "fanduel", "title": "FanDuel",
+        "markets": [
+          {"key": "h2h", "outcomes": [{"name": "Kansas City Chiefs", "price": -128}, {"name": "Buffalo Bills", "price": 108}]},
+          {"key": "spreads", "outcomes": [{"name": "Kansas City Chiefs", "price": -108, "point": -2.5}, {"name": "Buffalo Bills", "price": -112, "point": 2.5}]},
+          {"key": "totals", "outcomes": [{"name": "Over", "price": -108, "point": 47.5}, {"name": "Under", "price": -112, "point": 47.5}]}
+        ]
+      },
+      {
+        "key": "betmgm", "title": "BetMGM",
+        "markets": [
+          {"key": "h2h", "outcomes": [{"name": "Kansas City Chiefs", "price": -135}, {"name": "Buffalo Bills", "price": 114}]},
+          {"key": "spreads", "outcomes": [{"name": "Kansas City Chiefs", "price": -112, "point": -2.5}, {"name": "Buffalo Bills", "price": -108, "point": 2.5}]},
+          {"key": "totals", "outcomes": [{"name": "Over", "price": -112, "point": 47.5}, {"name": "Under", "price": -108, "point": 47.5}]}
+        ]
+      },
+      {
+        "key": "pinnacle", "title": "Pinnacle",
+        "markets": [
+          {"key": "h2h", "outcomes": [{"name": "Kansas City Chiefs", "price": -132}, {"name": "Buffalo Bills", "price": 118}]},
+          {"key": "spreads", "outcomes": [{"name": "Kansas City Chiefs", "price": -105, "point": -2.5}, {"name": "Buffalo Bills", "price": -105, "point": 2.5}]},
+          {"key": "totals", "outcomes": [{"name": "Over", "price": -105, "point": 47.5}, {"name": "Under", "price": -105, "point": 47.5}]}
+        ]
+      },
+      {
+        "key": "caesars", "title": "Caesars",
+        "markets": [
+          {"key": "h2h", "outcomes": [{"name": "Kansas City Chiefs", "price": -150}, {"name": "Buffalo Bills", "price": 135}]},
+          {"key": "spreads", "outcomes": [{"name": "Kansas City Chiefs", "price": -125, "point": -2.5}, {"name": "Buffalo Bills", "price": 105, "point": 2.5}]},
+          {"key": "totals", "outcomes": [{"name": "Over", "price": 106, "point": 47.5}, {"name": "Under", "price": -126, "point": 47.5}]}
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nba-bos-lal-2026",
+    "sport_key": "basketball_nba",
+    "sport_title": "NBA",
+    "commence_time": "2026-01-15T03:10:00Z",
+    "home_team": "Los Angeles Lakers",
+    "away_team": "Boston Celtics",
+    "bookmakers": [
+      {
+        "key": "draftkings", "title": "DraftKings",
+        "markets": [
+          {"key": "h2h", "outcomes": [{"name": "Los Angeles Lakers", "price": -150}, {"name": "Boston Celtics", "price": 130}]},
+          {"key": "spreads", "outcomes": [{"name": "Los Angeles Lakers", "price": -110, "point": -4.5}, {"name": "Boston Celtics", "price": -110, "point": 4.5}]},
+          {"key": "totals", "outcomes": [{"name": "Over", "price": -110, "point": 220.5}, {"name": "Under", "price": -110, "point": 220.5}]}
+        ]
+      },
+      {
+        "key": "fanduel", "title": "FanDuel",
+        "markets": [
+          {"key": "h2h", "outcomes": [{"name": "Los Angeles Lakers", "price": -145}, {"name": "Boston Celtics", "price": 125}]},
+          {"key": "spreads", "outcomes": [{"name": "Los Angeles Lakers", "price": -112, "point": -4.5}, {"name": "Boston Celtics", "price": -108, "point": 4.5}]},
+          {"key": "totals", "outcomes": [{"name": "Over", "price": -108, "point": 220.5}, {"name": "Under", "price": -112, "point": 220.5}]}
+        ]
+      },
+      {
+        "key": "betmgm", "title": "BetMGM",
+        "markets": [
+          {"key": "h2h", "outcomes": [{"name": "Los Angeles Lakers", "price": -155}, {"name": "Boston Celtics", "price": 135}]},
+          {"key": "spreads", "outcomes": [{"name": "Los Angeles Lakers", "price": -108, "point": -4.5}, {"name": "Boston Celtics", "price": -112, "point": 4.5}]},
+          {"key": "totals", "outcomes": [{"name": "Over", "price": -112, "point": 220.5}, {"name": "Under", "price": -108, "point": 220.5}]}
+        ]
+      },
+      {
+        "key": "caesars", "title": "Caesars",
+        "markets": [
+          {"key": "h2h", "outcomes": [{"name": "Los Angeles Lakers", "price": -160}, {"name": "Boston Celtics", "price": 145}]},
+          {"key": "spreads", "outcomes": [{"name": "Los Angeles Lakers", "price": -128, "point": -4.5}, {"name": "Boston Celtics", "price": 108, "point": 4.5}]},
+          {"key": "totals", "outcomes": [{"name": "Over", "price": -125, "point": 220.5}, {"name": "Under", "price": 106, "point": 220.5}]}
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mlb-nyy-bos-2026",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2026-07-04T23:05:00Z",
+    "home_team": "Boston Red Sox",
+    "away_team": "New York Yankees",
+    "bookmakers": [
+      {
+        "key": "draftkings", "title": "DraftKings",
+        "markets": [
+          {"key": "h2h", "outcomes": [{"name": "New York Yankees", "price": -135}, {"name": "Boston Red Sox", "price": 115}]},
+          {"key": "spreads", "outcomes": [{"name": "New York Yankees", "price": 120, "point": -1.5}, {"name": "Boston Red Sox", "price": -140, "point": 1.5}]},
+          {"key": "totals", "outcomes": [{"name": "Over", "price": -110, "point": 8.5}, {"name": "Under", "price": -110, "point": 8.5}]}
+        ]
+      },
+      {
+        "key": "fanduel", "title": "FanDuel",
+        "markets": [
+          {"key": "h2h", "outcomes": [{"name": "New York Yankees", "price": -130}, {"name": "Boston Red Sox", "price": 112}]},
+          {"key": "spreads", "outcomes": [{"name": "New York Yankees", "price": 118, "point": -1.5}, {"name": "Boston Red Sox", "price": -138, "point": 1.5}]},
+          {"key": "totals", "outcomes": [{"name": "Over", "price": -105, "point": 8.5}, {"name": "Under", "price": -115, "point": 8.5}]}
+        ]
+      },
+      {
+        "key": "betmgm", "title": "BetMGM",
+        "markets": [
+          {"key": "h2h", "outcomes": [{"name": "New York Yankees", "price": -140}, {"name": "Boston Red Sox", "price": 120}]},
+          {"key": "spreads", "outcomes": [{"name": "New York Yankees", "price": 124, "point": -1.5}, {"name": "Boston Red Sox", "price": -145, "point": 1.5}]},
+          {"key": "totals", "outcomes": [{"name": "Over", "price": -115, "point": 8.5}, {"name": "Under", "price": -105, "point": 8.5}]}
+        ]
+      },
+      {
+        "key": "caesars", "title": "Caesars",
+        "markets": [
+          {"key": "h2h", "outcomes": [{"name": "New York Yankees", "price": -150}, {"name": "Boston Red Sox", "price": 132}]},
+          {"key": "spreads", "outcomes": [{"name": "New York Yankees", "price": 135, "point": -1.5}, {"name": "Boston Red Sox", "price": -155, "point": 1.5}]},
+          {"key": "totals", "outcomes": [{"name": "Over", "price": 104, "point": 8.5}, {"name": "Under", "price": -124, "point": 8.5}]}
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nhl-edm-col-2026",
+    "sport_key": "icehockey_nhl",
+    "sport_title": "NHL",
+    "commence_time": "2026-02-20T02:00:00Z",
+    "home_team": "Colorado Avalanche",
+    "away_team": "Edmonton Oilers",
+    "bookmakers": [
+      {
+        "key": "draftkings", "title": "DraftKings",
+        "markets": [
+          {"key": "h2h", "outcomes": [{"name": "Colorado Avalanche", "price": -140}, {"name": "Edmonton Oilers", "price": 118}]},
+          {"key": "spreads", "outcomes": [{"name": "Colorado Avalanche", "price": 160, "point": -1.5}, {"name": "Edmonton Oilers", "price": -180, "point": 1.5}]},
+          {"key": "totals", "outcomes": [{"name": "Over", "price": -110, "point": 6.5}, {"name": "Under", "price": -110, "point": 6.5}]}
+        ]
+      },
+      {
+        "key": "fanduel", "title": "FanDuel",
+        "markets": [
+          {"key": "h2h", "outcomes": [{"name": "Colorado Avalanche", "price": -135}, {"name": "Edmonton Oilers", "price": 114}]},
+          {"key": "spreads", "outcomes": [{"name": "Colorado Avalanche", "price": 155, "point": -1.5}, {"name": "Edmonton Oilers", "price": -175, "point": 1.5}]},
+          {"key": "totals", "outcomes": [{"name": "Over", "price": -108, "point": 6.5}, {"name": "Under", "price": -112, "point": 6.5}]}
+        ]
+      },
+      {
+        "key": "betmgm", "title": "BetMGM",
+        "markets": [
+          {"key": "h2h", "outcomes": [{"name": "Colorado Avalanche", "price": -145}, {"name": "Edmonton Oilers", "price": 122}]},
+          {"key": "spreads", "outcomes": [{"name": "Colorado Avalanche", "price": 165, "point": -1.5}, {"name": "Edmonton Oilers", "price": -185, "point": 1.5}]},
+          {"key": "totals", "outcomes": [{"name": "Over", "price": -112, "point": 6.5}, {"name": "Under", "price": -108, "point": 6.5}]}
+        ]
+      },
+      {
+        "key": "caesars", "title": "Caesars",
+        "markets": [
+          {"key": "h2h", "outcomes": [{"name": "Colorado Avalanche", "price": -155}, {"name": "Edmonton Oilers", "price": 135}]},
+          {"key": "spreads", "outcomes": [{"name": "Colorado Avalanche", "price": 180, "point": -1.5}, {"name": "Edmonton Oilers", "price": -210, "point": 1.5}]},
+          {"key": "totals", "outcomes": [{"name": "Over", "price": -130, "point": 6.5}, {"name": "Under", "price": 110, "point": 6.5}]}
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "edge-betting"
+version = "0.1.0"
+description = "Odds-comparison and value-betting engine: de-vig, fair-value modelling, and +EV detection across sportsbooks."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = []  # core is standard-library only
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+edge = "edge.cli:main"
+
+[tool.setuptools]
+packages = ["edge", "edge.providers"]
+
+[tool.setuptools.package-data]
+edge = ["data/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
