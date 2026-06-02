@@ -249,6 +249,9 @@ key is present, so the default test run stays offline:
 ODDS_API_KEY=your_key pytest tests/test_live.py -v
 ```
 
+For full setup — getting/protecting a key, the network allowlist for cloud
+sessions, and the quota cost of each command — see **[docs/LIVE.md](docs/LIVE.md)**.
+
 ## Project layout
 
 ```
