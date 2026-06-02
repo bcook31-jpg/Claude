@@ -1,0 +1,562 @@
+"""Command-line interface for the Edge value-betting engine.
+
+Examples
+--------
+    edge scan                          # scan bundled sample odds for +EV bets
+    edge scan --min-ev 0.03            # only show edges of +3% or better
+    edge scan --sport nfl --market h2h
+    edge scan --sharp Pinnacle --bankroll 1000
+    edge scan --live --sport nfl       # use The Odds API (needs ODDS_API_KEY)
+
+    edge journal add --event "Bills @ Chiefs" --market h2h \\
+        --selection "Buffalo Bills" --book Caesars --price 135 --stake 50
+    edge journal list
+    edge journal settle 1 win
+    edge journal summary
+"""
+
+from __future__ import annotations
+
+import argparse
+import json
+import sys
+from pathlib import Path
+from typing import Optional
+
+from .backtest import run_backtest
+from .dataset import build_settled_events
+from .engine import ValueBet, find_model_value_bets, find_value_bets
+from .journal import Journal
+from .model import EloModel, TeamModel, load_results, results_from_scores
+from .providers import MockProvider, TheOddsApiProvider
+
+# Friendly aliases -> The Odds API sport keys.
+SPORT_ALIASES = {
+    "nfl": "americanfootball_nfl",
+    "nba": "basketball_nba",
+    "mlb": "baseball_mlb",
+    "nhl": "icehockey_nhl",
+}
+
+DEFAULT_JOURNAL = Path.home() / ".edge" / "journal.csv"
+MODEL_PATHS = {
+    "elo": Path.home() / ".edge" / "elo.json",
+    "team": Path.home() / ".edge" / "team.json",
+}
+BUNDLED_RESULTS = Path(__file__).resolve().parent / "data" / "historical_results.csv"
+BUNDLED_BACKTEST = Path(__file__).resolve().parent / "data" / "backtest_events.json"
+
+
+def _default_model_path(model: Optional[str]) -> Path:
+    return MODEL_PATHS.get(model or "team")
+
+
+def main(argv: Optional[list[str]] = None) -> int:
+    parser = argparse.ArgumentParser(prog="edge", description=__doc__,
+                                     formatter_class=argparse.RawDescriptionHelpFormatter)
+    sub = parser.add_subparsers(dest="command", required=True)
+
+    _add_scan_parser(sub)
+    _add_journal_parser(sub)
+    _add_train_parser(sub)
+    _add_sports_parser(sub)
+    _add_backtest_parser(sub)
+    _add_build_dataset_parser(sub)
+
+    args = parser.parse_args(argv)
+    return args.func(args)
+
+
+# -- scan -----------------------------------------------------------------
+def _add_scan_parser(sub) -> None:
+    p = sub.add_parser("scan", help="find +EV bets across books")
+    p.add_argument("--sport", help="filter by sport (nfl/nba/mlb/nhl or a full key)")
+    p.add_argument("--market", choices=["h2h", "spreads", "totals"],
+                   help="filter by market (default: all)")
+    p.add_argument("--min-ev", type=float, default=0.0,
+                   help="minimum EV to report, e.g. 0.03 for +3%% (default 0)")
+    p.add_argument("--sharp", help="treat this book as fair value (e.g. Pinnacle); "
+                                   "default uses the consensus of other books")
+    p.add_argument("--devig", choices=["proportional", "shin"], default="proportional",
+                   help="de-vig method for the market path (default proportional; "
+                        "shin reduces favourite-longshot bias)")
+    p.add_argument("--model", choices=["elo", "team"],
+                   help="use a predictive model as fair value instead of the "
+                        "market (elo: moneyline; team: all markets); train it "
+                        "first with 'edge train'")
+    p.add_argument("--ratings", type=Path, default=None,
+                   help="trained model file for --model (default ~/.edge/<model>.json)")
+    p.add_argument("--bankroll", type=float,
+                   help="if set, show the suggested Kelly stake in dollars")
+    p.add_argument("--live", action="store_true",
+                   help="use The Odds API instead of bundled sample data "
+                        "(requires ODDS_API_KEY)")
+    p.set_defaults(func=_run_scan)
+
+
+def _run_scan(args) -> int:
+    sport_keys = None
+    if args.sport:
+        sport_keys = [SPORT_ALIASES.get(args.sport.lower(), args.sport)]
+    markets = [args.market] if args.market else None
+
+    ratings_path = args.ratings or _default_model_path(args.model)
+    if args.model and not ratings_path.exists():
+        print(f"No trained model at {ratings_path}. Run 'edge train "
+              f"--model {args.model}' first.", file=sys.stderr)
+        return 1
+
+    try:
+        provider = TheOddsApiProvider() if args.live else MockProvider()
+        events = provider.get_odds(sport_keys, markets)
+    except Exception as exc:  # network / key / data errors -> friendly message
+        print(f"Failed to fetch odds: {exc}", file=sys.stderr)
+        return 1
+
+    if args.model:
+        model = (EloModel if args.model == "elo" else TeamModel).load(ratings_path)
+        bets = find_model_value_bets(events, model, markets=markets, min_ev=args.min_ev)
+        basis = f"model '{args.model}'"
+    else:
+        bets = find_value_bets(events, markets=markets, sharp_book=args.sharp,
+                               min_ev=args.min_ev, method=args.devig)
+        basis = f"sharp book '{args.sharp}'" if args.sharp else "market consensus"
+        if args.devig != "proportional":
+            basis += f" ({args.devig} de-vig)"
+
+    _print_value_bets(bets, bankroll=args.bankroll, basis=basis)
+    if args.live:
+        _print_quota(provider)
+    return 0
+
+
+def _print_value_bets(bets: list[ValueBet], bankroll: Optional[float],
+                       basis: str) -> None:
+    if not bets:
+        print(f"No +EV bets found (fair value = {basis}).")
+        return
+
+    print(f"Found {len(bets)} +EV bet(s). Fair value = {basis}.\n")
+    header = ["EV%", "Sport", "Matchup", "Market", "Selection", "Book", "Odds", "Fair%", "Kelly"]
+    if bankroll:
+        header.append("Stake$")
+    rows = []
+    for b in bets:
+        sel = b.selection + (f" {b.point:+g}" if b.point is not None else "")
+        row = [
+            f"+{b.ev_pct:.1f}",
+            b.sport_title,
+            b.matchup,
+            b.market_label,
+            sel,
+            b.book,
+            _fmt_american(b.price),
+            f"{b.fair_prob * 100:.1f}",
+            f"{b.kelly * 100:.1f}%",
+        ]
+        if bankroll:
+            row.append(f"{b.kelly * bankroll:,.2f}")
+        rows.append(row)
+    _print_table(header, rows)
+
+
+# -- journal --------------------------------------------------------------
+def _add_journal_parser(sub) -> None:
+    p = sub.add_parser("journal", help="track placed bets and ROI")
+    p.add_argument("--file", type=Path, default=DEFAULT_JOURNAL,
+                   help=f"journal CSV path (default {DEFAULT_JOURNAL})")
+    jsub = p.add_subparsers(dest="action", required=True)
+
+    add = jsub.add_parser("add", help="record a placed bet")
+    add.add_argument("--event", required=True)
+    add.add_argument("--market", required=True)
+    add.add_argument("--selection", required=True)
+    add.add_argument("--book", required=True)
+    add.add_argument("--price", type=int, required=True, help="American odds")
+    add.add_argument("--stake", type=float, required=True)
+    add.add_argument("--point", type=float, default=None)
+
+    settle = jsub.add_parser("settle", help="settle a bet")
+    settle.add_argument("id")
+    settle.add_argument("status", choices=["win", "loss", "push"])
+
+    close = jsub.add_parser("close", help="record the closing line to measure CLV")
+    close.add_argument("id")
+    close.add_argument("price", type=int, help="closing American odds for the selection")
+
+    jsub.add_parser("list", help="list all bets")
+    jsub.add_parser("summary", help="show record, profit and ROI")
+
+    p.set_defaults(func=_run_journal)
+
+
+def _run_journal(args) -> int:
+    journal = Journal(args.file)
+    if args.action == "add":
+        bet = journal.add(args.event, args.market, args.selection, args.book,
+                          args.price, args.stake, args.point)
+        print(f"Logged bet #{bet.id}: {bet.selection} @ {_fmt_american(bet.price)} "
+              f"({bet.book}) for {bet.stake:g}")
+        return 0
+    if args.action == "settle":
+        bet = journal.settle(args.id, args.status)
+        print(f"Bet #{bet.id} settled {bet.status}: profit {bet.profit:+.2f}")
+        return 0
+    if args.action == "close":
+        bet = journal.close(args.id, args.price)
+        print(f"Bet #{bet.id} closing line {_fmt_american(bet.price)} -> "
+              f"{_fmt_american(args.price)}: CLV {bet.clv * 100:+.1f}%")
+        return 0
+    if args.action == "list":
+        _print_journal(journal)
+        return 0
+    if args.action == "summary":
+        _print_summary(journal)
+        return 0
+    return 1
+
+
+def _print_journal(journal: Journal) -> None:
+    bets = journal.list()
+    if not bets:
+        print("No bets logged yet.")
+        return
+    header = ["ID", "Placed", "Event", "Selection", "Book", "Odds", "Stake",
+              "Status", "Profit", "Close", "CLV%"]
+    rows = [
+        [b.id, b.placed_at, b.event,
+         b.selection + (f" {b.point:+g}" if b.point is not None else ""),
+         b.book, _fmt_american(b.price), f"{b.stake:g}", b.status, f"{b.profit:+.2f}",
+         _fmt_american(b.closing_price) if b.closing_price is not None else "-",
+         f"{b.clv * 100:+.1f}" if b.clv is not None else "-"]
+        for b in bets
+    ]
+    _print_table(header, rows)
+
+
+def _print_summary(journal: Journal) -> None:
+    s = journal.summary()
+    print(f"Bets: {s['total_bets']}  (pending {s['pending']})")
+    print(f"Record: {s['wins']}-{s['losses']}-{s['pushes']} (W-L-P)")
+    print(f"Staked: {s['staked']:.2f}   Profit: {s['profit']:+.2f}   "
+          f"ROI: {s['roi'] * 100:+.1f}%")
+    if s["with_closing"]:
+        print(f"CLV: {s['avg_clv'] * 100:+.1f}% avg over {s['with_closing']} bet(s), "
+              f"beat the close {s['beat_close_rate'] * 100:.0f}% of the time")
+
+
+# -- train ----------------------------------------------------------------
+def _add_train_parser(sub) -> None:
+    p = sub.add_parser("train", help="train a predictive model on historical results")
+    p.add_argument("--model", choices=["elo", "team"], default="team",
+                   help="elo: moneyline ratings; team: all-markets scoring model "
+                        "(default)")
+    p.add_argument("--results", type=Path, default=BUNDLED_RESULTS,
+                   help="CSV of results; columns are auto-detected (sport_key,"
+                        "date,home_team,away_team,home_score,away_score and "
+                        "common aliases). Default uses bundled sample data")
+    p.add_argument("--map", action="append", default=[], metavar="FIELD=COLUMN",
+                   help="map a canonical field to a source column when "
+                        "auto-detection fails, e.g. --map home_team=Home "
+                        "(repeatable)")
+    p.add_argument("--sport-key", default=None,
+                   help="stamp every row with this sport_key if the file lacks one")
+    p.add_argument("--live", action="store_true",
+                   help="fetch completed results from The Odds API instead of a "
+                        "--results CSV (requires ODDS_API_KEY)")
+    p.add_argument("--sport", help="--live: limit to one sport (nfl/nba/mlb/nhl "
+                                   "or a full key); default all four majors")
+    p.add_argument("--days", type=int, default=3,
+                   help="--live: include completed games from up to N days ago "
+                        "(1-3, default 3)")
+    p.add_argument("--out", type=Path, default=None,
+                   help="where to save the model (default ~/.edge/<model>.json)")
+    p.add_argument("--k", type=float, default=20.0, help="Elo update step (default 20)")
+    p.add_argument("--home-adv", type=float, default=65.0,
+                   help="Elo home-field advantage in rating points (default 65)")
+    p.set_defaults(func=_run_train)
+
+
+def _run_train(args) -> int:
+    if args.live:
+        games = _fetch_live_results(args)
+        if games is None:
+            return 1
+    else:
+        try:
+            mapping = dict(pair.split("=", 1) for pair in args.map)
+        except ValueError:
+            print("Invalid --map; use FIELD=COLUMN, e.g. --map home_team=Home",
+                  file=sys.stderr)
+            return 1
+        try:
+            games = load_results(args.results, mapping=mapping or None,
+                                 default_sport=args.sport_key)
+        except FileNotFoundError:
+            print(f"Results file not found: {args.results}", file=sys.stderr)
+            return 1
+        except ValueError as exc:
+            print(str(exc), file=sys.stderr)
+            return 1
+        if not games:
+            print(f"No usable rows found in {args.results}", file=sys.stderr)
+            return 1
+
+    out = args.out or _default_model_path(args.model)
+    if args.model == "elo":
+        model = EloModel(k=args.k, home_advantage=args.home_adv).train(games)
+        model.save(out)
+        print(f"Trained Elo on {len(games)} games, {len(model.ratings)} teams. "
+              f"Saved to {out}\n")
+        rows = [[team, f"{rating:.0f}"]
+                for team, rating in sorted(model.ratings.items(),
+                                           key=lambda kv: kv[1], reverse=True)]
+        _print_table(["Team", "Rating"], rows)
+    else:
+        model = TeamModel().train(games)
+        model.save(out)
+        print(f"Trained team scoring model on {len(games)} games, "
+              f"{len(model.sports)} sport(s). Saved to {out}\n")
+        rows = [[sport, f"{s.home_adv:+.1f}", f"{s.sigma_margin:.1f}",
+                 f"{s.sigma_total:.1f}", str(len(s.pts_for))]
+                for sport, s in sorted(model.sports.items())]
+        _print_table(["Sport", "HomeAdv", "SigMargin", "SigTotal", "Teams"], rows)
+    return 0
+
+
+def _fetch_live_results(args) -> Optional[list[dict]]:
+    """Fetch completed results from The Odds API for training. None on failure."""
+    if args.sport:
+        sports = [SPORT_ALIASES.get(args.sport.lower(), args.sport)]
+    else:
+        sports = list(SPORT_ALIASES.values())
+    try:
+        provider = TheOddsApiProvider()
+        games: list[dict] = []
+        for sport_key in sports:
+            payload = provider.get_scores(sport_key, days_from=args.days)
+            games.extend(results_from_scores(payload))
+    except Exception as exc:  # missing key / network / API errors
+        print(f"Failed to fetch results: {exc}", file=sys.stderr)
+        return None
+    if not games:
+        print("No completed games returned (try a longer --days window, or a "
+              "sport that is in season).", file=sys.stderr)
+        return None
+    _print_quota(provider)
+    return games
+
+
+# -- sports ---------------------------------------------------------------
+def _add_sports_parser(sub) -> None:
+    p = sub.add_parser("sports", help="list in-season sports from The Odds API "
+                                      "(requires ODDS_API_KEY)")
+    p.add_argument("--all", action="store_true",
+                   help="include out-of-season sports too")
+    p.add_argument("--counts", action="store_true",
+                   help="also show upcoming event counts (one free request per "
+                        "sport; no quota cost)")
+    p.set_defaults(func=_run_sports)
+
+
+def _run_sports(args) -> int:
+    try:
+        provider = TheOddsApiProvider()
+        sports = provider.get_sports(all_sports=args.all)
+    except Exception as exc:  # missing key / network / API errors
+        print(f"Failed to fetch sports: {exc}", file=sys.stderr)
+        return 1
+
+    if not sports:
+        print("No sports returned.")
+        return 0
+
+    sports = sorted(sports, key=lambda s: (s.get("group", ""), s.get("title", "")))
+
+    counts: dict[str, Optional[int]] = {}
+    if args.counts:
+        for s in sports:
+            try:
+                counts[s["key"]] = len(provider.get_events(s["key"]))
+            except Exception:  # don't fail the whole listing on one sport
+                counts[s["key"]] = None
+
+    scope = "all" if args.all else "in-season"
+    print(f"{len(sports)} {scope} sport(s):\n")
+    header = ["Key", "Group", "Title", "Active"]
+    if args.counts:
+        header.append("Events")
+    rows = []
+    for s in sports:
+        row = [s.get("key", ""), s.get("group", ""), s.get("title", ""),
+               "yes" if s.get("active") else "no"]
+        if args.counts:
+            c = counts.get(s.get("key", ""))
+            row.append("?" if c is None else str(c))
+        rows.append(row)
+    _print_table(header, rows)
+    _print_quota(provider)
+    return 0
+
+
+# -- backtest -------------------------------------------------------------
+def _add_backtest_parser(sub) -> None:
+    p = sub.add_parser("backtest", help="replay a strategy over historical "
+                                        "odds + results and report ROI / CLV")
+    p.add_argument("--data", type=Path, default=BUNDLED_BACKTEST,
+                   help="settled-events JSON (default uses bundled sample data)")
+    p.add_argument("--market", choices=["h2h", "spreads", "totals"],
+                   help="restrict to one market (default: all)")
+    p.add_argument("--min-ev", type=float, default=0.0,
+                   help="minimum EV for the strategy to place a bet (default 0)")
+    p.add_argument("--sharp", help="use this book as fair value (market path)")
+    p.add_argument("--devig", choices=["proportional", "shin"], default="proportional",
+                   help="de-vig method for the market path (default proportional)")
+    p.add_argument("--model", choices=["elo", "team"],
+                   help="bet a trained model instead of the market")
+    p.add_argument("--ratings", type=Path, default=None,
+                   help="model file for --model (default ~/.edge/<model>.json)")
+    p.add_argument("--stake", choices=["flat", "kelly"], default="flat",
+                   help="flat unit per bet, or Kelly fraction of bankroll")
+    p.add_argument("--unit", type=float, default=1.0, help="flat stake size (default 1)")
+    p.add_argument("--bankroll", type=float, default=1000.0,
+                   help="starting bankroll for Kelly staking (default 1000)")
+    p.set_defaults(func=_run_backtest)
+
+
+def _run_backtest(args) -> int:
+    try:
+        settled = json.loads(Path(args.data).read_text())
+    except FileNotFoundError:
+        print(f"Backtest data not found: {args.data}", file=sys.stderr)
+        return 1
+
+    markets = [args.market] if args.market else None
+    if args.model:
+        ratings_path = args.ratings or _default_model_path(args.model)
+        if not ratings_path.exists():
+            print(f"No trained model at {ratings_path}. Run 'edge train "
+                  f"--model {args.model}' first.", file=sys.stderr)
+            return 1
+        model = (EloModel if args.model == "elo" else TeamModel).load(ratings_path)
+        strategy = lambda evs: find_model_value_bets(  # noqa: E731
+            evs, model, markets=markets, min_ev=args.min_ev)
+        basis = f"model '{args.model}'"
+    else:
+        strategy = lambda evs: find_value_bets(  # noqa: E731
+            evs, markets=markets, sharp_book=args.sharp,
+            min_ev=args.min_ev, method=args.devig)
+        basis = f"sharp '{args.sharp}'" if args.sharp else "market consensus"
+
+    summary = run_backtest(settled, strategy, stake=args.stake,
+                           unit=args.unit, bankroll=args.bankroll)
+    _print_backtest(summary, len(settled), basis, args.stake)
+    return 0
+
+
+def _print_backtest(s, num_events: int, basis: str, stake: str) -> None:
+    print(f"Backtest over {num_events} event(s)  |  strategy: {basis}, "
+          f"stake: {stake}\n")
+    if s.bets == 0:
+        print("No bets placed (no qualifying edges).")
+        return
+    print(f"Bets: {s.bets}   Record: {s.wins}-{s.losses}-{s.pushes} (W-L-P)")
+    print(f"Staked: {s.staked:.2f}   Profit: {s.profit:+.2f}   "
+          f"ROI: {s.roi * 100:+.1f}%")
+    if stake == "kelly":
+        print(f"Bankroll: {s.start_bankroll:.2f} -> {s.end_bankroll:.2f}")
+    if s.clv_count:
+        print(f"CLV: {s.avg_clv * 100:+.1f}% avg over {s.clv_count} bet(s), "
+              f"beat the close {s.beat_close_rate * 100:.0f}% of the time")
+
+
+# -- build-dataset --------------------------------------------------------
+def _add_build_dataset_parser(sub) -> None:
+    p = sub.add_parser("build-dataset",
+                       help="build a real backtest dataset from historical odds "
+                            "+ results (requires a paid Odds API plan)")
+    p.add_argument("--sport", required=True,
+                   help="sport (nfl/nba/mlb/nhl or a full key)")
+    p.add_argument("--open-date", required=True,
+                   help="ISO 8601 timestamp for the opening odds snapshot, "
+                        "e.g. 2025-09-14T12:00:00Z")
+    p.add_argument("--close-date",
+                   help="ISO 8601 timestamp for the closing odds snapshot "
+                        "(optional, enables CLV)")
+    p.add_argument("--out", type=Path, required=True,
+                   help="where to write the settled-events JSON")
+    p.add_argument("--regions", default="us", help="bookmaker regions (default us)")
+    p.add_argument("--market", help="comma-separated markets (default "
+                                    "h2h,spreads,totals)")
+    p.add_argument("--days", type=int, default=3,
+                   help="/scores results window in days (1-3, default 3)")
+    p.set_defaults(func=_run_build_dataset)
+
+
+def _run_build_dataset(args) -> int:
+    sport = SPORT_ALIASES.get(args.sport.lower(), args.sport)
+    try:
+        provider = TheOddsApiProvider(regions=args.regions)
+        opening = provider.get_historical_odds(
+            sport, args.open_date, markets=args.market)["data"]
+        closing = None
+        if args.close_date:
+            closing = provider.get_historical_odds(
+                sport, args.close_date, markets=args.market)["data"]
+        scores = provider.get_scores(sport, days_from=args.days)
+    except Exception as exc:  # missing key / network / API / plan errors
+        print(f"Failed to build dataset: {exc}", file=sys.stderr)
+        return 1
+
+    settled = build_settled_events(opening, scores, closing)
+    if not settled:
+        print("No settled events built: no opening events had a matching "
+              "completed result. Note /scores only covers the last 3 days, so "
+              "the snapshot dates must be recent.", file=sys.stderr)
+        _print_quota(provider)
+        return 1
+
+    args.out.parent.mkdir(parents=True, exist_ok=True)
+    args.out.write_text(json.dumps(settled, indent=2))
+    print(f"Wrote {len(settled)} settled event(s) to {args.out}")
+    print(f"Backtest it with:  edge backtest --data {args.out}")
+    _print_quota(provider)
+    return 0
+
+
+# -- formatting helpers ----------------------------------------------------
+def _print_quota(provider) -> None:
+    """Print The Odds API quota usage (to stderr) if the provider tracked it."""
+    remaining = getattr(provider, "requests_remaining", None)
+    if remaining is None:
+        return
+    parts = [f"quota remaining: {remaining}"]
+    if getattr(provider, "last_cost", None) is not None:
+        parts.append(f"last call cost: {provider.last_cost}")
+    if getattr(provider, "requests_used", None) is not None:
+        parts.append(f"used: {provider.requests_used}")
+    print("(" + ", ".join(parts) + ")", file=sys.stderr)
+
+
+def _fmt_american(price: int) -> str:
+    return f"+{price}" if price > 0 else str(price)
+
+
+def _print_table(header: list[str], rows: list[list[str]]) -> None:
+    widths = [len(h) for h in header]
+    for row in rows:
+        for i, cell in enumerate(row):
+            widths[i] = max(widths[i], len(str(cell)))
+    line = "  ".join(h.ljust(widths[i]) for i, h in enumerate(header))
+    print(line)
+    print("  ".join("-" * widths[i] for i in range(len(header))))
+    for row in rows:
+        print("  ".join(str(c).ljust(widths[i]) for i, c in enumerate(row)))
+
+
+if __name__ == "__main__":
+    try:
+        raise SystemExit(main())
+    except BrokenPipeError:
+        # Downstream closed the pipe early (e.g. `| head`); exit quietly.
+        sys.exit(0)
