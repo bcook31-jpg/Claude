@@ -12,7 +12,8 @@ Pipeline (the market-based modelling approach):
    is a +EV opportunity.
 
 This finds genuine line discrepancies without needing an independent
-predictive model: the market itself is the model.
+predictive model: the market itself is the model. The consensus is computed
+with a leave-one-out average in O(books) per market rather than O(books^2).
 """
 
 from __future__ import annotations
@@ -22,7 +23,7 @@ from dataclasses import dataclass
 from typing import Iterable, Optional
 
 from . import odds_math as om
-from .models import H2H, MARKET_KEYS, MARKET_LABELS, Event
+from .models import MARKET_KEYS, MARKET_LABELS, Event
 
 
 @dataclass
@@ -40,7 +41,7 @@ class ValueBet:
     fair_prob: float
     ev: float            # expected profit per unit staked (0.05 == +5%)
     kelly: float         # full-Kelly fraction of bankroll
-    sources: int         # how many books backed the fair estimate
+    sources: int         # how many books backed the fair estimate (0 == model)
 
     @property
     def ev_pct(self) -> float:
@@ -51,7 +52,7 @@ SelectionId = tuple[str, Optional[float]]
 
 
 def _devigged_book_probs(
-    event: Event, market_key: str
+    event: Event, market_key: str, method: str
 ) -> dict[str, dict[SelectionId, float]]:
     """For each book, the de-vigged probability of each selection in a market."""
     out: dict[str, dict[SelectionId, float]] = {}
@@ -60,16 +61,12 @@ def _devigged_book_probs(
         if offer is None or len(offer.outcomes) < 2:
             continue
         implied = [om.american_to_implied(o.price) for o in offer.outcomes]
-        fair = om.devig_proportional(implied)
-        out[bm.title] = {
-            o.selection_id: p for o, p in zip(offer.outcomes, fair)
-        }
+        fair = om.devig(implied, method)
+        out[bm.title] = {o.selection_id: p for o, p in zip(offer.outcomes, fair)}
     return out
 
 
-def _book_prices(
-    event: Event, market_key: str
-) -> dict[str, dict[SelectionId, int]]:
+def _book_prices(event: Event, market_key: str) -> dict[str, dict[SelectionId, int]]:
     """For each book, the American price it offers per selection."""
     out: dict[str, dict[SelectionId, int]] = {}
     for bm in event.bookmakers:
@@ -86,6 +83,7 @@ def find_value_bets(
     markets: Optional[Iterable[str]] = None,
     sharp_book: Optional[str] = None,
     min_ev: float = 0.0,
+    method: str = "proportional",
 ) -> list[ValueBet]:
     """Scan events and return +EV bets sorted by EV (descending).
 
@@ -99,13 +97,15 @@ def find_value_bets(
         priced against it. Otherwise the consensus of the other books is used.
     min_ev:
         Minimum EV to report (e.g. 0.02 for +2%). Defaults to 0 (any edge).
+    method:
+        De-vig method: "proportional" (default) or "shin".
     """
     market_keys = tuple(markets) if markets else MARKET_KEYS
     results: list[ValueBet] = []
 
     for event in events:
         for market_key in market_keys:
-            book_probs = _devigged_book_probs(event, market_key)
+            book_probs = _devigged_book_probs(event, market_key, method)
             book_prices = _book_prices(event, market_key)
             if len(book_probs) < 2:
                 # Need at least two books to have a market to compare against.
@@ -113,13 +113,23 @@ def find_value_bets(
 
             sharp_title = _resolve_sharp(book_probs, sharp_book)
 
+            # Precompute per-selection totals once so the consensus fair value
+            # is a leave-one-out average in O(1) per (book, selection).
+            sel_sum: dict[SelectionId, float] = defaultdict(float)
+            sel_count: dict[SelectionId, int] = defaultdict(int)
+            for probs in book_probs.values():
+                for sel, p in probs.items():
+                    sel_sum[sel] += p
+                    sel_count[sel] += 1
+
             for book_title, prices in book_prices.items():
                 if sharp_title and book_title == sharp_title:
                     continue  # never bet the reference line against itself
+                own = book_probs.get(book_title, {})
                 for sel, price in prices.items():
                     fair_prob, sources = _fair_probability(
-                        book_probs, sel, evaluating_book=book_title,
-                        sharp_title=sharp_title,
+                        sel, sharp_title=sharp_title, book_probs=book_probs,
+                        own=own, sel_sum=sel_sum, sel_count=sel_count,
                     )
                     if fair_prob is None:
                         continue
@@ -154,49 +164,50 @@ def find_model_value_bets(
     events: Iterable[Event],
     model,
     *,
+    markets: Optional[Iterable[str]] = None,
     min_ev: float = 0.0,
 ) -> list[ValueBet]:
-    """Find +EV moneyline bets using a predictive model as fair value.
+    """Find +EV bets using a predictive model as fair value.
 
-    ``model`` only needs a ``predict_event(event) -> {team: probability}``
-    method (e.g. :class:`edge.model.EloModel`). For each book's moneyline
-    price, EV is computed against the model's probability rather than the
-    market consensus, so this surfaces bets where the model disagrees with the
-    market. Only the head-to-head (moneyline) market is evaluated.
+    ``model`` needs an ``outcome_probability(event, market_key, outcome)``
+    method returning the model's probability for that outcome, or None if it
+    does not price it. For each book price, EV is computed against the model's
+    probability, surfacing bets where the model disagrees with the market.
     """
+    market_keys = tuple(markets) if markets else MARKET_KEYS
     results: list[ValueBet] = []
     for event in events:
-        probs = model.predict_event(event)
         for bm in event.bookmakers:
-            offer = bm.market(H2H)
-            if offer is None:
-                continue
-            for o in offer.outcomes:
-                p = probs.get(o.name)
-                if p is None:
+            for market_key in market_keys:
+                offer = bm.market(market_key)
+                if offer is None:
                     continue
-                decimal = om.american_to_decimal(o.price)
-                ev = om.expected_value(p, decimal)
-                if ev < min_ev:
-                    continue
-                results.append(
-                    ValueBet(
-                        sport_title=event.sport_title,
-                        commence_time=event.commence_time,
-                        matchup=event.matchup,
-                        market=H2H,
-                        market_label=MARKET_LABELS[H2H],
-                        selection=o.name,
-                        point=o.point,
-                        book=bm.title,
-                        price=o.price,
-                        decimal=decimal,
-                        fair_prob=p,
-                        ev=ev,
-                        kelly=om.kelly_fraction(p, decimal),
-                        sources=0,  # model-derived, not from peer books
+                for o in offer.outcomes:
+                    p = model.outcome_probability(event, market_key, o)
+                    if p is None:
+                        continue
+                    decimal = om.american_to_decimal(o.price)
+                    ev = om.expected_value(p, decimal)
+                    if ev < min_ev:
+                        continue
+                    results.append(
+                        ValueBet(
+                            sport_title=event.sport_title,
+                            commence_time=event.commence_time,
+                            matchup=event.matchup,
+                            market=market_key,
+                            market_label=MARKET_LABELS.get(market_key, market_key),
+                            selection=o.name,
+                            point=o.point,
+                            book=bm.title,
+                            price=o.price,
+                            decimal=decimal,
+                            fair_prob=p,
+                            ev=ev,
+                            kelly=om.kelly_fraction(p, decimal),
+                            sources=0,  # model-derived, not from peer books
+                        )
                     )
-                )
     results.sort(key=lambda v: v.ev, reverse=True)
     return results
 
@@ -215,28 +226,27 @@ def _resolve_sharp(
 
 
 def _fair_probability(
-    book_probs: dict[str, dict[SelectionId, float]],
     sel: SelectionId,
     *,
-    evaluating_book: str,
     sharp_title: Optional[str],
+    book_probs: dict[str, dict[SelectionId, float]],
+    own: dict[SelectionId, float],
+    sel_sum: dict[SelectionId, float],
+    sel_count: dict[SelectionId, int],
 ) -> tuple[Optional[float], int]:
     """Fair probability for a selection, excluding the book being evaluated.
 
     In sharp mode the fair value is the sharp book's line. Otherwise it is the
-    average de-vigged probability across all *other* books offering the exact
-    same selection (same point). Excluding the evaluated book keeps the
-    comparison honest: we ask "is this book off vs the rest of the market?".
+    leave-one-out average de-vigged probability across all *other* books
+    offering the exact same selection (same point). Excluding the evaluated
+    book keeps the comparison honest: "is this book off vs the rest?".
     """
     if sharp_title:
         p = book_probs.get(sharp_title, {}).get(sel)
         return (p, 1) if p is not None else (None, 0)
 
-    others = [
-        probs[sel]
-        for title, probs in book_probs.items()
-        if title != evaluating_book and sel in probs
-    ]
-    if not others:
+    count = sel_count[sel] - (1 if sel in own else 0)
+    if count <= 0:
         return None, 0
-    return sum(others) / len(others), len(others)
+    total = sel_sum[sel] - own.get(sel, 0.0)
+    return total / count, count

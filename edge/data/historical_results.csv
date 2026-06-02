@@ -1,41 +1,41 @@
-date,home_team,away_team,home_score,away_score
-2025-09-14,Kansas City Chiefs,Buffalo Bills,27,24
-2025-09-21,Buffalo Bills,Cincinnati Bengals,24,20
-2025-09-28,Kansas City Chiefs,Miami Dolphins,30,17
-2025-10-05,Cincinnati Bengals,Miami Dolphins,21,14
-2025-10-12,Buffalo Bills,Miami Dolphins,28,21
-2025-10-19,Kansas City Chiefs,Cincinnati Bengals,26,23
-2025-10-26,Miami Dolphins,Cincinnati Bengals,17,13
-2025-11-02,Kansas City Chiefs,Buffalo Bills,20,24
-2025-11-09,Buffalo Bills,Miami Dolphins,31,20
-2025-11-16,Kansas City Chiefs,Miami Dolphins,28,14
-2025-11-01,Los Angeles Lakers,Boston Celtics,112,108
-2025-11-04,Boston Celtics,Golden State Warriors,120,110
-2025-11-07,Los Angeles Lakers,Denver Nuggets,118,115
-2025-11-10,Denver Nuggets,Golden State Warriors,115,112
-2025-11-13,Los Angeles Lakers,Golden State Warriors,125,120
-2025-11-16,Boston Celtics,Denver Nuggets,110,105
-2025-11-19,Boston Celtics,Los Angeles Lakers,100,105
-2025-11-22,Golden State Warriors,Denver Nuggets,130,125
-2025-11-25,Los Angeles Lakers,Boston Celtics,115,110
-2025-11-28,Denver Nuggets,Boston Celtics,108,112
-2025-06-01,Boston Red Sox,New York Yankees,3,5
-2025-06-04,New York Yankees,Tampa Bay Rays,4,2
-2025-06-07,Boston Red Sox,Baltimore Orioles,6,4
-2025-06-10,New York Yankees,Baltimore Orioles,7,1
-2025-06-13,Boston Red Sox,Tampa Bay Rays,2,3
-2025-06-16,New York Yankees,Tampa Bay Rays,6,5
-2025-06-19,Boston Red Sox,New York Yankees,4,2
-2025-06-22,Baltimore Orioles,Tampa Bay Rays,5,3
-2025-06-25,New York Yankees,Baltimore Orioles,8,3
-2025-06-28,New York Yankees,Boston Red Sox,5,4
-2025-12-01,Colorado Avalanche,Edmonton Oilers,4,2
-2025-12-04,Colorado Avalanche,Vegas Golden Knights,3,1
-2025-12-07,Edmonton Oilers,Dallas Stars,5,3
-2025-12-10,Colorado Avalanche,Dallas Stars,4,3
-2025-12-13,Vegas Golden Knights,Edmonton Oilers,3,2
-2025-12-16,Colorado Avalanche,Vegas Golden Knights,2,1
-2025-12-19,Edmonton Oilers,Colorado Avalanche,4,3
-2025-12-22,Dallas Stars,Vegas Golden Knights,3,2
-2025-12-25,Colorado Avalanche,Edmonton Oilers,5,2
-2025-12-28,Vegas Golden Knights,Dallas Stars,4,3
+sport_key,date,home_team,away_team,home_score,away_score
+americanfootball_nfl,2025-09-14,Kansas City Chiefs,Buffalo Bills,27,24
+americanfootball_nfl,2025-09-21,Buffalo Bills,Cincinnati Bengals,24,20
+americanfootball_nfl,2025-09-28,Kansas City Chiefs,Miami Dolphins,30,17
+americanfootball_nfl,2025-10-05,Cincinnati Bengals,Miami Dolphins,21,14
+americanfootball_nfl,2025-10-12,Buffalo Bills,Miami Dolphins,28,21
+americanfootball_nfl,2025-10-19,Kansas City Chiefs,Cincinnati Bengals,26,23
+americanfootball_nfl,2025-10-26,Miami Dolphins,Cincinnati Bengals,17,13
+americanfootball_nfl,2025-11-02,Kansas City Chiefs,Buffalo Bills,20,24
+americanfootball_nfl,2025-11-09,Buffalo Bills,Miami Dolphins,31,20
+americanfootball_nfl,2025-11-16,Kansas City Chiefs,Miami Dolphins,28,14
+basketball_nba,2025-11-01,Los Angeles Lakers,Boston Celtics,112,108
+basketball_nba,2025-11-04,Boston Celtics,Golden State Warriors,120,110
+basketball_nba,2025-11-07,Los Angeles Lakers,Denver Nuggets,118,115
+basketball_nba,2025-11-10,Denver Nuggets,Golden State Warriors,115,112
+basketball_nba,2025-11-13,Los Angeles Lakers,Golden State Warriors,125,120
+basketball_nba,2025-11-16,Boston Celtics,Denver Nuggets,110,105
+basketball_nba,2025-11-19,Boston Celtics,Los Angeles Lakers,100,105
+basketball_nba,2025-11-22,Golden State Warriors,Denver Nuggets,130,125
+basketball_nba,2025-11-25,Los Angeles Lakers,Boston Celtics,115,110
+basketball_nba,2025-11-28,Denver Nuggets,Boston Celtics,108,112
+baseball_mlb,2025-06-01,Boston Red Sox,New York Yankees,3,5
+baseball_mlb,2025-06-04,New York Yankees,Tampa Bay Rays,4,2
+baseball_mlb,2025-06-07,Boston Red Sox,Baltimore Orioles,6,4
+baseball_mlb,2025-06-10,New York Yankees,Baltimore Orioles,7,1
+baseball_mlb,2025-06-13,Boston Red Sox,Tampa Bay Rays,2,3
+baseball_mlb,2025-06-16,New York Yankees,Tampa Bay Rays,6,5
+baseball_mlb,2025-06-19,Boston Red Sox,New York Yankees,4,2
+baseball_mlb,2025-06-22,Baltimore Orioles,Tampa Bay Rays,5,3
+baseball_mlb,2025-06-25,New York Yankees,Baltimore Orioles,8,3
+baseball_mlb,2025-06-28,New York Yankees,Boston Red Sox,5,4
+icehockey_nhl,2025-12-01,Colorado Avalanche,Edmonton Oilers,4,2
+icehockey_nhl,2025-12-04,Colorado Avalanche,Vegas Golden Knights,3,1
+icehockey_nhl,2025-12-07,Edmonton Oilers,Dallas Stars,5,3
+icehockey_nhl,2025-12-10,Colorado Avalanche,Dallas Stars,4,3
+icehockey_nhl,2025-12-13,Vegas Golden Knights,Edmonton Oilers,3,2
+icehockey_nhl,2025-12-16,Colorado Avalanche,Vegas Golden Knights,2,1
+icehockey_nhl,2025-12-19,Edmonton Oilers,Colorado Avalanche,4,3
+icehockey_nhl,2025-12-22,Dallas Stars,Vegas Golden Knights,3,2
+icehockey_nhl,2025-12-25,Colorado Avalanche,Edmonton Oilers,5,2
+icehockey_nhl,2025-12-28,Vegas Golden Knights,Dallas Stars,4,3

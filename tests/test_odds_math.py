@@ -56,6 +56,35 @@ def test_kelly_zero_when_no_edge():
     assert om.kelly_fraction(0.5, 1.9) == 0.0
 
 
+def test_devig_shin_sums_to_one():
+    implied = [om.american_to_implied(-130), om.american_to_implied(110)]
+    fair = om.devig_shin(implied)
+    assert math.isclose(sum(fair), 1.0, abs_tol=1e-6)
+
+
+def test_devig_shin_symmetric_is_half():
+    implied = [om.american_to_implied(-110), om.american_to_implied(-110)]
+    fair = om.devig_shin(implied)
+    assert fair[0] == pytest.approx(0.5, abs=1e-6)
+
+
+def test_shin_reduces_longshot_vs_proportional():
+    # Heavy favourite / longshot: Shin assigns the underdog a lower probability.
+    implied = [om.american_to_implied(-400), om.american_to_implied(320)]
+    prop = om.devig_proportional(implied)
+    shin = om.devig_shin(implied)
+    assert shin[1] < prop[1]      # underdog shrunk
+    assert shin[0] > prop[0]      # favourite raised
+    assert math.isclose(sum(shin), 1.0, abs_tol=1e-6)
+
+
+def test_devig_dispatcher():
+    implied = [0.55, 0.55]
+    assert om.devig([0.55, 0.55], "proportional") == om.devig_proportional(implied)
+    with pytest.raises(ValueError):
+        om.devig(implied, "bogus")
+
+
 def test_closing_line_value():
     # Got +135 (2.35), closed at +120 (2.20) -> beat the close.
     clv = om.closing_line_value(135, 120)

@@ -24,7 +24,9 @@ odds (many books)  ─▶  de-vig each book  ─▶  fair probability  ─▶  E
    the other books* (default), or a single designated **sharp book**
    (`--sharp Pinnacle`). The book being priced is excluded from its own
    benchmark, so the question is always "is this book off vs the rest of the
-   market?".
+   market?". The consensus uses an O(books) leave-one-out average. De-vig is
+   proportional by default or **Shin** (`--devig shin`), which counteracts the
+   favourite-longshot bias.
 3. **EV & Kelly** — `EV = fair_prob × decimal_odds − 1`; Kelly fraction sizes
    the stake.
 
@@ -52,6 +54,9 @@ edge scan --min-ev 0.03 --bankroll 1000
 # Filter by sport / market, or benchmark against a sharp book
 edge scan --sport nfl --market h2h
 edge scan --sharp Pinnacle
+
+# Use Shin de-vig (reduces favourite-longshot bias) instead of proportional
+edge scan --devig shin
 
 # Use live odds from The Odds API instead of sample data
 export ODDS_API_KEY=your_key_here
@@ -92,30 +97,43 @@ Staked: 95.00   Profit: +22.50   ROI: +23.7%
 CLV: +2.1% avg over 12 bet(s), beat the close 75% of the time
 ```
 
-## Predictive model (Elo)
+## Predictive models
 
 By default the engine treats the *market* as the model. As an alternative, it
-ships a small **independent** predictive model — an [Elo rating
-model](https://en.wikipedia.org/wiki/Elo_rating_system) — that learns team
-strength from historical results and predicts moneyline win probabilities with
-no knowledge of the odds. Comparing the model against book prices surfaces bets
+ships two **independent** models that learn from historical results with no
+knowledge of the odds. Comparing a model against book prices surfaces bets
 where the model disagrees with the market.
 
+| Model | Markets | What it does |
+|-------|---------|--------------|
+| `elo` | Moneyline | [Elo ratings](https://en.wikipedia.org/wiki/Elo_rating_system) — learns team strength and win probability. |
+| `team` | Moneyline, spreads, totals | Gaussian scoring model — learns each team's points for/against, derives an expected **margin** and **total**, and reads cover/over probabilities off a normal distribution. |
+
 ```bash
-edge train                              # train on bundled results -> ~/.edge/elo.json
-edge train --results my_games.csv       # or your own history
-edge scan --model elo --min-ev 0.03     # find model-vs-market edges (moneyline)
+edge train --model team                  # -> ~/.edge/team.json (all markets)
+edge train --model elo                   # -> ~/.edge/elo.json  (moneyline)
+edge train --model team --results my.csv # train on your own history
+
+edge scan --model team --min-ev 0.03     # model-vs-market edges, all markets
+edge scan --model elo                    # moneyline only
 ```
 
-Training prints the learned ratings; `--results` expects a CSV with columns
-`date,home_team,away_team,home_score,away_score`.
+`--results` expects a CSV with columns
+`sport_key,date,home_team,away_team,home_score,away_score`.
 
-**Caveat — model edges are only as good as the model.** Elo is transparent and
-well established, but trained on thin sample data it is *overconfident*, so its
-"edges" reflect disagreement with the market, not guaranteed value. Market
-consensus (the default) is the more reliable signal; the model is best used as
-a second opinion. The `predict_event` interface is the seam where a stronger
-model (logistic regression, gradient boosting, ...) could be dropped in.
+**Precision safeguards.** The team model regresses each team's scoring rate
+toward the league average (empirical-Bayes shrinkage), so teams with few games
+are not treated as confidently as those with many; and the margin/total
+standard deviations are floored at sane per-sport values so the model is never
+more confident than the sport's real-world variance allows.
+
+> **Caveat — a model is only as good as its data.** The bundled sample has just
+> ~10 games per sport, so the models are **overconfident**: their "edges" mostly
+> reflect disagreement with the market, not guaranteed value. Market consensus
+> (the default) is the more reliable signal; treat the models as a second
+> opinion, and train on a full season of real results before trusting the
+> numbers. The `outcome_probability` interface is the seam where a stronger
+> model (logistic regression, gradient boosting, ...) can be dropped in.
 
 ## Library
 
@@ -146,10 +164,10 @@ ODDS_API_KEY=your_key pytest tests/test_live.py -v
 
 ```
 edge/
-  odds_math.py        # conversions, de-vig, EV, Kelly (pure functions)
+  odds_math.py        # conversions, de-vig (proportional/Shin), EV, Kelly, CLV
   models.py           # Event / Bookmaker / Outcome (The Odds API shape)
   engine.py           # de-vig → fair value → +EV finder (market + model)
-  model.py            # Elo predictive model (train / predict / save / load)
+  model.py            # predictive models: Elo + Gaussian team scoring model
   journal.py          # CSV bet journal (record / profit / ROI / CLV)
   cli.py              # `edge scan`, `edge journal`, `edge train`
   providers/          # MockProvider, TheOddsApiProvider (pluggable seam)

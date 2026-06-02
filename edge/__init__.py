@@ -6,7 +6,7 @@ layer" for bettors.
 """
 
 from .engine import ValueBet, find_model_value_bets, find_value_bets
-from .model import EloModel
+from .model import EloModel, TeamModel
 from .models import Event, Outcome
 from .providers import MockProvider, OddsProvider, TheOddsApiProvider
 
@@ -17,6 +17,7 @@ __all__ = [
     "find_model_value_bets",
     "ValueBet",
     "EloModel",
+    "TeamModel",
     "Event",
     "Outcome",
     "OddsProvider",

@@ -13,6 +13,8 @@ Conventions
 
 from __future__ import annotations
 
+import math
+
 
 def american_to_decimal(american: int) -> float:
     """Convert American odds to decimal odds."""
@@ -59,6 +61,48 @@ def devig_proportional(implied: list[float]) -> list[float]:
     if total <= 0:
         raise ValueError("Implied probabilities must sum to a positive number")
     return [p / total for p in implied]
+
+
+def devig_shin(implied: list[float], max_iter: int = 100, tol: float = 1e-10) -> list[float]:
+    """Remove the bookmaker margin using Shin's method.
+
+    Shin models the margin as compensation for informed ("insider") bettors
+    rather than spreading it proportionally. This shrinks favourites slightly
+    less than proportional de-vig and tends to produce better-calibrated
+    probabilities (it counteracts the favourite-longshot bias). The insider
+    proportion ``z`` is solved by bisection so the fair probabilities sum to 1.
+    """
+    q = sum(implied)
+    if q <= 0:
+        raise ValueError("Implied probabilities must sum to a positive number")
+
+    def probs_for(z: float) -> list[float]:
+        denom = 2.0 * (1.0 - z)
+        return [
+            (math.sqrt(z * z + 4.0 * (1.0 - z) * qi * qi / q) - z) / denom
+            for qi in implied
+        ]
+
+    # sum(probs) is monotonically decreasing in z; it is > 1 at z=0.
+    lo, hi = 0.0, 0.999999
+    for _ in range(max_iter):
+        mid = (lo + hi) / 2.0
+        if sum(probs_for(mid)) > 1.0:
+            lo = mid
+        else:
+            hi = mid
+        if hi - lo < tol:
+            break
+    return probs_for((lo + hi) / 2.0)
+
+
+def devig(implied: list[float], method: str = "proportional") -> list[float]:
+    """De-vig dispatcher: ``method`` is "proportional" (default) or "shin"."""
+    if method == "proportional":
+        return devig_proportional(implied)
+    if method == "shin":
+        return devig_shin(implied)
+    raise ValueError(f"Unknown de-vig method: {method!r}")
 
 
 def market_overround(implied: list[float]) -> float:

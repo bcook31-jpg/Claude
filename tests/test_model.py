@@ -4,7 +4,7 @@ from pathlib import Path
 import pytest
 
 from edge.engine import find_model_value_bets
-from edge.model import EloModel, load_results
+from edge.model import EloModel, TeamModel, load_results
 from edge.models import Bookmaker, Event, MarketOffer, Outcome
 from edge.providers import MockProvider
 
@@ -91,3 +91,83 @@ def test_model_only_evaluates_moneyline():
     assert bets  # produces some moneyline edges on the sample data
     assert all(b.market == "h2h" for b in bets)
     assert all(b.ev > 0 for b in bets)
+
+
+# -- TeamModel (all-markets Gaussian model) -------------------------------
+@pytest.fixture
+def team_model():
+    return TeamModel().train(load_results(BUNDLED_RESULTS))
+
+
+def _nhl_event() -> Event:
+    return Event(
+        id="e", sport_key="icehockey_nhl", sport_title="NHL",
+        commence_time="t", home_team="Colorado Avalanche",
+        away_team="Edmonton Oilers", bookmakers=[],
+    )
+
+
+def test_team_model_probabilities_are_coherent(team_model):
+    ev = _nhl_event()
+    over = team_model.outcome_probability(ev, "totals", Outcome("Over", -110, 6.5))
+    under = team_model.outcome_probability(ev, "totals", Outcome("Under", -110, 6.5))
+    assert math.isclose(over + under, 1.0, abs_tol=1e-9)
+
+    home = team_model.outcome_probability(ev, "spreads", Outcome("Colorado Avalanche", -110, -1.5))
+    away = team_model.outcome_probability(ev, "spreads", Outcome("Edmonton Oilers", -110, 1.5))
+    assert math.isclose(home + away, 1.0, abs_tol=1e-9)
+
+    hw = team_model.outcome_probability(ev, "h2h", Outcome("Colorado Avalanche", -110))
+    aw = team_model.outcome_probability(ev, "h2h", Outcome("Edmonton Oilers", 110))
+    assert math.isclose(hw + aw, 1.0, abs_tol=1e-9)
+    for p in (over, under, home, away, hw, aw):
+        assert 0.0 < p < 1.0
+
+
+def test_team_model_prices_all_markets(team_model):
+    events = MockProvider().get_odds()
+    bets = find_model_value_bets(events, team_model)
+    markets = {b.market for b in bets}
+    assert {"h2h", "spreads", "totals"} <= markets
+    assert all(b.ev > 0 for b in bets)
+
+
+def test_team_model_unknown_sport_or_team_returns_none(team_model):
+    unknown_sport = Event(
+        id="e", sport_key="cricket", sport_title="?", commence_time="t",
+        home_team="A", away_team="B", bookmakers=[],
+    )
+    assert team_model.outcome_probability(unknown_sport, "h2h", Outcome("A", -110)) is None
+
+    unknown_team = Event(
+        id="e", sport_key="icehockey_nhl", sport_title="NHL", commence_time="t",
+        home_team="Nonexistent FC", away_team="Edmonton Oilers", bookmakers=[],
+    )
+    assert team_model.outcome_probability(unknown_team, "h2h", Outcome("Edmonton Oilers", 110)) is None
+
+
+def test_team_model_shrinkage_pulls_toward_mean():
+    # With heavy shrinkage, a small sample is pulled toward the league average,
+    # so an extreme single-game result barely moves the rating.
+    games = [
+        {"sport_key": "x", "home_team": "A", "away_team": "B",
+         "home_score": "10", "away_score": "0"},
+    ]
+    weak = TeamModel(shrink=0.0).train(games)
+    strong = TeamModel(shrink=50.0).train(games)
+    ev = Event("e", "x", "X", "t", "A", "B", [])
+    p_weak = weak.outcome_probability(ev, "h2h", Outcome("A", -110))
+    p_strong = strong.outcome_probability(ev, "h2h", Outcome("A", -110))
+    # Heavily shrunk model is far less confident A is better.
+    assert p_strong < p_weak
+
+
+def test_team_model_save_load_roundtrip(team_model, tmp_path):
+    path = tmp_path / "team.json"
+    team_model.save(path)
+    loaded = TeamModel.load(path)
+    ev = _nhl_event()
+    out = Outcome("Over", -110, 6.5)
+    assert loaded.outcome_probability(ev, "totals", out) == pytest.approx(
+        team_model.outcome_probability(ev, "totals", out)
+    )
