@@ -55,6 +55,7 @@ def main(argv: Optional[list[str]] = None) -> int:
     _add_scan_parser(sub)
     _add_journal_parser(sub)
     _add_train_parser(sub)
+    _add_sports_parser(sub)
 
     args = parser.parse_args(argv)
     return args.func(args)
@@ -279,6 +280,37 @@ def _run_train(args) -> int:
                  f"{s.sigma_total:.1f}", str(len(s.pts_for))]
                 for sport, s in sorted(model.sports.items())]
         _print_table(["Sport", "HomeAdv", "SigMargin", "SigTotal", "Teams"], rows)
+    return 0
+
+
+# -- sports ---------------------------------------------------------------
+def _add_sports_parser(sub) -> None:
+    p = sub.add_parser("sports", help="list in-season sports from The Odds API "
+                                      "(requires ODDS_API_KEY)")
+    p.add_argument("--all", action="store_true",
+                   help="include out-of-season sports too")
+    p.set_defaults(func=_run_sports)
+
+
+def _run_sports(args) -> int:
+    try:
+        sports = TheOddsApiProvider().get_sports(all_sports=args.all)
+    except Exception as exc:  # missing key / network / API errors
+        print(f"Failed to fetch sports: {exc}", file=sys.stderr)
+        return 1
+
+    if not sports:
+        print("No sports returned.")
+        return 0
+
+    scope = "all" if args.all else "in-season"
+    print(f"{len(sports)} {scope} sport(s):\n")
+    rows = [
+        [s.get("key", ""), s.get("group", ""), s.get("title", ""),
+         "yes" if s.get("active") else "no"]
+        for s in sorted(sports, key=lambda s: (s.get("group", ""), s.get("title", "")))
+    ]
+    _print_table(["Key", "Group", "Title", "Active"], rows)
     return 0
 
 

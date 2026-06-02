@@ -153,6 +153,15 @@ only the standard library. Drop in an `ODDS_API_KEY` and the exact same engine
 runs on real lines — the data model mirrors that API's response shape, so the
 mock and live providers are interchangeable.
 
+List which sports are currently in season (handy because off-season sports
+return no odds). This hits the free `/sports` endpoint and costs no quota:
+
+```bash
+export ODDS_API_KEY=your_key
+edge sports            # in-season sports and their keys
+edge sports --all      # include out-of-season sports
+```
+
 A live smoke test confirms the round trip end-to-end. It is skipped unless a
 key is present, so the default test run stays offline:
 
@@ -169,7 +178,7 @@ edge/
   engine.py           # de-vig → fair value → +EV finder (market + model)
   model.py            # predictive models: Elo + Gaussian team scoring model
   journal.py          # CSV bet journal (record / profit / ROI / CLV)
-  cli.py              # `edge scan`, `edge journal`, `edge train`
+  cli.py              # `edge scan`, `edge journal`, `edge train`, `edge sports`
   providers/          # MockProvider, TheOddsApiProvider (pluggable seam)
   data/               # sample_odds.json, historical_results.csv
 tests/                # pytest suite (math, engine, model, journal, live)

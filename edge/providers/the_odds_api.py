@@ -47,6 +47,21 @@ class TheOddsApiProvider(OddsProvider):
         self.odds_format = odds_format
         self.timeout = timeout
 
+    def get_sports(self, all_sports: bool = False) -> list[dict]:
+        """List available sports.
+
+        By default returns only in-season ("active") sports. Pass
+        ``all_sports=True`` to include out-of-season ones. This hits the free
+        ``/sports`` endpoint and does not consume request quota. Each item has
+        keys like ``key``, ``group``, ``title``, ``description`` and ``active``.
+        """
+        params = {"apiKey": self.api_key}
+        if all_sports:
+            params["all"] = "true"
+        url = f"{BASE_URL}/sports/?{urllib.parse.urlencode(params)}"
+        with urllib.request.urlopen(url, timeout=self.timeout) as resp:
+            return json.loads(resp.read().decode())
+
     def get_odds(
         self,
         sport_keys: Optional[Iterable[str]] = None,
