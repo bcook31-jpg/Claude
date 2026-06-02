@@ -160,6 +160,7 @@ return no odds). This hits the free `/sports` endpoint and costs no quota:
 export ODDS_API_KEY=your_key
 edge sports            # in-season sports and their keys
 edge sports --all      # include out-of-season sports
+edge sports --counts   # also show upcoming event counts per sport
 ```
 
 A live smoke test confirms the round trip end-to-end. It is skipped unless a

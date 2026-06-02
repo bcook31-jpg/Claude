@@ -8,26 +8,41 @@ def test_sports_missing_key_returns_error(monkeypatch, capsys):
     assert "Failed to fetch sports" in capsys.readouterr().err
 
 
+class _FakeProvider:
+    def __init__(self, *a, **k):
+        pass
+
+    def get_sports(self, all_sports=False):
+        return [
+            {"key": "baseball_mlb", "group": "Baseball", "title": "MLB", "active": True},
+            {"key": "americanfootball_nfl", "group": "American Football",
+             "title": "NFL", "active": True},
+        ]
+
+    def get_events(self, sport_key):
+        return {"baseball_mlb": [{}, {}, {}], "americanfootball_nfl": []}[sport_key]
+
+
 def test_sports_lists_in_season(monkeypatch, capsys):
-    class FakeProvider:
-        def __init__(self, *a, **k):
-            pass
-
-        def get_sports(self, all_sports=False):
-            assert all_sports is False
-            return [
-                {"key": "baseball_mlb", "group": "Baseball", "title": "MLB", "active": True},
-                {"key": "americanfootball_nfl", "group": "American Football",
-                 "title": "NFL", "active": True},
-            ]
-
-    monkeypatch.setattr(cli, "TheOddsApiProvider", FakeProvider)
+    monkeypatch.setattr(cli, "TheOddsApiProvider", _FakeProvider)
     rc = cli.main(["sports"])
     out = capsys.readouterr().out
     assert rc == 0
     assert "2 in-season sport(s)" in out
     assert "baseball_mlb" in out
     assert "americanfootball_nfl" in out
+    assert "Events" not in out  # no counts column unless requested
+
+
+def test_sports_with_event_counts(monkeypatch, capsys):
+    monkeypatch.setattr(cli, "TheOddsApiProvider", _FakeProvider)
+    rc = cli.main(["sports", "--counts"])
+    out = capsys.readouterr().out
+    assert rc == 0
+    assert "Events" in out
+    # MLB has 3 upcoming events in the fake data.
+    mlb_line = next(line for line in out.splitlines() if "baseball_mlb" in line)
+    assert mlb_line.strip().endswith("3")
 
 
 def test_scan_offline_runs(capsys):

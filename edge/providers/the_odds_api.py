@@ -62,6 +62,18 @@ class TheOddsApiProvider(OddsProvider):
         with urllib.request.urlopen(url, timeout=self.timeout) as resp:
             return json.loads(resp.read().decode())
 
+    def get_events(self, sport_key: str) -> list[dict]:
+        """Upcoming/live events for a sport, without odds.
+
+        Hits the free ``/events`` endpoint (no quota cost). Useful for counting
+        how many games are on the board for a sport. Each item has ``id``,
+        ``commence_time``, ``home_team`` and ``away_team``.
+        """
+        params = urllib.parse.urlencode({"apiKey": self.api_key})
+        url = f"{BASE_URL}/sports/{sport_key}/events/?{params}"
+        with urllib.request.urlopen(url, timeout=self.timeout) as resp:
+            return json.loads(resp.read().decode())
+
     def get_odds(
         self,
         sport_keys: Optional[Iterable[str]] = None,

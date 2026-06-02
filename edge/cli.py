@@ -289,12 +289,16 @@ def _add_sports_parser(sub) -> None:
                                       "(requires ODDS_API_KEY)")
     p.add_argument("--all", action="store_true",
                    help="include out-of-season sports too")
+    p.add_argument("--counts", action="store_true",
+                   help="also show upcoming event counts (one free request per "
+                        "sport; no quota cost)")
     p.set_defaults(func=_run_sports)
 
 
 def _run_sports(args) -> int:
     try:
-        sports = TheOddsApiProvider().get_sports(all_sports=args.all)
+        provider = TheOddsApiProvider()
+        sports = provider.get_sports(all_sports=args.all)
     except Exception as exc:  # missing key / network / API errors
         print(f"Failed to fetch sports: {exc}", file=sys.stderr)
         return 1
@@ -303,14 +307,30 @@ def _run_sports(args) -> int:
         print("No sports returned.")
         return 0
 
+    sports = sorted(sports, key=lambda s: (s.get("group", ""), s.get("title", "")))
+
+    counts: dict[str, Optional[int]] = {}
+    if args.counts:
+        for s in sports:
+            try:
+                counts[s["key"]] = len(provider.get_events(s["key"]))
+            except Exception:  # don't fail the whole listing on one sport
+                counts[s["key"]] = None
+
     scope = "all" if args.all else "in-season"
     print(f"{len(sports)} {scope} sport(s):\n")
-    rows = [
-        [s.get("key", ""), s.get("group", ""), s.get("title", ""),
-         "yes" if s.get("active") else "no"]
-        for s in sorted(sports, key=lambda s: (s.get("group", ""), s.get("title", "")))
-    ]
-    _print_table(["Key", "Group", "Title", "Active"], rows)
+    header = ["Key", "Group", "Title", "Active"]
+    if args.counts:
+        header.append("Events")
+    rows = []
+    for s in sports:
+        row = [s.get("key", ""), s.get("group", ""), s.get("title", ""),
+               "yes" if s.get("active") else "no"]
+        if args.counts:
+            c = counts.get(s.get("key", ""))
+            row.append("?" if c is None else str(c))
+        rows.append(row)
+    _print_table(header, rows)
     return 0
 
 
