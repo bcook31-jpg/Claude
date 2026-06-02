@@ -5,7 +5,8 @@ De-vig bookmaker odds, estimate fair probabilities from the market, and surface
 layer" for bettors.
 """
 
-from .engine import ValueBet, find_value_bets
+from .engine import ValueBet, find_model_value_bets, find_value_bets
+from .model import EloModel
 from .models import Event, Outcome
 from .providers import MockProvider, OddsProvider, TheOddsApiProvider
 
@@ -13,7 +14,9 @@ __version__ = "0.1.0"
 
 __all__ = [
     "find_value_bets",
+    "find_model_value_bets",
     "ValueBet",
+    "EloModel",
     "Event",
     "Outcome",
     "OddsProvider",

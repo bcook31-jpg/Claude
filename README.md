@@ -92,6 +92,31 @@ Staked: 95.00   Profit: +22.50   ROI: +23.7%
 CLV: +2.1% avg over 12 bet(s), beat the close 75% of the time
 ```
 
+## Predictive model (Elo)
+
+By default the engine treats the *market* as the model. As an alternative, it
+ships a small **independent** predictive model — an [Elo rating
+model](https://en.wikipedia.org/wiki/Elo_rating_system) — that learns team
+strength from historical results and predicts moneyline win probabilities with
+no knowledge of the odds. Comparing the model against book prices surfaces bets
+where the model disagrees with the market.
+
+```bash
+edge train                              # train on bundled results -> ~/.edge/elo.json
+edge train --results my_games.csv       # or your own history
+edge scan --model elo --min-ev 0.03     # find model-vs-market edges (moneyline)
+```
+
+Training prints the learned ratings; `--results` expects a CSV with columns
+`date,home_team,away_team,home_score,away_score`.
+
+**Caveat — model edges are only as good as the model.** Elo is transparent and
+well established, but trained on thin sample data it is *overconfident*, so its
+"edges" reflect disagreement with the market, not guaranteed value. Market
+consensus (the default) is the more reliable signal; the model is best used as
+a second opinion. The `predict_event` interface is the seam where a stronger
+model (logistic regression, gradient boosting, ...) could be dropped in.
+
 ## Library
 
 ```python
@@ -110,18 +135,26 @@ only the standard library. Drop in an `ODDS_API_KEY` and the exact same engine
 runs on real lines — the data model mirrors that API's response shape, so the
 mock and live providers are interchangeable.
 
+A live smoke test confirms the round trip end-to-end. It is skipped unless a
+key is present, so the default test run stays offline:
+
+```bash
+ODDS_API_KEY=your_key pytest tests/test_live.py -v
+```
+
 ## Project layout
 
 ```
 edge/
   odds_math.py        # conversions, de-vig, EV, Kelly (pure functions)
   models.py           # Event / Bookmaker / Outcome (The Odds API shape)
-  engine.py           # de-vig → fair value → +EV finder
-  journal.py          # CSV bet journal (record / profit / ROI)
-  cli.py              # `edge scan` and `edge journal`
+  engine.py           # de-vig → fair value → +EV finder (market + model)
+  model.py            # Elo predictive model (train / predict / save / load)
+  journal.py          # CSV bet journal (record / profit / ROI / CLV)
+  cli.py              # `edge scan`, `edge journal`, `edge train`
   providers/          # MockProvider, TheOddsApiProvider (pluggable seam)
-  data/sample_odds.json
-tests/                # pytest suite (odds math + engine)
+  data/               # sample_odds.json, historical_results.csv
+tests/                # pytest suite (math, engine, model, journal, live)
 ```
 
 ## Tests

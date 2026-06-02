@@ -22,7 +22,7 @@ from dataclasses import dataclass
 from typing import Iterable, Optional
 
 from . import odds_math as om
-from .models import MARKET_KEYS, MARKET_LABELS, Event
+from .models import H2H, MARKET_KEYS, MARKET_LABELS, Event
 
 
 @dataclass
@@ -146,6 +146,57 @@ def find_value_bets(
                         )
                     )
 
+    results.sort(key=lambda v: v.ev, reverse=True)
+    return results
+
+
+def find_model_value_bets(
+    events: Iterable[Event],
+    model,
+    *,
+    min_ev: float = 0.0,
+) -> list[ValueBet]:
+    """Find +EV moneyline bets using a predictive model as fair value.
+
+    ``model`` only needs a ``predict_event(event) -> {team: probability}``
+    method (e.g. :class:`edge.model.EloModel`). For each book's moneyline
+    price, EV is computed against the model's probability rather than the
+    market consensus, so this surfaces bets where the model disagrees with the
+    market. Only the head-to-head (moneyline) market is evaluated.
+    """
+    results: list[ValueBet] = []
+    for event in events:
+        probs = model.predict_event(event)
+        for bm in event.bookmakers:
+            offer = bm.market(H2H)
+            if offer is None:
+                continue
+            for o in offer.outcomes:
+                p = probs.get(o.name)
+                if p is None:
+                    continue
+                decimal = om.american_to_decimal(o.price)
+                ev = om.expected_value(p, decimal)
+                if ev < min_ev:
+                    continue
+                results.append(
+                    ValueBet(
+                        sport_title=event.sport_title,
+                        commence_time=event.commence_time,
+                        matchup=event.matchup,
+                        market=H2H,
+                        market_label=MARKET_LABELS[H2H],
+                        selection=o.name,
+                        point=o.point,
+                        book=bm.title,
+                        price=o.price,
+                        decimal=decimal,
+                        fair_prob=p,
+                        ev=ev,
+                        kelly=om.kelly_fraction(p, decimal),
+                        sources=0,  # model-derived, not from peer books
+                    )
+                )
     results.sort(key=lambda v: v.ev, reverse=True)
     return results
 

@@ -22,8 +22,9 @@ import sys
 from pathlib import Path
 from typing import Optional
 
-from .engine import ValueBet, find_value_bets
+from .engine import ValueBet, find_model_value_bets, find_value_bets
 from .journal import Journal
+from .model import EloModel, load_results
 from .providers import MockProvider, TheOddsApiProvider
 
 # Friendly aliases -> The Odds API sport keys.
@@ -35,6 +36,8 @@ SPORT_ALIASES = {
 }
 
 DEFAULT_JOURNAL = Path.home() / ".edge" / "journal.csv"
+DEFAULT_RATINGS = Path.home() / ".edge" / "elo.json"
+BUNDLED_RESULTS = Path(__file__).resolve().parent / "data" / "historical_results.csv"
 
 
 def main(argv: Optional[list[str]] = None) -> int:
@@ -44,6 +47,7 @@ def main(argv: Optional[list[str]] = None) -> int:
 
     _add_scan_parser(sub)
     _add_journal_parser(sub)
+    _add_train_parser(sub)
 
     args = parser.parse_args(argv)
     return args.func(args)
@@ -59,6 +63,11 @@ def _add_scan_parser(sub) -> None:
                    help="minimum EV to report, e.g. 0.03 for +3%% (default 0)")
     p.add_argument("--sharp", help="treat this book as fair value (e.g. Pinnacle); "
                                    "default uses the consensus of other books")
+    p.add_argument("--model", choices=["elo"],
+                   help="use a predictive model as fair value (moneyline only) "
+                        "instead of the market; train it first with 'edge train'")
+    p.add_argument("--ratings", type=Path, default=DEFAULT_RATINGS,
+                   help=f"trained ratings file for --model (default {DEFAULT_RATINGS})")
     p.add_argument("--bankroll", type=float,
                    help="if set, show the suggested Kelly stake in dollars")
     p.add_argument("--live", action="store_true",
@@ -71,7 +80,13 @@ def _run_scan(args) -> int:
     sport_keys = None
     if args.sport:
         sport_keys = [SPORT_ALIASES.get(args.sport.lower(), args.sport)]
-    markets = [args.market] if args.market else None
+    # The predictive model only prices moneylines.
+    markets = ["h2h"] if args.model else ([args.market] if args.market else None)
+
+    if args.model and not args.ratings.exists():
+        print(f"No trained model at {args.ratings}. Run 'edge train' first.",
+              file=sys.stderr)
+        return 1
 
     try:
         provider = TheOddsApiProvider() if args.live else MockProvider()
@@ -80,15 +95,21 @@ def _run_scan(args) -> int:
         print(f"Failed to fetch odds: {exc}", file=sys.stderr)
         return 1
 
-    bets = find_value_bets(events, markets=markets, sharp_book=args.sharp,
-                           min_ev=args.min_ev)
-    _print_value_bets(bets, bankroll=args.bankroll, sharp=args.sharp)
+    if args.model:
+        model = EloModel.load(args.ratings)
+        bets = find_model_value_bets(events, model, min_ev=args.min_ev)
+        basis = f"model '{args.model}'"
+    else:
+        bets = find_value_bets(events, markets=markets, sharp_book=args.sharp,
+                               min_ev=args.min_ev)
+        basis = f"sharp book '{args.sharp}'" if args.sharp else "market consensus"
+
+    _print_value_bets(bets, bankroll=args.bankroll, basis=basis)
     return 0
 
 
 def _print_value_bets(bets: list[ValueBet], bankroll: Optional[float],
-                       sharp: Optional[str]) -> None:
-    basis = f"sharp book '{sharp}'" if sharp else "market consensus"
+                       basis: str) -> None:
     if not bets:
         print(f"No +EV bets found (fair value = {basis}).")
         return
@@ -200,6 +221,40 @@ def _print_summary(journal: Journal) -> None:
     if s["with_closing"]:
         print(f"CLV: {s['avg_clv'] * 100:+.1f}% avg over {s['with_closing']} bet(s), "
               f"beat the close {s['beat_close_rate'] * 100:.0f}% of the time")
+
+
+# -- train ----------------------------------------------------------------
+def _add_train_parser(sub) -> None:
+    p = sub.add_parser("train", help="train the Elo model on historical results")
+    p.add_argument("--results", type=Path, default=BUNDLED_RESULTS,
+                   help="CSV of results (date,home_team,away_team,home_score,"
+                        f"away_score); default uses bundled sample data")
+    p.add_argument("--out", type=Path, default=DEFAULT_RATINGS,
+                   help=f"where to save trained ratings (default {DEFAULT_RATINGS})")
+    p.add_argument("--k", type=float, default=20.0, help="Elo update step (default 20)")
+    p.add_argument("--home-adv", type=float, default=65.0,
+                   help="home-field advantage in Elo points (default 65)")
+    p.set_defaults(func=_run_train)
+
+
+def _run_train(args) -> int:
+    try:
+        games = load_results(args.results)
+    except FileNotFoundError:
+        print(f"Results file not found: {args.results}", file=sys.stderr)
+        return 1
+    model = EloModel(k=args.k, home_advantage=args.home_adv)
+    model.train(games)
+    model.save(args.out)
+
+    print(f"Trained on {len(games)} games, {len(model.ratings)} teams. "
+          f"Ratings saved to {args.out}\n")
+    header = ["Team", "Rating"]
+    rows = [[team, f"{rating:.0f}"]
+            for team, rating in sorted(model.ratings.items(),
+                                       key=lambda kv: kv[1], reverse=True)]
+    _print_table(header, rows)
+    return 0
 
 
 # -- formatting helpers ----------------------------------------------------

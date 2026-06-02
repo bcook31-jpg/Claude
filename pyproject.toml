@@ -21,7 +21,7 @@ edge = "edge.cli:main"
 packages = ["edge", "edge.providers"]
 
 [tool.setuptools.package-data]
-edge = ["data/*.json"]
+edge = ["data/*.json", "data/*.csv"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
