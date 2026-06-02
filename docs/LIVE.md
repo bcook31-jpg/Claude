@@ -77,9 +77,21 @@ Notes:
 
 ## 4. Verifying the integration
 
+One-command local check (lists sports, runs a live scan, trains on live
+results) with a PASS/FAIL summary:
+
+```bash
+export ODDS_API_KEY=your_key
+./scripts/smoke.sh                  # defaults to baseball_mlb
+./scripts/smoke.sh basketball_nba   # or any in-season sport key
+```
+
+Exit codes: `0` all passed, `1` a step failed (e.g. host not allowlisted),
+`2` no key set.
+
+Or run the key-gated pytest smoke test, which is skipped automatically when
+`ODDS_API_KEY` is unset so the default test run stays offline:
+
 ```bash
 ODDS_API_KEY=your_key pytest tests/test_live.py -v
 ```
-
-The live smoke test is skipped automatically when `ODDS_API_KEY` is unset, so
-the default test run stays offline and deterministic.
