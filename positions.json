@@ -1,0 +1,38 @@
+{
+  "positions": [
+    {
+      "asset_type": "option",
+      "ticker": "AAPL",
+      "option_type": "call",
+      "strike": 210,
+      "expiry": "2026-09-18",
+      "entry_price": 8.45,
+      "contracts": 2,
+      "entry_date": "2026-05-20",
+      "target_price": 18.00,
+      "stop_price": 4.00
+    },
+    {
+      "id": "MSFT-PUT-HEDGE",
+      "asset_type": "option",
+      "ticker": "MSFT",
+      "option_type": "put",
+      "strike": 400,
+      "expiry": "2026-07-17",
+      "entry_price": 12.30,
+      "contracts": 1,
+      "entry_date": "2026-06-01",
+      "target_price": 25.00,
+      "stop_price": 6.00
+    },
+    {
+      "asset_type": "shares",
+      "ticker": "NVDA",
+      "entry_price": 118.40,
+      "contracts": 50,
+      "entry_date": "2026-03-10",
+      "target_price": 160.00,
+      "stop_price": 95.00
+    }
+  ]
+}
