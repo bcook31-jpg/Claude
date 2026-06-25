@@ -1,0 +1,3 @@
+# Claude session-only scheduler state (not config)
+.claude/scheduled_tasks.json
+.claude/scheduled_tasks.lock
