@@ -71,7 +71,7 @@ nobody blocked and not a prospect → `FYI`.
 - `Waiting: Client` threads where MY reply is the last message and it's been >5 days → "Nudge candidates."
 - `Lead` threads I haven't replied to (search `label:Lead -in:sent` for inbound web/Hibu/Nextdoor leads) → "Uncontacted leads."
 
-## Step 6 — Output a digest
+## Step 6 — Build the digest
 
 Title: "Top Tax Pros — Daily Triage [today's date]". Keep it short and skimmable:
 - One summary line: X new threads triaged (Y action, Z leads, rest FYI).
@@ -81,4 +81,17 @@ Title: "Top Tax Pros — Daily Triage [today's date]". Keep it short and skimmab
 - 🟢 New / uncontacted leads — name + contact + suggested next step.
 - ⚠️ Verify — anything flagged in Step 4.
 
-Do not draft replies unless asked. End by asking whether I want any follow-ups drafted.
+## Step 7 — Deliver the digest
+
+Create a Gmail **draft** (via `create_draft`) so the digest is readable in the mailbox
+even on unattended scheduled runs:
+- `to`: `bcook31@toptaxpros.com`
+- `subject`: `Top Tax Pros — Daily Triage [today's date]`
+- `body`: the full digest from Step 6.
+
+This is a DRAFT, not a send — it stays in Drafts; nothing is sent outward (consistent
+with the Step 4 "never send email" rule). To read it, open the Drafts folder; to move it
+into your inbox, open the draft and send it to yourself.
+
+When run interactively (not scheduled), also print the digest in the reply and ask
+whether I want any follow-ups drafted. Do not draft replies otherwise.
