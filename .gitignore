@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Generated run artifacts
+*.db
+snapshots/
+
+# Claude session-only scheduler state (not config)
+.claude/scheduled_tasks.json
+.claude/scheduled_tasks.lock
