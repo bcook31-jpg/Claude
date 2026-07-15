@@ -10,8 +10,12 @@ intentionally out of scope).
 | `/daily-brief` | **Morning umbrella** — Gmail triage + conversation sweep in one brief | **Daily, 8:00 AM Pacific** |
 | `/ghl-conversation-sweep` | Customer messaged last, no reply yet — pre-drafts responses | (bundled into `/daily-brief`) |
 | `/ghl-pipeline-sweep` | Uncontacted leads + deals rotting in a stage | Daily, 8:15 AM Pacific |
+| `/ghl-missed-call-rapid-response` | Missed inbound calls + brand-new leads → callback list + draft texts | 2–3× daily, business hours (e.g. 11:00 AM & 4:00 PM Pacific) |
 | `/ghl-doc-chase` | Tax clients we're waiting on for docs + internal prep bottlenecks | Daily during season (Jan–Apr + extension weeks); 8:00 AM Pacific |
-| `/ghl-review-followup` | Completed/filed jobs that never got a review request | Weekly, Monday 9:00 AM Pacific |
+| `/ghl-database-reactivation` | Dormant/abandoned contacts → segmented off-season re-engagement drafts | Weekly, Monday 9:00 AM Pacific (heaviest value May–Dec) |
+| `/ghl-referral-review-flywheel` | Finished jobs → review AND referral asks | Weekly, Wednesday 9:00 AM Pacific |
+| `/ghl-ar-collections` | QuickBooks overdue invoices → draft payment reminders | Weekly, Thursday 9:00 AM Pacific |
+| `/ghl-review-followup` | Completed/filed jobs that never got a review request | Folded into `/ghl-referral-review-flywheel` |
 
 ## The same auth constraint as the Gmail triage
 
