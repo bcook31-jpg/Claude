@@ -34,6 +34,19 @@ each segment, gather the count + a sample; propose bulk-adding the target tag.
 Resolve tag names → IDs fresh each run via `get-location-tags` (some tags use an en-dash
 `–`, not a hyphen `-` — match the exact character).
 
+**Data reality (validated 2026-07-15):** the tag system is sparse and inconsistent — many
+`status - *` / `type - *` tags are empty or split across hyphen vs en-dash duplicates, so
+tag-only detection under-counts badly (`type - *` service tags, `no-show`, `return-filed`,
+`status - filed` all returned 0). **Prefer PIPELINE STAGE signals as the primary source of
+truth**: search opportunities by pipeline + stage + age (e.g. Tax-Prep "Docs Requested" idle,
+"Prep In Progress/Overflow" idle) rather than tags. Use tags only where confirmed populated:
+`signature-stalled` (~73), `status - docs requested` (~98, of which ~216 later reached
+`status - docs submitted` — so filter the overlap out), `business_tax_interest` (~25),
+`2025 reactivation` (~7,498, undifferentiated bulk import). **Compound "has X but not Y"
+filtering is NOT reliable** — the search API ignores `not_contains`; pull the base segment
+and filter the exclusion client-side (in a subagent for large sets). En-dash tag values can
+return a 400 — prefer resolving to tag IDs.
+
 ## Build the report
 
 Title: **"Top Tax Pros — Reactivation Engine [today's date]"**:

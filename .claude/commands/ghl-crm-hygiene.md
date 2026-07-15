@@ -49,6 +49,18 @@ nothing looks "fully clean" when it wasn't.
    `test-audit-delete-me`, `spam likely`, and internal addresses (e.g. `rb@toptaxpros.com`).
    → Propose exclusion/cleanup — list them, don't delete.
 
+7. **Duplicate / inconsistent tags.**
+   The same tag exists in hyphen `-` and en-dash `–` variants, splitting data across two tags
+   (e.g. `status - lead` vs `status – lead`). → Propose consolidating each pair to one variant
+   (bulk re-tag) so every tag-based segment counts correctly.
+
+**Data reality (validated 2026-07-15):** confirmed live totals — `validEmail=false` **≈1,505**
+(many with a permanent-bounce `dndSettings.Email`), `couldn't find caller name` **≈285**,
+native `dnd=true` **13** (vs only 1 carrying the tag), `spam likely` **9**. The invalid-email
+pool is the headline fix: propose tagging those contacts for **email suppression** to protect
+sender reputation. Note: compound "has X but not Y" filtering is unreliable (the search API
+ignores `not_contains`) — pull the base set and filter client-side.
+
 ## Build the report
 
 Title: **"Top Tax Pros — CRM Hygiene [today's date]"**:
