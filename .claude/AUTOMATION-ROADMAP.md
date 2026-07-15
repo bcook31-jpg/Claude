@@ -10,14 +10,16 @@ Daily Brief (Gmail triage + conversation sweep) · conversation sweep · pipelin
 doc chase · missed-call rapid response · database reactivation · referral/review flywheel ·
 AR collections.
 
-## 🔜 Next wave — approved, not yet built
+## 🔜 Next wave — approved
 
 Ordered by dependency + timing (off-season = data cleanup + advisory revenue).
 
-1. **CRM data hygiene sweep** — dedupe, fix "couldn't find caller name" records, flag bad
-   emails, surface untagged contacts. *Foundational; do before season.*
-2. **Populate the reactivation engine** — auto-detect docs/prep/signature abandonment and
-   apply the empty `cre - *` tags so the reactivation plays have fuel. *Pairs with #1.*
+1. ✅ **CRM data hygiene sweep** (`/ghl-crm-hygiene`) — suppression gaps, bad emails, unnamed
+   callers, duplicates (report-only; merges are manual — no GHL merge API), junk records.
+   *Built. Read + propose; writes need approval.*
+2. ✅ **Reactivation engine** (`/ghl-reactivation-engine`) — detect abandonment/dormancy from
+   pipeline+tag state, apply the empty `cre - *` tags so reactivation has fuel.
+   *Built. Read + propose; tagging needs approval.*
 3. **Year-end tax planning outreach** — work `cre - year end planning target` into proactive
    Q4 planning-call invites (high-margin advisory). *Timely: now→Q4.*
 4. **Owner's weekly scorecard** — one weekly report: leads in, appts, deals won, revenue +

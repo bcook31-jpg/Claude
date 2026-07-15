@@ -15,6 +15,8 @@ intentionally out of scope).
 | `/ghl-database-reactivation` | Dormant/abandoned contacts → segmented off-season re-engagement drafts | Weekly, Monday 9:00 AM Pacific (heaviest value May–Dec) |
 | `/ghl-referral-review-flywheel` | Finished jobs → review AND referral asks | Weekly, Wednesday 9:00 AM Pacific |
 | `/ghl-ar-collections` | QuickBooks overdue invoices → draft payment reminders | Weekly, Thursday 9:00 AM Pacific |
+| `/ghl-crm-hygiene` | Suppression gaps, bad emails, unnamed callers, duplicates, junk records → proposed fixes | Weekly, off-season; monthly in season |
+| `/ghl-reactivation-engine` | Detect abandonment/dormancy → apply empty `cre - *` tags | Monthly (run before reactivation campaigns) |
 | `/ghl-review-followup` | Completed/filed jobs that never got a review request | Folded into `/ghl-referral-review-flywheel` |
 
 ## The same auth constraint as the Gmail triage
