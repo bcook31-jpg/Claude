@@ -14,7 +14,9 @@ approves sends. Best run weekly. (Location `0f6QDSApEC1Ul6yIZ0gL`.)
 ## Step 0 — Suppression (always)
 
 Exclude contacts tagged `dnd`, `opted-out-sms`, `stop`, `unsubcribed - delete`,
-`spam likely`, `no-response-final`.
+`spam likely`, `no-response-final`. **Also** exclude any contact whose native `dnd` field is
+`true` or whose `dndSettings` shows a `STOP`/permanent status on the send channel — tags
+alone miss real opt-outs. Check tags AND `dnd`/`dndSettings` before drafting.
 
 ## Step 1 — Find freshly completed jobs
 

@@ -16,7 +16,11 @@ Best run weekly (heaviest value May–Dec). (Location `0f6QDSApEC1Ul6yIZ0gL`.)
 ## Step 0 — Suppression (always)
 
 Exclude every contact tagged `dnd`, `opted-out-sms`, `stop`, `unsubcribed - delete`,
-`spam likely`, or `no-response-final` from all segments. Non-negotiable (TCPA/CAN-SPAM).
+`spam likely`, or `no-response-final` from all segments. **Also** exclude any contact whose
+native `dnd` field is `true`, or whose `dndSettings` shows a `STOP`/permanent status on the
+channel you'd send through (SMS/Email) — tags alone miss real opt-outs (verified in live
+data: contacts with an SMS STOP on file but no opt-out tag). Check tags AND the
+`dnd`/`dndSettings` fields before drafting. Non-negotiable (TCPA/CAN-SPAM).
 
 ## Step 1 — Build segments (highest ROI first)
 

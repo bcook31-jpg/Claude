@@ -15,8 +15,10 @@ hours (Pacific).
 ## Step 0 — Suppression (always)
 
 Never draft outreach to a contact carrying any of: `dnd`, `opted-out-sms`, `stop`,
-`unsubcribed - delete`, `spam likely`, `no-response-final`. Exclude them from all lists
-below. (Location `0f6QDSApEC1Ul6yIZ0gL`.)
+`unsubcribed - delete`, `spam likely`, `no-response-final`. **Also** exclude any contact
+whose native `dnd` field is `true` or whose `dndSettings` shows a `STOP`/permanent status on
+the send channel — tags alone miss real opt-outs. Check tags AND `dnd`/`dndSettings` before
+drafting. Exclude them from all lists below. (Location `0f6QDSApEC1Ul6yIZ0gL`.)
 
 ## Step 1 — Pull the callback set
 
