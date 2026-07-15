@@ -23,8 +23,11 @@ Ordered by dependency + timing (off-season = data cleanup + advisory revenue).
 3. ✅ **Year-end tax planning outreach** (`/ghl-year-end-planning`) — Q4 advisory-call invites
    to business-interest + Bookkeeping-pipeline + entity clients (targets populated signals,
    since `type - *` tags are empty). *Built. Read + draft; sends need approval.*
-4. **Owner's weekly scorecard** — one weekly report: leads in, appts, deals won, revenue +
-   AR (QuickBooks), reviews. *Always-on; finally puts QuickBooks to work.*
+4. ✅ **Owner's weekly scorecard** (`/ghl-owner-scorecard`) — one Monday report: leads in,
+   appts, deals won, revenue + AR (QuickBooks), reviews, pipeline health.
+   *Built. Read-only; delivers a Gmail draft.*
+
+**Next-wave complete.** Remaining work lives in the backlog below.
 
 ## 🗂️ Backlog — identified, not yet prioritized
 

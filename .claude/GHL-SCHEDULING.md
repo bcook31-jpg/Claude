@@ -18,6 +18,7 @@ intentionally out of scope).
 | `/ghl-crm-hygiene` | Suppression gaps, bad emails, unnamed callers, duplicates, junk records → proposed fixes | Weekly, off-season; monthly in season |
 | `/ghl-reactivation-engine` | Detect abandonment/dormancy → apply empty `cre - *` tags | Monthly (run before reactivation campaigns) |
 | `/ghl-year-end-planning` | Q4 advisory-call invites to business/bookkeeping/entity clients | Weekly, Oct–Dec |
+| `/ghl-owner-scorecard` | Weekly GHL + QuickBooks owner's report (leads, deals, revenue, AR) | Weekly, Monday 7:00 AM Pacific |
 | `/ghl-review-followup` | Completed/filed jobs that never got a review request | Folded into `/ghl-referral-review-flywheel` |
 
 ## The same auth constraint as the Gmail triage
