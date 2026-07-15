@@ -22,10 +22,13 @@ drafting. Exclude them from all lists below. (Location `0f6QDSApEC1Ul6yIZ0gL`.)
 
 ## Step 1 — Pull the callback set
 
-Gather, de-duplicated by contact:
-- **Contacts tagged** `status - need callback`, `couldn't find caller name`,
-  `int - ai unresolved`, `needs-human-follow-up`, or `name via lookup` (use
-  `search-contacts-advanced`; call `describe_operation` for the tag-filter body).
+Gather, de-duplicated by contact. **The call-feed scan below is the primary signal** —
+validated 2026-07-15, the `status - need callback` tag is unused (0 contacts), so don't
+rely on it; lean on the missed-call feed plus the populated `couldn't find caller name` /
+`name via lookup` tags.
+- **Contacts tagged** `couldn't find caller name`, `name via lookup`, `int - ai unresolved`,
+  `needs-human-follow-up` (and `status - need callback` if it ever gets populated) — use
+  `search-contacts-advanced`; call `describe_operation` for the tag-filter body.
 - **Missed inbound calls:** `search-conversation` with `lastMessageDirection=inbound`,
   `lastMessageType=TYPE_CALL`, `status=unread`. Keep only true missed calls (no real
   reply logged after the call). Cross-reference to the contact so recent callers already
