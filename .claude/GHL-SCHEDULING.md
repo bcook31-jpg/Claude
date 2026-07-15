@@ -7,6 +7,7 @@ intentionally out of scope).
 
 | Command | What it catches | Suggested schedule |
 |---|---|---|
+| `/ghl-conversation-sweep` | Customer messaged last, no reply yet — pre-drafts responses | **Daily, 8:00 AM Pacific** |
 | `/ghl-pipeline-sweep` | Uncontacted leads + deals rotting in a stage | Daily, 8:00 AM Pacific |
 | `/ghl-doc-chase` | Tax clients we're waiting on for docs + internal prep bottlenecks | Daily during season (Jan–Apr + extension weeks); 8:00 AM Pacific |
 | `/ghl-review-followup` | Completed/filed jobs that never got a review request | Weekly, Monday 9:00 AM Pacific |
