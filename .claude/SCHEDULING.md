@@ -6,6 +6,11 @@ place: **`.claude/commands/daily-triage.md`** (run it any time by typing `/daily
 This doc explains how to make it run **unattended every morning** and — importantly —
 which mechanisms actually reach Gmail and which don't.
 
+> **Note:** the triage is now bundled into the combined **`/daily-brief`** command (Gmail
+> triage + GoHighLevel conversation sweep in one report). For the 8:00 AM run, schedule a
+> single trigger for `/daily-brief` — see `.claude/GHL-SCHEDULING.md`. Run `/daily-triage`
+> standalone any time you want just the email pass.
+
 ## The constraint that drives the design
 
 The Gmail connection is an **interactively-authenticated MCP server** tied to the
