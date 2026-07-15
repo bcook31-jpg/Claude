@@ -20,8 +20,9 @@ Ordered by dependency + timing (off-season = data cleanup + advisory revenue).
 2. ✅ **Reactivation engine** (`/ghl-reactivation-engine`) — detect abandonment/dormancy from
    pipeline+tag state, apply the empty `cre - *` tags so reactivation has fuel.
    *Built. Read + propose; tagging needs approval.*
-3. **Year-end tax planning outreach** — work `cre - year end planning target` into proactive
-   Q4 planning-call invites (high-margin advisory). *Timely: now→Q4.*
+3. ✅ **Year-end tax planning outreach** (`/ghl-year-end-planning`) — Q4 advisory-call invites
+   to business-interest + Bookkeeping-pipeline + entity clients (targets populated signals,
+   since `type - *` tags are empty). *Built. Read + draft; sends need approval.*
 4. **Owner's weekly scorecard** — one weekly report: leads in, appts, deals won, revenue +
    AR (QuickBooks), reviews. *Always-on; finally puts QuickBooks to work.*
 
