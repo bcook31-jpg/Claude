@@ -39,6 +39,18 @@ environment — exactly like Gmail (see `.claude/SCHEDULING.md`).
 The digest appears **inside that session** — it is not emailed or pushed. Open the
 session to read it, or ask in a later turn to summarize the latest run.
 
+## Held campaigns
+
+Campaigns intentionally prepared but paused until a future date. Do not send before the date.
+
+| Campaign | Segment | Hold until | How to run |
+|---|---|---|---|
+| **Signature-stalled reactivation** | `signature-stalled` (~73 contacts; returns prepared but never signed) | **2027-01-15** | Re-run `/ghl-database-reactivation` fresh on/after this date — do NOT reuse an old list; re-pull so signed/filed/opted-out contacts drop off. Message: "your return is prepared and just needs your signature." |
+
+Rationale: tax season is over as of the July 2026 hold; the natural moment to re-approach
+"never signed" clients is the opening of the new filing season. The list was profiled and
+cleaned in July 2026 for validation only — it must be regenerated at send time.
+
 ## Manual backstop
 
 Any time, in any session for this repo, type the command (e.g. `/ghl-pipeline-sweep`).
