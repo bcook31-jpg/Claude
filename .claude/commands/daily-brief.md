@@ -54,11 +54,25 @@ the two areas clearly separated so each is skimmable:
 
 ## Part D — Deliver
 
-Create ONE Gmail **draft** (via `create_draft`) with the whole combined brief:
-- `to`: `bcook31@toptaxpros.com`
-- `subject`: `Top Tax Pros — Daily Brief [today's date]`
-- `body`: the full brief from Part C.
+1. **In-mailbox copy (always).** Create ONE Gmail **draft** (`create_draft`) with the whole
+   combined brief — `to`: `bcook31@toptaxpros.com`, `subject`:
+   `Top Tax Pros — Daily Brief [today's date]`, `body`: the full brief from Part C. Note the
+   Gmail connector is **draft-only — it cannot send** — so this is the readable copy that sits
+   in Drafts; it does not itself notify.
 
-This is a DRAFT, not a send. When run interactively, also print the brief and ask which
-conversation drafts to send. To send an approved GHL reply, use `send-a-new-message`
-(requires approval). **On an unattended scheduled run: brief + drafts only — send nothing.**
+2. **iPhone notification (scheduled/unattended runs).** Fire a push so Brian's phone buzzes:
+   call the push-notification tool with a one-line summary, under 200 chars, leading with the
+   count that matters — e.g. `Daily Brief ready — 2 conversations need a reply, 1 new lead.
+   Full brief in Gmail Drafts.` (Pushes to the phone when the Claude app / remote control is
+   connected; it's automatically skipped when Brian is already at the session.)
+
+3. **Optional full-text email to the inbox.** If a real email (not just a draft) is wanted,
+   send the brief to Brian via **GoHighLevel email** (GHL can send; Gmail cannot) — a
+   **self-send to `bcook31@toptaxpros.com` only**, never to anyone else. Resolve/create the
+   self-contact, then `send-a-new-message` with `type: Email`. Caveat: GHL sends are
+   approval-gated, so this may not complete on a fully unattended run — the push (step 2) is
+   the reliable phone alert.
+
+When run interactively, print the brief and **skip the push** (Brian's already here); ask
+which conversation drafts to send. To send an approved client reply, use `send-a-new-message`
+(requires approval). **Never send a client message on an unattended run — self-notification only.**
