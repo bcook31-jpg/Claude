@@ -22,6 +22,10 @@ channel you'd send through (SMS/Email) — tags alone miss real opt-outs (verifi
 data: contacts with an SMS STOP on file but no opt-out tag). Check tags AND the
 `dnd`/`dndSettings` fields before drafting. Non-negotiable (TCPA/CAN-SPAM).
 
+For the **email channel specifically**, also skip contacts tagged `email-invalid` (bounced /
+invalid addresses, ~1,505 flagged) — route them to SMS or drop them; emailing bad addresses
+harms sender reputation.
+
 ## Step 1 — Build segments (highest ROI first)
 
 Use `search-contacts-advanced` with tag filters (call `describe_operation` for the body).

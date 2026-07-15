@@ -16,7 +16,9 @@ approves sends. Best run weekly. (Location `0f6QDSApEC1Ul6yIZ0gL`.)
 Exclude contacts tagged `dnd`, `opted-out-sms`, `stop`, `unsubcribed - delete`,
 `spam likely`, `no-response-final`. **Also** exclude any contact whose native `dnd` field is
 `true` or whose `dndSettings` shows a `STOP`/permanent status on the send channel — tags
-alone miss real opt-outs. Check tags AND `dnd`/`dndSettings` before drafting.
+alone miss real opt-outs. Check tags AND `dnd`/`dndSettings` before drafting. For the
+**email channel specifically**, also skip contacts tagged `email-invalid` (bounced/invalid
+addresses) — route to SMS or drop; emailing bad addresses harms sender reputation.
 
 ## Step 1 — Find freshly completed jobs
 
