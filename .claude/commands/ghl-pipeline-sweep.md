@@ -40,9 +40,10 @@ exceeds the threshold for its stage:
 
 **Stalled deals:**
 - **Proposal Sent** > 5 days → "Proposal cold — follow up."
-- **Discovery Call Scheduled / Meeting Scheduled / New Appointment Booked** past its date with no advance → "Appt not reconciled."
+- **Discovery Call Scheduled / Meeting Scheduled / New Appointment Booked** past its date with no advance → "Appt not reconciled." (Validated 2026-07-15: this is the biggest real leak — consults from 1–2 weeks ago still sitting in Meeting Scheduled, never moved to Showed / Completed / No-Show. Parse the appointment date from the opportunity name where present.)
 - **Docs Requested** (Lead pipeline) > 7 days → "Docs never sent."
 - Any other open stage with **no movement > 14 days** → "Aging — review."
+- **Duplicate opportunities:** the same contact with 2+ near-identical open deals (same appointment date/name) — flag under "Duplicates to merge." (Validated 2026-07-15: the booking integration double-creates appointment deals; e.g. one contact had the same consult 3×.)
 
 Skip terminal stages (Cancelled, No Show, Closed, Converted, Monthly Completed,
 Completed / Paid, Filed) — those aren't stalls.
