@@ -111,8 +111,12 @@ Publication 583 sets out what a small business is expected to keep.
 [https://www.irs.gov/pub/irs-pdf/p583.pdf]
 
 **Can you talk to the IRS for me?**
-No. We prepare books and returns. Representation before the IRS is not something we offer, and
-we will tell you plainly when that is what you need.
+No. Representation before the IRS is not something we offer, and we will tell you plainly when
+that is what you need.
+
+What we can do: if a notice arrives about a return we prepared, send it to us. We will read it,
+check it against what was filed, and tell you whether it is right. If it is, we will prepare the
+amendment or help you put the response together.
 
 **Do you work weekends during tax season?**
 [NEEDS FROM YOU. Only answer if true.]
