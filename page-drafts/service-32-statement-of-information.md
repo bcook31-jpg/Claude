@@ -3,7 +3,7 @@
 **Map row:** 32 · Service page · Standalone
 **Primary:** california statement of information · 4,400/mo · difficulty 21
 **Secondaries:** file statement of information california (880/24) · llc statement of information california (140/23) · statement of information due date (140/20)
-**Status:** Draft — needs two fee figures verified before publishing
+**Status:** Draft — our fee confirmed at $100. State fee, penalty and frequency still need verifying.
 
 **Why this page matters more than its ticket size.** $50 to $100 is the smallest service on the
 map. It is also 4,400 searches a month at difficulty 21, and every single searcher owns a
@@ -46,13 +46,12 @@ We file it for you. Send us your entity details and we handle it.
 
 **$100, plus the state filing fee.**
 
-⚠️ **[VERIFY BEFORE PUBLISHING — two numbers.** Your invoices show $50 and $100 for this work.
-Pick one and publish it, because a range on a service this small reads as indecision.
+*Fee confirmed 2026-09-07: $100. An older invoice shows $50; $100 is current.*
 
-And confirm the current state fee and late penalty on the Secretary of State's own site before
-printing either. Filing fees and the penalty amount change, and this page will be read by people
-about to rely on it. Never quote a fee from a blog, including mine.
-https://bizfileonline.sos.ca.gov/]
+⚠️ **[STILL TO VERIFY — the state's own numbers.** Confirm the current filing fee, the late
+penalty, and the filing frequency on the Secretary of State's site before printing any of them.
+These change, and this page is read by people about to act on it. Never quote a state fee from a
+blog, including this draft. https://bizfileonline.sos.ca.gov/]
 
 **Primary action:** File mine → form
 **Secondary action:** Call (562) 600-7072
@@ -169,7 +168,7 @@ this page's whole value is routing entity owners toward the annual return.
 
 ## ⛔ Before this goes to Hibu
 
-1. **$50 or $100 — pick one.** Your invoices show both.
+1. ✅ **Our fee confirmed: $100.**
 2. **Verify the state filing fee, the late penalty, and the filing frequency** against
    bizfileonline.sos.ca.gov. Three numbers, all of which a reader will rely on.
 3. Confirm you file for corporations as well as LLCs.
