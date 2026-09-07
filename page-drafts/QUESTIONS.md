@@ -52,6 +52,11 @@ $250/hour with a one hour minimum, which is right for work that is genuinely var
 
 - ✅ **Confirmed 2026-09-07: $250 a month is a figure real clients actually pay.** Stated plainly
   on page 4, no hedging needed.
-- **Is work outside the monthly scope billed hourly at $250?** If so, say it on the page. A
-  monthly price with unstated hourly overages is the most common complaint about bookkeeping
-  services and it is easy to avoid.
+- ✅ **Confirmed 2026-09-07: $250 covers everything in scope, no overages.** Now the headline line
+  on page 4.
+
+**17. What is "in scope"?** This is the one new question the answer above creates. "No overages"
+is a strong promise and it needs a boundary, or it reads as unlimited bookkeeping for $250 a
+month. Give me the limits — how many accounts, roughly what transaction volume, what is excluded —
+and the page states them as part of the offer. With a stated boundary the promise is safer than a
+competitor's hourly overages and still reads as the better deal.

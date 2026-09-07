@@ -90,11 +90,20 @@ carry inventory, and whether payroll reports need bringing in.
 We look at your accounts and quote your monthly figure before you commit, so the first invoice is
 never a surprise.
 
-⚠️ **[ONE THING LEFT: is work outside the monthly scope billed hourly at $250?** If yes, say it
-here in one sentence. A monthly price with unstated hourly overages is the most common complaint
-about bookkeeping services, and disclosing it costs nothing while hiding it costs a review. If
-there are no overages and $250 covers everything in scope, say that instead — it is a stronger
-line than most competitors can write.]
+**$250 a month covers everything in scope. No hourly overages, no surprise invoices.**
+
+*Confirmed 2026-09-07. This is the strongest single line on the page and it should be visible,
+not collapsed. The most common complaint about bookkeeping services is a monthly price that grows
+by the hour, and you can answer it in one sentence.*
+
+⚠️ **[ONE THING THIS NOW REQUIRES: a clear scope list.** "No overages" is only safe if the page
+says what is included. Without a boundary, you have promised unlimited bookkeeping for $250 a
+month and the first client with 900 transactions a month will find it.
+
+Write the scope as a short list — number of accounts, transaction volume, what is and is not
+included — and the promise becomes defensible instead of open-ended. Something like *"covers up to
+X accounts and Y transactions a month; above that we requote, and we tell you before we do."*
+That is still a far better offer than a competitor billing hourly overages, and it protects you.]
 
 ---
 
@@ -111,6 +120,11 @@ page can say it without hedging — which most competitors publishing a "from" p
 That is a real change in this page's prospects. It was the weakest of the top four; it is now
 arguably the strongest, because it targets 6,600 searches a month at a price the market
 recognises.
+
+**And "no overages" is a sharper differentiator than the price itself.** The $150-a-month
+providers almost all bill extra by the hour or by transaction volume, which is why their advertised
+price and their invoices disagree. A flat figure that holds is the thing this buyer actually
+wants, and very few pages in this market can say it.
 
 Price still should not carry the page alone. What it argues alongside, all of it true:
 
