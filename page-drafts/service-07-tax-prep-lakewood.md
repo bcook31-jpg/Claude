@@ -5,6 +5,12 @@
 **Secondaries:** tax preparer lakewood · tax preparation lakewood ca · income tax preparation lakewood ca · tax filing service lakewood ca
 **Status:** Draft — needs proof before it goes to Hibu
 
+⚠️ **[READ `HOMEPAGE-FIX.md` BEFORE BUILDING THIS PAGE.** If the homepage title is changed to
+target tax preparation in Lakewood, this page competes with it and the homepage wins — it carries
+35 of your 36 ranking keywords. Either narrow this page to the office itself (hours, appointments,
+directions, what to bring, the people) or drop it and let the homepage be the tax preparation
+page. Do not publish both against the same term.]
+
 **Why this page exists despite tiny volume.** It is the home-city page for the service that
 brings the most people in, it is where the Google Business Profile points, and six city pages
 below it need a hub to link up to. It is also the page that fixes an existing problem: your
