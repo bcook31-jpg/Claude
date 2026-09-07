@@ -48,9 +48,15 @@ That is what monthly bookkeeping buys. Your accounts get reconciled every month,
 transactions get categorized properly, and you get financial statements you can actually read.
 When the return comes due, the numbers are already there.
 
-**[NEEDS FROM YOU: monthly starting price.** This is a subscription service and the buyer is
-comparing prices. Competitors in this market publish from about $150 a month upward. A page with
-no price loses to one with a price, even a higher one.]
+**Bookkeeping is billed at $250 an hour, one hour minimum, and we quote your expected monthly
+hours before you start.**
+
+⚠️ **[ONE QUESTION LEFT: how many hours does a typical monthly client actually run?** This is the
+most important unanswered thing on this page. The buyer searching "bookkeeping services near me"
+is comparing monthly figures, and an hourly rate with no typical monthly total does not let them
+compare. If a typical client is 2 hours, say "most clients run about $500 a month". If it is 5,
+say that. A real typical figure converts far better than an hourly rate alone, and it costs you
+nothing to state.]
 
 **Primary action:** Get a quote → form
 
@@ -80,9 +86,37 @@ Lakewood, Long Beach, Cerritos, Bellflower, Downey, Paramount and Norwalk.
 
 ### What it costs (accordion)
 
-**[NEEDS FROM YOU: real pricing or real bands.]** What genuinely moves the price: number of
-accounts, monthly transaction volume, whether you carry inventory, and whether payroll reports
-need to be brought in.
+**$250 an hour, one hour minimum.** What drives your monthly hours: number of accounts, monthly
+transaction volume, whether you carry inventory, and whether payroll reports need bringing in.
+
+We quote your expected monthly hours after looking at the accounts, so you know the number before
+you commit.
+
+---
+
+**⛔ Positioning note — read before writing this page.**
+
+This is the page where the premium rate is hardest, and it needs saying plainly rather than
+discovering it in the numbers later.
+
+Competitors ranking for these keywords advertise flat monthly bookkeeping from $150 to $299. At
+$250 an hour, a client running three hours a month is at $750. **You are not competing in the same
+price bracket, so do not write a page that invites the comparison.**
+
+What this page should argue instead, all of it true:
+
+1. **One firm does the books and the return.** For a business owner this is the whole pitch. The
+   cheap monthly providers hand you a file in March and wish you luck.
+2. **26 years in Lakewood, 4.5 stars across roughly 80 reviews.** The $150 providers are
+   offshore-staffed subscription services. You are a person on Paramount Boulevard.
+3. **You can walk in.** Weeknights until 8pm and Saturdays.
+4. **Nothing gets estimated in April**, because the books were closed monthly by the people
+   filing the return.
+
+**And be realistic about this page's conversion rate.** It targets 6,600 searches a month at a
+price point well above what most of that traffic is shopping for. It will convert a smaller
+fraction than the cleanup pages, which is another reason cleanup leads the build order. The
+buyers who do convert here are worth more and stay longer.
 
 We do not run payroll. Where you have a payroll provider, we work from their reports.
 

@@ -39,21 +39,17 @@ answer is "it depends", in which case say what it depends on.
 
 ---
 
-## The pricing hold
+## ✅ Pricing resolved — one follow-up
 
-You gave **$250/hour** for both monthly bookkeeping and cleanup.
+**$250 an hour, one hour minimum. Confirmed 2026-09-07.** Pages 1, 2, 3 and 4 are repositioned
+around it: the rate is stated honestly in a costs section, never in the hero, and each page now
+argues outcome, speed and continuity instead of price.
 
-That is roughly two to five times the typical market rate for bookkeeping work, and the
-competitors ranking for these keywords advertise flat monthly packages from about $150 to $299.
-Three possibilities, and they lead to different pages:
+**16. How many hours does a typical monthly bookkeeping client actually run?**
 
-- **It is a typo for $250/month.** Then page 4 is straightforward and competitive.
-- **It is genuinely $250/hour.** Then you are a premium firm and the pages need to sell the
-  outcome, the 14-day turnaround and the fact that the same people do the books and the return.
-  The rate goes behind the free assessment rather than in the hero. That is a real strategy and it
-  works, but it is not the page I drafted.
-- **It is an hourly rate with a monthly minimum.** Then say the minimum, because a monthly figure
-  is what this buyer compares.
+This is now the most valuable unanswered question on the whole batch. Page 4 targets 6,600
+searches a month from people comparing monthly figures. An hourly rate alone does not let them
+compare, so most will assume the worst and leave. "Most clients run about $500 a month" converts;
+"$250 an hour" does not.
 
-**Which is it?** Everything on pages 1, 2 and 4 hangs on the answer, and those are your three
-highest-priority pages.
+It costs you nothing to state and it is the difference between that page working and not.

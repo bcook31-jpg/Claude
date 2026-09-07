@@ -82,6 +82,13 @@ The books get caught up, the return gets prepared from real numbers, and you sto
 it. Note also that IRS notice response and penalty abatement are on your DON'T list, so this page
 must not offer to deal with the IRS on the client's behalf.]
 
+### What it costs (accordion)
+
+$250 an hour, one hour minimum, quoted as a fixed estimate of hours before work starts.
+
+We will not quote you cheap to win the job and then bill past it in the week you can least afford
+a surprise.
+
 ### What we need to start today (accordion)
 
 Bank and credit card statements for the period. That is genuinely enough to begin. Everything

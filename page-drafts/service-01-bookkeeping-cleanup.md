@@ -42,15 +42,11 @@ That is fixable, and it is more common than you think. We rebuild neglected book
 you have — bank statements, a shoebox of receipts, a QuickBooks file nobody has opened in
 eighteen months — and hand you back financials you can file from and actually use.
 
-**Free books assessment. Cleanup from $250/hour. Most clients have clean books back within
-14 business days.**
+**Free assessment. A fixed quote before any work starts. Most clients have clean books back
+within 14 business days.**
 
-⚠️ **[HOLD — confirm the rate before publishing.** You gave $250/hour for cleanup. That is roughly
-two to five times the going rate for bookkeeping cleanup, and the competitors ranking for this
-term advertise flat packages from about $299. If $250/hour is correct, this page needs to sell an
-outcome rather than a rate, and I would lead with the 14-day turnaround and put the rate behind
-the assessment. If you meant something else — a flat fee, a minimum, or $250/month — tell me and
-I will rewrite the offer line.]
+*Rate confirmed 2026-09-07: $250 an hour, one hour minimum. Deliberately not in the hero — see
+the pricing note below.*
 
 **Primary action:** Get a free books assessment → form
 **Secondary action:** Call (562) 600-7072
@@ -87,6 +83,36 @@ Every engagement is different, but the work is usually some combination of these
 - **Untangling the balance sheet.** Undeposited funds, uncleared checks and mystery balances
   that have been carried forward for years.
 - **Producing the year-end financials** your tax return is prepared from.
+
+### What it costs (accordion)
+
+Cleanup is billed at **$250 an hour, with a one hour minimum**. Nobody can quote this work
+without looking at the books first, which is why the assessment is free and why you get a fixed
+estimate of hours before anything starts.
+
+What drives the hours: how many accounts, how many transactions, how many years back, whether the
+bank feeds still connect, and how much of what is already entered has to be corrected rather than
+added.
+
+You will know the number before you commit to it.
+
+---
+
+**⛔ Positioning note — read before writing this page.**
+
+$250 an hour is a premium rate. Competitors ranking for these keywords advertise flat cleanup
+packages from around $299 and monthly bookkeeping from $150. **This page cannot win on price and
+must not try.** Three things it wins on instead, all of them true:
+
+1. **14 business days.** A national competitor ranking on this term advertises 30 days for a year
+   of books. You are roughly half.
+2. **The same firm files the return.** A cleanup from a bookkeeper who does not prepare returns
+   gets handed to a preparer who did not build the file. Yours does not.
+3. **26 years and 4.5 stars across roughly 80 reviews.** At this rate the buyer is paying for
+   judgment, and that is the evidence of it.
+
+Keep the rate honest and visible — burying it entirely reads as evasive on a page whose whole
+argument is that you are the trustworthy option. Just do not lead with it.
 
 ### How long it takes (accordion)
 

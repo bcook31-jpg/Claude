@@ -45,10 +45,11 @@ We go into the file and fix it — reconcile every account, clear the duplicates
 transactions where they belong, and rebuild the chart of accounts if it has grown past
 usefulness. You get a file you can run reports from.
 
-**The file review is free. Cleanup work is quoted from the review, and most files are finished
-within 14 business days.**
+**The file review is free. You get a fixed estimate before any work starts, and most files are
+finished within 14 business days.**
 
-⚠️ [Same rate hold as page 1 — see that page before publishing a number here.]
+*Cleanup is billed at $250 an hour, one hour minimum. State it in the "how the review works"
+section, not the hero — same reasoning as page 1.*
 
 **Primary action:** Get a free file review → form
 
@@ -91,6 +92,9 @@ worth saying out loud if you offer it.]
 3. You get a written summary: what is wrong, how far back it goes, what it takes to fix, and
    what it costs.
 4. You decide. No obligation.
+
+Work is billed at **$250 an hour, one hour minimum**, and the review tells you how many hours
+before you commit. You are never quoted a range and billed the top of it.
 
 ### If the file is beyond repair (accordion)
 
