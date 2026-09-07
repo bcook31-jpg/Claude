@@ -1,60 +1,71 @@
 # Page 1 — Bookkeeping cleanup and catch-up
 
 **Map row:** 1 · Service page · Standalone
-**Primary:** bookkeeping cleanup services · 480/mo · difficulty 10
-**Secondaries:** bookkeeping clean up (390/13) · catch up bookkeeping (320/5) · clean up bookkeeping services (260/11) · catch up bookkeeping services (210/12) · bookkeeping catch up (90/3)
+**Primary:** accounting clean up · 1,000/mo · difficulty 16
+**Secondaries:** bookkeeping cleanup services (480/10) · bookkeeping clean up (390/13) · catch up bookkeeping (320/5) · clean up bookkeeping services (260/11) · catch up bookkeeping services (210/12)
 
-**Resolved 2026-09-07: `accounting clean up` (1,000/mo, difficulty 16) stays in body copy, and
-never in the title, H1, URL, meta description or schema.**
+**Decided 2026-09-07: target `accounting clean up` fully — title, H1, URL, meta and body.**
 
-The distinction that makes this work: in the title it is a *self-description* — this firm provides
-accounting. In body copy describing a client's situation it is a *noun for the records being
-fixed* — your accounting records are a mess. The first is what B&P 5058 and the Board's regulation
-reach. The second is ordinary English about the work.
+This is the highest-volume commercial term on the map at 1,000 searches a month, difficulty 16.
 
-*Moore v. California State Bd. of Accountancy* (1992) held the ban is constitutional only where
-the use could mislead about licence status, and that use alongside a modifier or express
-disclaimer dispelling confusion cannot be enjoined. This page already carries the credential
-statement, which is exactly that modifier.
+**The disclaimer below is now load-bearing.** *Moore v. California State Bd. of Accountancy*
+(1992) 2 Cal.4th 999 holds that the ban on unlicensed use of "accounting" is constitutional only
+where the use could mislead about licence status, and that use alongside a modifier or express
+disclaimer dispelling that confusion cannot be enjoined. With the term in the title and H1, the
+disclaimer is what puts this page inside that holding. **It is not optional, it does not go in the
+footer, and it does not get trimmed in a later edit.**
 
-**Expect to recover some of the volume, not all of it.** A term in body copy and one H2 ranks less
-well than one in the title. At difficulty 10 for the primary and 16 for this, the page can
-plausibly hold both. **This is my reading and not legal advice** — the zero-risk option remains
-leaving it out entirely, and that costs you around 1,000 searches a month.
+**Get a California attorney to read this page before it goes to Hibu.** It is one page and one
+short read. Your live `/business-accounting` page has the same term in its title and URL already,
+so the same review covers both.
 **Status:** Draft — needs proof before it goes to Hibu
 
 ---
 
 ## Metadata
 
-**Slug:** `/services/bookkeeping-cleanup`
+**Slug:** `/services/accounting-clean-up`
 
 **Title options**
-1. Bookkeeping Cleanup & Catch-Up Services | Top Tax Pros — 58 chars
-2. Bookkeeping Cleanup & Catch-Up for Small Business | Top Tax Pros — 65 chars, too long
-3. Behind on Your Books? Bookkeeping Cleanup | Top Tax Pros — 55 chars
+1. Accounting Clean Up & Catch-Up Bookkeeping | Top Tax Pros — 56 chars
+2. Accounting Clean Up Services | Top Tax Pros, Lakewood CA — 55 chars
+3. Accounting Clean Up | Books Fixed in 14 Business Days — 52 chars
 
-**Pick: option 1.** It carries the primary phrase and the two highest-value secondaries in
-natural order, and it reads as a service rather than a question. Option 3 converts well but
-buries the keyword behind a hook.
+**Pick: option 1.** Exact primary first, the strongest secondary family second, brand last. It
+carries both keyword clusters in one line without reading as a keyword list.
+
+Option 3 is the strongest for click-through because the turnaround is the differentiator, but it
+drops the brand and the secondary cluster. Worth testing later, not first.
 
 **Meta description**
-1. Months or years behind on your books? We rebuild them, reconcile every account and hand you clean, tax-ready financials. Serving Lakewood and Long Beach. (152)
-2. Bookkeeping cleanup and catch-up for small businesses. We fix messy books, catch up missed transactions and get you ready to file. Free review. (141)
+1. Accounting clean up and catch-up bookkeeping for small businesses. We rebuild neglected records and hand back tax-ready books in 14 business days or less. (155)
+2. Months or years behind? Accounting clean up from a Lakewood firm. Free assessment, fixed quote, and clean books back in 14 business days or less. (146)
 
-**Pick: option 1.** Names the problem in the reader's own words, states the outcome, and the
-location earns the local relevance the second one lacks.
+**Pick: option 1.** Leads with the exact primary phrase and closes on the turnaround, which is the
+thing no competitor on this term can match.
 
 ---
 
 ## H1
 
-**Behind on your books? We'll catch them up.**
+**Accounting clean up and catch-up bookkeeping**
+
+## ⛔ Disclaimer — directly under the H1, in normal body text, above the fold
+
+> **We are CTEC-registered tax preparers and bookkeepers, not certified public accountants. The
+> accounting clean up and bookkeeping services described on this page do not require a California
+> CPA licence. We are not a CPA firm and do not provide audited, reviewed or compiled financial
+> statements.**
+
+*This wording is modelled on what Moore describes as curative. It is the reason this page can use
+the term in its title. Never move it to the footer, never reduce the type size, never shorten it.*
 
 ## Hero (visible, never collapsed)
 
-You stopped reconciling in March. Or last year. Or you are not sure when, because the last
-person who touched the books left and nothing has balanced since.
+You stopped reconciling in March. Or last year. Or you are not sure when, because the last person
+who touched the books left and nothing has balanced since.
+
+That is what an accounting clean up fixes.
 
 That is fixable, and it is more common than you think. We rebuild neglected books from whatever
 you have — bank statements, a shoebox of receipts, a QuickBooks file nobody has opened in
@@ -91,9 +102,6 @@ Downey and the surrounding area, and remotely with clients anywhere in the US.
 ## Collapsed sections
 
 ### What an accounting clean up involves (accordion)
-
-*This H2 is where the body-copy use of the term lives. One H2 and a few natural mentions below —
-do not seed it further, and do not let it migrate into the title on a later edit.*
 
 
 Every engagement is different, but the work is usually some combination of these.
@@ -258,7 +266,7 @@ and will not rank.
 {
   "@context": "https://schema.org",
   "@type": "Service",
-  "serviceType": "Bookkeeping cleanup and catch-up",
+  "serviceType": "Accounting clean up and catch-up bookkeeping",
   "provider": {
     "@type": "ProfessionalService",
     "name": "Top Tax Pros",
@@ -291,13 +299,12 @@ accounting titles. See page 5 for the full reasoning.
 
 ## ⛔ Before this goes to Hibu
 
-1. The offer line in the hero
-2. The one proof number
+1. **A California attorney's read of this page.** The term is in the title, the disclaimer is what
+   makes that defensible, and the same review covers your live /business-accounting page.
+2. The offer line in the hero
 3. Real turnaround time
-4. Phone number
-5. Whether you prepare prior-year and late returns
-6. At least two real reviews, word for word
-7. The before-and-after reconciliation image
+4. At least two real reviews, word for word
+5. The before-and-after reconciliation image
 
 Items 1 to 3 are not optional. This is the highest-value page on the map and it will not convert
 as a description of a service with no price, no proof and no timeline.

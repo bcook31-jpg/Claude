@@ -326,9 +326,10 @@ building the page in the editor or handing the draft to Hibu support, and it is 
 **Demand:** swings roughly 5x across the year, and the family includes "books clean-up for tax season" — this is work people buy on their way into filing season.
 
 **Primary keyword**
-- bookkeeping cleanup services · 480 searches a month · Easy to rank for (10 out of 100)
+- accounting clean up · 1,000 searches a month · Easy to rank for (16 out of 100)
 
 **Secondary keywords**
+- bookkeeping cleanup services · 480 a month · Easy (10)
 - bookkeeping clean up · 390 a month · Easy (13)
 - catch up bookkeeping · 320 a month · Easy (5)
 - clean up bookkeeping services · 260 a month · Easy (11)
@@ -336,7 +337,7 @@ building the page in the editor or handing the draft to Hibu support, and it is 
 
 **Also ranks for:** cleanup bookkeeping, catchup bookkeeping, bookkeeping clean-up, catch-up bookkeeping — same query, one page answers all of them.
 
-**Body copy only:** "accounting clean up" (1,000/mo, difficulty 16). Higher volume than the primary, but restricted wording — it appears in one H2 and natural body mentions, never in the title, H1, URL, meta description or schema. Decided 2026-09-07.
+⚠️ **Restricted wording, targeted deliberately.** "accounting clean up" is the primary despite California's limits on unlicensed use of the term. The page carries a Moore-style disclaimer directly under the H1, which is what brings the use inside the holding. Needs an attorney's read before it publishes. Decided 2026-09-07.
 
 **Why first:** the strongest page on the map and the fastest to rank, at difficulty 5 to 16.
 Advertisers pay between $15 and $47 a click here, which is the market pricing one of these
