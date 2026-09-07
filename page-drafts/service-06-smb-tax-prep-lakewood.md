@@ -1,0 +1,141 @@
+# Page 6 — Small business tax preparation, Lakewood
+
+**Map row:** 6 · Service page · **Hub** · spokes: 9 · 10
+**Primary:** small business tax preparer near me · 1,000/mo · difficulty 24
+**Secondaries:** business tax preparer near me (720/26) · cpa for llc taxes (320/16) · filing business taxes for llc for the first time (1,600/26) · small business tax preparation lakewood ca
+**Status:** Draft — needs proof before it goes to Hibu
+
+**Seasonality:** 33x swing, the sharpest on the map. This page has a hard deadline. Live and
+indexed well before January or it misses the year.
+
+---
+
+## Metadata
+
+**Slug:** `/services/small-business-tax-preparation`
+
+**Title options**
+1. Small Business Tax Preparation | Lakewood, CA | Top Tax Pros — 59 chars
+2. Business Tax Preparation for LLCs & S Corps | Lakewood, CA — 57 chars
+
+**Pick: option 1.** Exact primary, city, brand.
+
+**Meta description**
+Business tax returns for LLCs, S corps, partnerships and sole proprietors in Lakewood and Long
+Beach. Filed from books we keep, so nothing is guessed at. (151)
+
+---
+
+## H1
+
+**Small business tax preparation in Lakewood**
+
+## Hero (visible)
+
+A business return is only as good as the books behind it. We prepare federal and California
+returns for LLCs, S corporations, partnerships and sole proprietors — and where we keep the
+books, the return is built from real reconciled numbers instead of a spreadsheet assembled in
+April.
+
+**[NEEDS FROM YOU: starting price by return type.** Buyers on this term are comparing. A range
+per entity type is enough. For context, the National Society of Accountants' last published fee
+survey (2020-2021 edition, the last one they produced) put an itemized 1040 with a Schedule C
+and a state return at roughly $457 — dated, but it is the figure the market anchors on.]
+
+**Primary action:** Get a quote → form
+
+## One proof line (visible)
+
+**[NEEDS FROM YOU: business returns filed, or years doing business returns specifically.]**
+
+## Service area line (visible)
+
+Lakewood, Long Beach, Cerritos, Bellflower, Downey and the surrounding area.
+
+---
+
+## Collapsed sections
+
+### Returns we prepare (accordion)
+
+**[NEEDS FROM YOU: confirm every line before publishing. Remove anything you do not file.]**
+
+- Sole proprietors and single-member LLCs — Schedule C with the personal return
+- Multi-member LLCs and partnerships — Form 1065 with K-1s
+- S corporations — Form 1120-S with K-1s
+- C corporations — Form 1120
+- California returns and the annual LLC and franchise tax filings
+
+### First business return? (accordion)
+
+The first one is where most owners find out their bookkeeping was not built for it. Common
+surprises: the entity type changes which form you file and when it is due; the $800 California
+franchise tax applies whether or not the business made money; and the filing deadline for a
+partnership or S corporation comes earlier in the year than the personal one.
+
+We will tell you what applies to your entity before the deadline rather than after.
+[Link to page 24, Filing business taxes for an LLC for the first time.]
+
+### What we need from you (accordion)
+
+- Last year's return, if there is one
+- Year-end financials, or access to the books
+- Entity documents, the EIN letter and the S corp election if there is one
+- Payroll reports for the year, from your provider
+- Asset purchases and loan documents
+- Owner draws, distributions and anything that moved between you and the business
+
+### Bookkeeping and the return together (accordion)
+
+Most of our business clients use both. [Link page 4.] It removes the April scramble entirely,
+because there is nothing to assemble — the books are already closed.
+
+If your books are behind, that comes first. [Link page 1.]
+
+---
+
+## FAQ
+
+**When is my business return due?**
+Depends on the entity, and the business deadlines come earlier than the personal one. We will
+confirm your dates in writing when you engage. [Do not print specific 2027 dates on the page —
+they change and a stale date on a live page costs a client money.]
+
+**Do you file the extension if we need one?**
+[NEEDS FROM YOU]
+
+**Can you file a prior-year business return?**
+[NEEDS FROM YOU]
+
+**Do you handle multi-state?**
+[NEEDS FROM YOU]
+
+**Do I need a CPA for an S corp return?**
+No. An S corporation return can be prepared by any qualified preparer with a PTIN. [Then state
+what your team holds — see page 5's credential note.]
+
+**Do you do the personal return too?**
+Yes, and for most owners they are prepared together. [Link page 7.]
+
+---
+
+## Bridge CTA (visible)
+
+**Send last year's return and we'll quote this year's.**
+Fastest way to a real number rather than a range.
+
+---
+
+## Internal links
+
+**Out:** pages 1, 4, 7, 9, 10, 23, 24.
+**In, required:** homepage, pages 4, 5, 7.
+
+---
+
+## ⛔ Before this goes to Hibu
+
+1. Which return types you actually file
+2. Starting prices by entity type
+3. Extensions, prior-year, multi-state — yes or no on each
+4. What the team holds (see page 5)

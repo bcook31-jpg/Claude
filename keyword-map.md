@@ -12,7 +12,283 @@ which, so no block claims a specific month.
 
 ---
 
-# To build · 31
+# To build · 12
+
+## 20. Service page: Bookkeeping services, Long Beach
+
+**Spoke** · hub: 4 (Bookkeeping services, Lakewood)
+
+**Google check:** passed — bookkeeping firms and CPA practices, commercial.
+
+**Demand:** flat all year.
+
+**Primary keyword**
+- bookkeeping services long beach ca · 30 searches a month · not scored
+
+**Secondary keywords**
+- bookkeeper long beach ca · too few searches to report · not scored
+- small business bookkeeping long beach ca · too few searches to report · not scored
+- quickbooks bookkeeper long beach ca · too few searches to report · not scored
+- monthly bookkeeping long beach ca · too few searches to report · not scored
+
+**Why here:** first page after the seasonal deadline passes. Biggest business base near you
+crossed with your highest-value service, and no rush on it because the demand is flat. Needs
+genuinely Long Beach content, not page 4 with the city swapped.
+
+---
+
+
+## 21. Service page: Bookkeeping services, Cerritos
+
+**Spoke** · hub: 4 (Bookkeeping services, Lakewood)
+
+**Google check:** passed — bookkeeping firms with real Cerritos city pages already ranking, commercial.
+
+**Demand:** flat all year.
+
+**Primary keyword**
+- bookkeeping services cerritos ca · too few searches to report · not scored
+
+**Secondary keywords**
+- bookkeeper cerritos ca · too few searches to report · not scored
+- small business bookkeeping cerritos ca · too few searches to report · not scored
+- quickbooks bookkeeping cerritos ca · too few searches to report · not scored
+- catch up bookkeeping cerritos ca · too few searches to report · not scored
+
+**Why here:** competitors already run Cerritos bookkeeping pages that rank, which is the
+clearest evidence on this map that the pattern works in this city.
+
+---
+
+
+## 22. Service page: Bookkeeping services, Downey
+
+**Spoke** · hub: 4 (Bookkeeping services, Lakewood)
+
+**Demand:** flat all year.
+
+**Primary keyword**
+- bookkeeping services downey ca · too few searches to report · not scored
+
+**Secondary keywords**
+- bookkeeper downey ca · too few searches to report · not scored
+- small business bookkeeping downey ca · too few searches to report · not scored
+- quickbooks bookkeeping downey ca · too few searches to report · not scored
+- monthly bookkeeping downey ca · too few searches to report · not scored
+
+**Why here:** the recurring service in the third-largest market you serve.
+
+---
+
+
+## 23. Service page: Business entity formation, Lakewood
+
+**Standalone**
+
+**Google check:** mixed — law firms hold most of the top ten, one accounting firm ranks, commercial.
+
+**Demand:** swings about 6x but erratically, with no clean seasonal shape.
+
+**Primary keyword**
+- business formation services · 2,400 searches a month · Medium (23 out of 100)
+
+**Secondary keywords**
+- company formation services · 390 a month · Medium (25)
+- llc formation lakewood ca · too few searches to report · not scored
+- s corp formation lakewood ca · too few searches to report · not scored
+- incorporation services lakewood ca · too few searches to report · not scored
+
+**Why here:** the front door to both other services, since someone who forms an entity needs
+books kept and a business return filed. Deliberately scoped to the service terms and your own
+city — the national "LLC formation" family is 8,100 searches of people hunting a free or
+cheapest filing service, which is a different buyer from someone hiring you.
+
+---
+
+
+## 24. Blog post: Filing business taxes for an LLC for the first time
+
+**Standalone**
+
+**Demand:** swings about 4x across the year.
+
+**Primary keyword**
+- filing business taxes for llc for the first time · 1,600 searches a month · Medium (26 out of 100)
+
+**Secondary keywords**
+- cpa for llc taxes · 320 a month · Easy (16)
+- llc tax filing cost · too few searches to report · not scored
+- s corp tax return cost · too few searches to report · not scored
+- partnership tax return cost · too few searches to report · not scored
+
+**Why here:** 1,600 searches from people doing this for the first time and finding it harder
+than expected. Routes straight into page 6.
+
+---
+
+
+## 25. Blog post: How much does a bookkeeper cost
+
+**Hub** · spokes: 26 · 27
+
+**Demand:** flat all year, about 1.8x.
+
+**Primary keyword**
+- how much does a bookkeeper cost · 480 searches a month · Medium (22 out of 100)
+
+**Secondary keywords**
+- bookkeeper hourly rate · 390 a month · Medium (26)
+- bookkeeping services pricing · 390 a month · Medium (27)
+- monthly bookkeeping cost small business · too few searches to report · not scored
+- in house vs outsourced bookkeeping cost · too few searches to report · not scored
+
+**Why here:** the price question for your recurring service. Flat demand means it earns the
+same whenever you write it, which is exactly why it sits below the deadline pages. Links into
+pages 1, 2, 4, 20, 21 and 22.
+
+---
+
+
+## 26. Blog post: Bookkeeper or CPA — which one do you need
+
+**Spoke** · hub: 25 (How much does a bookkeeper cost)
+
+**Demand:** flat all year, about 1.5x — the steadiest term on the map.
+
+**Primary keyword**
+- bookkeeper vs cpa · 210 searches a month · Easy to rank for (5 out of 100)
+
+**Secondary keywords**
+- do i need a bookkeeper or an accountant · 30 a month · Easy (9)
+- when to hire a bookkeeper · 110 a month · Easy (5)
+- do i need a cpa to file my taxes · too few searches to report · not scored
+- what does a bookkeeper do · above your ceiling at 44 — covered here, never targeted
+
+**Why here:** most small business owners genuinely do not know which they need, and for many
+the answer is both, from one firm. Difficulty 5 and it never goes quiet.
+
+---
+
+
+## 27. Blog post: When to hire a bookkeeper
+
+**Spoke** · hub: 25 (How much does a bookkeeper cost)
+
+**Demand:** flat all year, about 2.4x.
+
+**Primary keyword**
+- when to hire a bookkeeper · 110 searches a month · Easy to rank for (5 out of 100)
+
+**Secondary keywords**
+- do i need a bookkeeper or an accountant · 30 a month · Easy (9)
+- bookkeeping maintenance · 70 a month · Easy (19)
+- up to date bookkeeping · 70 a month · Easy (10)
+- small business bookkeeper near me · 1,300 a month · Easy (11)
+
+**Why here:** narrow family — four is everything with this intent. Small, but it is the decision
+that precedes buying page 4.
+
+---
+
+
+## 28. Blog post: Enrolled agent or CPA — what is the difference
+
+**Standalone**
+
+**Demand:** flat all year, about 1.8x.
+
+**Primary keyword**
+- enrolled agent vs cpa · 1,300 searches a month · Medium (21 out of 100)
+
+**Secondary keywords**
+- what is an enrolled agent · above your ceiling at 37 — covered here, never targeted
+- cpa vs tax preparer · above your ceiling at 37 — covered here, never targeted
+- tax preparer credentials explained · too few searches to report · not scored
+- do i need a cpa to file my taxes · too few searches to report · not scored
+
+**Why here:** 1,300 searches at difficulty 21 that hold steady in every month of the year, and
+it is the page that explains why an enrolled agent can do everything these searchers need.
+Narrow family — the bigger phrasings around it are above your ceiling and belong in the copy,
+not the title.
+
+---
+
+
+## 29. Blog post: LLC or S corp in California
+
+**Hub** · spokes: 30 · 31
+
+**Google check:** passed — comparison guides from law firms and CPA blogs, informational.
+
+**Demand:** flat all year, about 2.3x.
+
+**Primary keyword**
+- llc vs s corp california · 210 searches a month · Easy to rank for (18 out of 100)
+
+**Secondary keywords**
+- llc taxed as s corp california · 30 a month · Medium (26)
+- when to switch from llc to s corp · 30 a month · Easy (3)
+- s corp reasonable salary rules · 40 a month · Medium (24)
+- california s corp 1.5 percent tax · too few searches to report · not scored
+
+**Why here:** the decision that creates entity-formation work, and the searcher is a business
+owner rather than a student. Semrush labels this commercial; the live results are guides, so
+it is a blog post that links down to page 23.
+
+---
+
+
+## 30. Blog post: What a California LLC actually costs each year
+
+**Spoke** · hub: 29 (LLC or S corp in California)
+
+**Demand:** swings about 4x across the year.
+
+**Primary keyword**
+- california llc annual fee · 390 searches a month · Medium (27 out of 100)
+
+**Secondary keywords**
+- california llc filing fee · 320 a month · Medium (21)
+- california registered agent requirements · 110 a month · Medium (25)
+- california llc gross receipts fee · 90 a month · Easy (18)
+- when is the 800 franchise tax due · too few searches to report · not scored
+
+**Why here:** the $800 franchise tax blindsides new owners every year. Specific, answerable,
+and almost nobody writes it for a local audience. Note that "how to start an llc in california"
+is 3,600 searches at difficulty 36 — above your ceiling, so it belongs in the copy, never in
+the title.
+
+---
+
+
+## 31. Blog post: Would an S corp election actually save you money
+
+**Spoke** · hub: 29 (LLC or S corp in California)
+
+**Demand:** flat all year, about 1.5x.
+
+**Primary keyword**
+- s corp tax savings calculator · 170 searches a month · Easy to rank for (11 out of 100)
+
+**Secondary keywords**
+- when to elect s corp status · too few searches to report · not scored
+- s corp reasonable salary rules · 40 a month · Medium (24)
+- is an s corp worth it for a small business · too few searches to report · not scored
+- s corp election deadline form 2553 · too few searches to report · not scored
+
+**Why here:** the highest-intent informational page you can write. Someone running these
+numbers is deciding on a change that needs a professional to execute, which is page 23.
+
+---
+
+---
+
+# Written · 19
+
+Drafted into `page-drafts/`. Every one is gated on proof the business still has to supply —
+see `page-drafts/NEEDS-FROM-YOU.md`. Nothing here is published. On Hibu, publishing means
+building the page in the editor or handing the draft to Hibu support, and it is tracked in
+`website-index.md`, never here.
 
 ## 1. Service page: Bookkeeping cleanup and catch-up
 
@@ -41,6 +317,7 @@ in January already needing a return.
 
 ---
 
+
 ## 2. Service page: QuickBooks cleanup
 
 **Standalone**
@@ -60,6 +337,7 @@ in January already needing a return.
 through the software they already use. Sharply seasonal, so it needs the runway.
 
 ---
+
 
 ## 3. Service page: Behind on your books
 
@@ -81,6 +359,7 @@ in trouble who needs help this week. Narrow family — five is everything with t
 intent. Sibling of pages 1 and 2; it catches the panicked phrasing those pages do not.
 
 ---
+
 
 ## 4. Service page: Bookkeeping services, Lakewood
 
@@ -107,6 +386,7 @@ order despite having no deadline, because it is what pays you between May and De
 
 ---
 
+
 ## 5. Service page: Small business accounting
 
 **Standalone**
@@ -132,6 +412,7 @@ CPA is on staff.
 
 ---
 
+
 ## 6. Service page: Small business tax preparation, Lakewood
 
 **Hub** · spokes: 9 · 10
@@ -155,6 +436,7 @@ second chance at this — a page published in February has already missed most o
 would have earned.
 
 ---
+
 
 ## 7. Service page: Tax preparation, Lakewood
 
@@ -180,6 +462,7 @@ without "ca" report more demand than the versions with it, so lead with those.
 
 ---
 
+
 ## 8. Service page: Tax preparation, Long Beach
 
 **Spoke** · hub: 7 (Tax preparation, Lakewood)
@@ -202,6 +485,7 @@ comfortably inside your ceiling. Build this one first of the city pages.
 
 ---
 
+
 ## 9. Service page: Small business tax preparation, Long Beach
 
 **Spoke** · hub: 6 (Small business tax preparation, Lakewood)
@@ -219,6 +503,7 @@ comfortably inside your ceiling. Build this one first of the city pages.
 hold this ground, so expect it to take longer than the individual pages.
 
 ---
+
 
 ## 10. Service page: Small business tax preparation, Cerritos
 
@@ -238,6 +523,7 @@ half of what you sell.
 
 ---
 
+
 ## 11. Service page: Tax preparation, Downey
 
 **Spoke** · hub: 7 (Tax preparation, Lakewood)
@@ -255,6 +541,7 @@ half of what you sell.
 volume at all.
 
 ---
+
 
 ## 12. Service page: Tax preparation, Cerritos
 
@@ -274,6 +561,7 @@ business side, through pages 10 and 21.
 
 ---
 
+
 ## 13. Service page: Tax preparation, Bellflower
 
 **Spoke** · hub: 7 (Tax preparation, Lakewood)
@@ -291,6 +579,7 @@ business side, through pages 10 and 21.
 searchers and the page can say something true about getting here.
 
 ---
+
 
 ## 14. Service page: Tax preparation, Norwalk
 
@@ -310,6 +599,7 @@ content is established on the earlier city pages.
 
 ---
 
+
 ## 15. Service page: Tax preparation, Paramount
 
 **Spoke** · hub: 7 (Tax preparation, Lakewood)
@@ -327,6 +617,7 @@ content is established on the earlier city pages.
 everything above it is done. If the calendar runs out before January, this is the one to drop.
 
 ---
+
 
 ## 16. Blog post: Small business tax preparation checklist
 
@@ -348,6 +639,7 @@ your team the back-and-forth during the exact weeks you have no time. The indivi
 version of this term sits at difficulty 50, so the business version is the one worth writing.
 
 ---
+
 
 ## 17. Blog post: What tax preparation actually costs
 
@@ -374,6 +666,7 @@ the results.
 
 ---
 
+
 ## 18. Blog post: How much does a CPA cost
 
 **Spoke** · hub: 17 (What tax preparation actually costs)
@@ -396,6 +689,7 @@ what you charge instead of a CPA firm's rate.
 
 ---
 
+
 ## 19. Blog post: How much do tax preparers charge
 
 **Spoke** · hub: 17 (What tax preparation actually costs)
@@ -415,260 +709,6 @@ what you charge instead of a CPA firm's rate.
 cluster sits under difficulty 20. Last of the deadline pages.
 
 ---
-
-## 20. Service page: Bookkeeping services, Long Beach
-
-**Spoke** · hub: 4 (Bookkeeping services, Lakewood)
-
-**Google check:** passed — bookkeeping firms and CPA practices, commercial.
-
-**Demand:** flat all year.
-
-**Primary keyword**
-- bookkeeping services long beach ca · 30 searches a month · not scored
-
-**Secondary keywords**
-- bookkeeper long beach ca · too few searches to report · not scored
-- small business bookkeeping long beach ca · too few searches to report · not scored
-- quickbooks bookkeeper long beach ca · too few searches to report · not scored
-- monthly bookkeeping long beach ca · too few searches to report · not scored
-
-**Why here:** first page after the seasonal deadline passes. Biggest business base near you
-crossed with your highest-value service, and no rush on it because the demand is flat. Needs
-genuinely Long Beach content, not page 4 with the city swapped.
-
----
-
-## 21. Service page: Bookkeeping services, Cerritos
-
-**Spoke** · hub: 4 (Bookkeeping services, Lakewood)
-
-**Google check:** passed — bookkeeping firms with real Cerritos city pages already ranking, commercial.
-
-**Demand:** flat all year.
-
-**Primary keyword**
-- bookkeeping services cerritos ca · too few searches to report · not scored
-
-**Secondary keywords**
-- bookkeeper cerritos ca · too few searches to report · not scored
-- small business bookkeeping cerritos ca · too few searches to report · not scored
-- quickbooks bookkeeping cerritos ca · too few searches to report · not scored
-- catch up bookkeeping cerritos ca · too few searches to report · not scored
-
-**Why here:** competitors already run Cerritos bookkeeping pages that rank, which is the
-clearest evidence on this map that the pattern works in this city.
-
----
-
-## 22. Service page: Bookkeeping services, Downey
-
-**Spoke** · hub: 4 (Bookkeeping services, Lakewood)
-
-**Demand:** flat all year.
-
-**Primary keyword**
-- bookkeeping services downey ca · too few searches to report · not scored
-
-**Secondary keywords**
-- bookkeeper downey ca · too few searches to report · not scored
-- small business bookkeeping downey ca · too few searches to report · not scored
-- quickbooks bookkeeping downey ca · too few searches to report · not scored
-- monthly bookkeeping downey ca · too few searches to report · not scored
-
-**Why here:** the recurring service in the third-largest market you serve.
-
----
-
-## 23. Service page: Business entity formation, Lakewood
-
-**Standalone**
-
-**Google check:** mixed — law firms hold most of the top ten, one accounting firm ranks, commercial.
-
-**Demand:** swings about 6x but erratically, with no clean seasonal shape.
-
-**Primary keyword**
-- business formation services · 2,400 searches a month · Medium (23 out of 100)
-
-**Secondary keywords**
-- company formation services · 390 a month · Medium (25)
-- llc formation lakewood ca · too few searches to report · not scored
-- s corp formation lakewood ca · too few searches to report · not scored
-- incorporation services lakewood ca · too few searches to report · not scored
-
-**Why here:** the front door to both other services, since someone who forms an entity needs
-books kept and a business return filed. Deliberately scoped to the service terms and your own
-city — the national "LLC formation" family is 8,100 searches of people hunting a free or
-cheapest filing service, which is a different buyer from someone hiring you.
-
----
-
-## 24. Blog post: Filing business taxes for an LLC for the first time
-
-**Standalone**
-
-**Demand:** swings about 4x across the year.
-
-**Primary keyword**
-- filing business taxes for llc for the first time · 1,600 searches a month · Medium (26 out of 100)
-
-**Secondary keywords**
-- cpa for llc taxes · 320 a month · Easy (16)
-- llc tax filing cost · too few searches to report · not scored
-- s corp tax return cost · too few searches to report · not scored
-- partnership tax return cost · too few searches to report · not scored
-
-**Why here:** 1,600 searches from people doing this for the first time and finding it harder
-than expected. Routes straight into page 6.
-
----
-
-## 25. Blog post: How much does a bookkeeper cost
-
-**Hub** · spokes: 26 · 27
-
-**Demand:** flat all year, about 1.8x.
-
-**Primary keyword**
-- how much does a bookkeeper cost · 480 searches a month · Medium (22 out of 100)
-
-**Secondary keywords**
-- bookkeeper hourly rate · 390 a month · Medium (26)
-- bookkeeping services pricing · 390 a month · Medium (27)
-- monthly bookkeeping cost small business · too few searches to report · not scored
-- in house vs outsourced bookkeeping cost · too few searches to report · not scored
-
-**Why here:** the price question for your recurring service. Flat demand means it earns the
-same whenever you write it, which is exactly why it sits below the deadline pages. Links into
-pages 1, 2, 4, 20, 21 and 22.
-
----
-
-## 26. Blog post: Bookkeeper or CPA — which one do you need
-
-**Spoke** · hub: 25 (How much does a bookkeeper cost)
-
-**Demand:** flat all year, about 1.5x — the steadiest term on the map.
-
-**Primary keyword**
-- bookkeeper vs cpa · 210 searches a month · Easy to rank for (5 out of 100)
-
-**Secondary keywords**
-- do i need a bookkeeper or an accountant · 30 a month · Easy (9)
-- when to hire a bookkeeper · 110 a month · Easy (5)
-- do i need a cpa to file my taxes · too few searches to report · not scored
-- what does a bookkeeper do · above your ceiling at 44 — covered here, never targeted
-
-**Why here:** most small business owners genuinely do not know which they need, and for many
-the answer is both, from one firm. Difficulty 5 and it never goes quiet.
-
----
-
-## 27. Blog post: When to hire a bookkeeper
-
-**Spoke** · hub: 25 (How much does a bookkeeper cost)
-
-**Demand:** flat all year, about 2.4x.
-
-**Primary keyword**
-- when to hire a bookkeeper · 110 searches a month · Easy to rank for (5 out of 100)
-
-**Secondary keywords**
-- do i need a bookkeeper or an accountant · 30 a month · Easy (9)
-- bookkeeping maintenance · 70 a month · Easy (19)
-- up to date bookkeeping · 70 a month · Easy (10)
-- small business bookkeeper near me · 1,300 a month · Easy (11)
-
-**Why here:** narrow family — four is everything with this intent. Small, but it is the decision
-that precedes buying page 4.
-
----
-
-## 28. Blog post: Enrolled agent or CPA — what is the difference
-
-**Standalone**
-
-**Demand:** flat all year, about 1.8x.
-
-**Primary keyword**
-- enrolled agent vs cpa · 1,300 searches a month · Medium (21 out of 100)
-
-**Secondary keywords**
-- what is an enrolled agent · above your ceiling at 37 — covered here, never targeted
-- cpa vs tax preparer · above your ceiling at 37 — covered here, never targeted
-- tax preparer credentials explained · too few searches to report · not scored
-- do i need a cpa to file my taxes · too few searches to report · not scored
-
-**Why here:** 1,300 searches at difficulty 21 that hold steady in every month of the year, and
-it is the page that explains why an enrolled agent can do everything these searchers need.
-Narrow family — the bigger phrasings around it are above your ceiling and belong in the copy,
-not the title.
-
----
-
-## 29. Blog post: LLC or S corp in California
-
-**Hub** · spokes: 30 · 31
-
-**Google check:** passed — comparison guides from law firms and CPA blogs, informational.
-
-**Demand:** flat all year, about 2.3x.
-
-**Primary keyword**
-- llc vs s corp california · 210 searches a month · Easy to rank for (18 out of 100)
-
-**Secondary keywords**
-- llc taxed as s corp california · 30 a month · Medium (26)
-- when to switch from llc to s corp · 30 a month · Easy (3)
-- s corp reasonable salary rules · 40 a month · Medium (24)
-- california s corp 1.5 percent tax · too few searches to report · not scored
-
-**Why here:** the decision that creates entity-formation work, and the searcher is a business
-owner rather than a student. Semrush labels this commercial; the live results are guides, so
-it is a blog post that links down to page 23.
-
----
-
-## 30. Blog post: What a California LLC actually costs each year
-
-**Spoke** · hub: 29 (LLC or S corp in California)
-
-**Demand:** swings about 4x across the year.
-
-**Primary keyword**
-- california llc annual fee · 390 searches a month · Medium (27 out of 100)
-
-**Secondary keywords**
-- california llc filing fee · 320 a month · Medium (21)
-- california registered agent requirements · 110 a month · Medium (25)
-- california llc gross receipts fee · 90 a month · Easy (18)
-- when is the 800 franchise tax due · too few searches to report · not scored
-
-**Why here:** the $800 franchise tax blindsides new owners every year. Specific, answerable,
-and almost nobody writes it for a local audience. Note that "how to start an llc in california"
-is 3,600 searches at difficulty 36 — above your ceiling, so it belongs in the copy, never in
-the title.
-
----
-
-## 31. Blog post: Would an S corp election actually save you money
-
-**Spoke** · hub: 29 (LLC or S corp in California)
-
-**Demand:** flat all year, about 1.5x.
-
-**Primary keyword**
-- s corp tax savings calculator · 170 searches a month · Easy to rank for (11 out of 100)
-
-**Secondary keywords**
-- when to elect s corp status · too few searches to report · not scored
-- s corp reasonable salary rules · 40 a month · Medium (24)
-- is an s corp worth it for a small business · too few searches to report · not scored
-- s corp election deadline form 2553 · too few searches to report · not scored
-
-**Why here:** the highest-intent informational page you can write. Someone running these
-numbers is deciding on a change that needs a professional to execute, which is page 23.
 
 ---
 
