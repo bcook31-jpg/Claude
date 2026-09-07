@@ -65,7 +65,7 @@ The 14-day turnaround and doing the books and the return together are the two ar
 ## One proof line (visible)
 
 **Over 20 years serving Lakewood. CTEC A045646, registered since 2003. IRS Annual Filing Season
-Program participant, listed in the IRS public preparer directory. 4.5 stars across roughly 80
+Program participant, listed in the IRS public preparer directory. 4.5 stars on Yelp across roughly 80
 reviews.**
 
 ⚠️ **[One live inaccuracy to fix off-site.** A directory listing claims "over 30 years". Founded

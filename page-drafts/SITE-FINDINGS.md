@@ -43,6 +43,29 @@ your official site — worth a look on its own terms, since you did not put it t
 
 ---
 
+### 3. A directory listing claims you handle audits and garnishments
+
+Your Yellow Pages listing describes the business as helping with **tax audits, garnishments and
+late filings**, under categories including **"Taxes-Consultants & Representatives"**.
+
+Late filings are fine — you do those. Audits and garnishments are not. Both are IRS examination
+and collections matters, and collections is explicitly outside what an Annual Filing Season
+Program Record of Completion permits. The word "Representatives" in the category compounds it.
+
+This is the same class of problem as the homepage title: a claim of authority you do not hold,
+sitting in public, on a business whose new pages are about to be scrupulous on exactly this point.
+Correct the description and, if the category can be changed, move off "Representatives".
+
+Worth checking every directory for the same language while you are correcting the phone numbers.
+Listings like these are often auto-generated from an industry template and nobody at the business
+ever read them.
+
+### Also noted
+
+Yellow Pages shows a **3-star rating**, against 4.5 on Yelp. Small sample on a low-traffic
+directory, so not worth chasing, but do not use "4.5 stars" as an unqualified sitewide claim —
+say "4.5 stars on Yelp" and it is accurate everywhere.
+
 ## Useful things I can now put in the drafts
 
 | Item | What the listings say | Status |
