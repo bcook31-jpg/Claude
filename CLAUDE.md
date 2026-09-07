@@ -75,4 +75,8 @@ Used by `/keyword-research` (and any later SEO command) so these are never asked
 - **Market:** Lakewood, CA and neighboring cities (Long Beach, Cerritos, Bellflower, Downey and nearby). Customers search from the US.
 - **Semrush database:** `us`.
 - **Business type:** local brand. Service × city is the map's axis; national volume is never their addressable demand.
-- **Domain:** toptaxpros.com — pull its Authority Score to set the difficulty ceiling.
+- **Domain:** toptaxpros.com. Authority Score 9 (2026-09-07), so the difficulty ceiling is a flat 30.
+- **Platform:** Hibu. No repo, no file-based publishing, no deploy step. Pages are drafted to `page-drafts/` and built inside Hibu's editor or handed to Hibu support.
+- **HIBU_PAGE_BUDGET:** unknown — Hibu's terms cap managed builds at 4 new pages per service year on most packages, with 5 or 10 more as a paid add-on, but Smart Sites customers can add pages themselves. Confirm with Hibu before drafting past the budget.
+- **Busy season:** January through May. Everything with seasonal demand must be live and aged before the January ramp, so the writing window is roughly September through December.
+- **Never claim:** "CPA" unless a CPA is on staff, and no IRS representation, payroll or ITIN work.
