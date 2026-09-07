@@ -8,23 +8,35 @@ This list is ordered by how many pages each item unblocks.
 
 ---
 
-## 1. The credential answer — blocks 5 pages, decides the wording of 12
+## 1. ✅ RESOLVED — the credential answer
 
-**Is anyone on staff a CPA? An enrolled agent? CTEC registered? For how long?**
+**Confirmed 2026-09-07: CTEC-registered tax preparers. No CPA on staff.**
 
-This is the single most important answer on the list. It decides:
+All affected pages are rewritten. What changed:
 
-- Whether page 5 ("small business accountant", 5,400 searches, the highest-volume page on the
-  map) can be written as "we are accountants" or must be written as "we provide accounting
-  services". California restricts who may hold out as a CPA, so this is a regulatory question,
-  not a marketing one.
-- Whether page 18 ("how much does a CPA cost", difficulty 4, the cheapest ranking available)
-  converts or just informs.
-- The trust section on pages 6, 7 and 19.
+- **Page 5** was "Small business accounting" and is now "Small business bookkeeping and tax
+  services". California restricts unlicensed use of "accountant" and "accounting" — B&P Code
+  5058, narrowed by *Moore v. California State Bd. of Accountancy* (1992) 2 Cal.4th 999, which
+  permits the terms only alongside a disclaimer that dispels confusion about licence status. The
+  draft now carries two versions: a safe one to publish now, and a keyword-forward one that needs
+  a lawyer's sign-off first. **Publish the safe one.**
+- **Schema types changed** on pages 1, 5 and 7, from `AccountingService` to `ProfessionalService`
+  and `TaxPreparationService`. Schema is a public machine-readable claim about what the business
+  is, so the same restriction applies there.
+- **`cpa for llc taxes` was removed** as a secondary from page 6 and moved to blog 24. A service
+  page ranking for it implies the service is CPA-provided.
+- **Blogs 17, 18 and 19 now state the credential plainly** and convert on it rather than around
+  it. Blog 19 in particular is now your strongest article, because every competitor ranking for
+  "how much do tax preparers charge" is describing you from the outside.
 
-**If the answer is enrolled agent, that is much better news than most people assume.** An
-enrolled agent has the same unlimited IRS representation rights as a CPA. Almost no local firm
-says so on its website. It is the strongest unclaimed positioning available to you.
+**What is still needed: your CTEC number and how long you have been registered.** Publish it.
+It is verifiable in seconds at ctec.org, it is a genuine trust signal, and almost no competitor
+bothers.
+
+**One question left open.** Is anyone on staff an enrolled agent? You said tax preparers, so I
+have written everything for CTEC registration. If an EA credential exists, say so — an enrolled
+agent holds the same unlimited IRS representation rights as a CPA, and three pages get materially
+stronger.
 
 ## 2. Pricing — blocks 9 pages
 
@@ -114,7 +126,11 @@ software, and the panic. Read them side by side before building. If two say the 
 same order, merge them and keep the losing page's keywords as secondaries on the survivor. That
 judgment needs your eyes on your own market.
 
-**One legal check.** Page 19 states what a preparer may and may not charge, including that
+**Two legal checks now.** Page 5 Version B uses "accounting services" with a disclaimer modelled
+on *Moore*. Do not publish it without a California attorney or the Board of Accountancy
+confirming the wording. Version A needs no review and should go up now.
+
+Page 19 states what a preparer may and may not charge, including that
 contingent fees are generally prohibited for ordinary return preparation under Circular 230. I
 have written it carefully and linked primary sources, but it is the only page in this batch making
 claims about what is legally permitted. Have someone confirm those sentences, or soften them and

@@ -6,6 +6,11 @@ have a deadline: they must be live and aged before the January ramp, so they get
 Pages 20 to 31 hold flat demand all year and can wait. City terms are ordered by revenue per
 job, not volume — city-level search counts are the least reliable numbers in the tool.
 
+**On the CPA keywords in this map.** The firm is CTEC-registered tax preparers with no CPA on
+staff. Blog posts *about* CPAs (18, 26, 28) stay — explaining a credential you do not hold is
+honest and it is where your cheapest rankings are, difficulty 4 on 1,300 searches. Service pages
+implying you *are* one are out, permanently.
+
 **On the seasonality figures below:** each is the ratio between the quietest and busiest month
 in Semrush's twelve-month trend. The ratio is solid; the tool does not label which month is
 which, so no block claims a specific month.
@@ -116,7 +121,8 @@ cheapest filing service, which is a different buyer from someone hiring you.
 - filing business taxes for llc for the first time · 1,600 searches a month · Medium (26 out of 100)
 
 **Secondary keywords**
-- cpa for llc taxes · 320 a month · Easy (16)
+- cpa for llc taxes · 320 a month · Easy (16) — moved here from page 6 on 2026-09-07; answer it
+  as information ("do you need a CPA for LLC taxes?"), never as a service claim
 - llc tax filing cost · too few searches to report · not scored
 - s corp tax return cost · too few searches to report · not scored
 - partnership tax return cost · too few searches to report · not scored
@@ -387,7 +393,7 @@ order despite having no deadline, because it is what pays you between May and De
 ---
 
 
-## 5. Service page: Small business accounting
+## 5. Service page: Small business bookkeeping and tax services
 
 **Standalone**
 
@@ -406,9 +412,12 @@ order despite having no deadline, because it is what pays you between May and De
 - accountants small business near me · 260 a month · Easy (16)
 
 **Why fifth:** the highest-volume term on the map still under your ceiling, at roughly $20 a
-click, and it holds up year-round. One caution — the top ten is mostly CPA firms. Use
-"accountant" only if it describes your team accurately, and keep "CPA" off the page unless a
-CPA is on staff.
+click, and it holds up year-round. ⚠️ **Credential constraint, confirmed 2026-09-07:** the firm
+is CTEC-registered tax preparers with no CPA on staff, and California restricts unlicensed use of
+"accountant" and "accounting" (B&P 5058; Moore v. CBA (1992) 2 Cal.4th 999 permits the terms only
+with a disclaimer that dispels confusion). The draft therefore ships as "bookkeeping and tax
+services" and treats the accountant terms as body copy, not claims. Expect to capture less of
+this 5,400 than the difficulty score suggests.
 
 ---
 
@@ -426,9 +435,12 @@ CPA is on staff.
 
 **Secondary keywords**
 - business tax preparer near me · 720 a month · Medium (26)
-- cpa for llc taxes · 320 a month · Easy (16)
 - filing business taxes for llc for the first time · 1,600 a month · Medium (26)
 - small business tax preparation lakewood ca · too few searches to report · not scored
+
+**Moved off this page 2026-09-07:** `cpa for llc taxes` (320/mo, difficulty 16) went to blog 24.
+A service page ranking for it implies the service is CPA-provided, which is not true here. It is
+answerable honestly as information, not claimable as a service.
 
 **Why sixth:** first of the deadline pages. A business return is worth several times an
 individual one and the same client usually buys bookkeeping. With a 33x swing there is no
@@ -731,7 +743,7 @@ free llc and the whole "cheapest / free LLC" family — 8,100 searches of people
 start a tax preparation business — people opening a competitor to you, not clients
 taxact business — software shoppers, and a brand you do not own
 small business taxes for dummies — do-it-yourself readers who will never call
-cpa near me for small business — difficulty 6 and tempting, but do not target "CPA" unless a CPA is on staff
+cpa near me for small business — difficulty 6 and tempting, permanently out. No CPA on staff, confirmed 2026-09-07
 
 **Career, training and licensing terms · junk**
 how to become a tax preparer in california · tax preparer course · ctec registration · tax preparer jobs · bookkeeping certification

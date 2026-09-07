@@ -151,8 +151,11 @@ city rankings), pages 4, 5, 6.
 
 ## Schema
 
-`LocalBusiness` / `AccountingService` with the real street address, hours and phone. Unlike the
+`LocalBusiness` / `TaxPreparationService` with the real street address, hours and phone. Unlike the
 other pages, this one should carry the full address — it is the office page.
+
+**Not `AccountingService`.** Schema is a public claim about what the business is, and California
+restricts unlicensed use of accounting titles. See page 5.
 
 ---
 

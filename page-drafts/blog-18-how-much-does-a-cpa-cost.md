@@ -3,14 +3,20 @@
 **Map row:** 18 · Blog post · **Spoke** · hub: 17
 **Primary:** how much does a cpa cost · 1,300/mo · difficulty 4
 **Secondaries:** cpa cost (1,000/18) · how much do cpas charge (590/12) · average cost cpa tax filing (590/11) · how much is a cpa (390/11) · how much does a cpa charge to do taxes (390/15)
-**Status:** Draft — needs the firm's credential answer before it publishes
+**Status:** Draft — ready to write once pricing is verified. **Credential confirmed
+2026-09-07: CTEC-registered tax preparers, no CPA on staff.**
 
 **Difficulty 4 on 1,300 searches a month. This is the cheapest ranking on the whole map.**
 
-⚠️ **This post must be written by a firm that is honest about not being a CPA firm, if that is
-the case.** Written well, that is an advantage: an article explaining when you do and do not need
-a CPA, from someone who will tell you to go elsewhere when you do, is more persuasive than a
-sales pitch. Written badly it reads as sour grapes. See the tone note below.
+**You are not a CPA firm, and that makes this post better, not worse.** An article explaining
+when you do and do not need a CPA, written by a firm that will send you to one when you do, is
+more persuasive than anything a CPA firm can publish on this keyword — they cannot write the
+honest version without arguing against their own fee.
+
+**The one tone rule: never argue that CPAs are not worth it.** Sometimes they are exactly what
+someone needs, and this post says so plainly and early. Resentment reads instantly and it
+destroys the credibility the post is built on. The register is a professional explaining the
+options, including the ones that are not yours.
 
 ---
 
@@ -152,21 +158,26 @@ particular credential.
 
 ## Bridge CTA (mid-text, after "So when do you actually need a CPA?")
 
-**[NEEDS FROM YOU: the credential answer from page 5.** This CTA is unwriteable until then.
+**We are not a CPA firm, and for most returns you do not need one.**
 
-If a CPA or enrolled agent is on staff, say so here plainly and the post becomes a strong
-conversion page.
+We are CTEC-registered tax preparers in Lakewood. We file returns for individuals and small
+businesses across Lakewood, Long Beach, Cerritos and Downey, and we keep the books behind them.
 
-If neither, the honest CTA is stronger than it sounds: *"We are a tax preparation and bookkeeping
-firm. We file returns for individuals and small businesses in Lakewood and Long Beach, and when
-your situation genuinely calls for a CPA, we will tell you."* That sentence, on a post about
-credentials, does more for trust than a claim would.]
+If your situation genuinely calls for a CPA — audited or reviewed financial statements, a complex
+multi-entity structure, a business sale — we will tell you that rather than take the work.
+
+[Link page 7 for individual returns, page 6 for business returns.]
+
+*That paragraph is the whole conversion mechanism of this post. It works because it is true and
+because it names the cases where you are the wrong answer. Do not soften it into a sales pitch.*
 
 ---
 
 ## ⛔ Before this publishes
 
-1. The credential answer — this post cannot go live without it
-2. Verify the price ranges against real local rates
-3. Real author and credential in the author box
-4. Confirm the California Board of Accountancy licensing details are current before printing them
+1. Verify the price ranges against real local rates
+2. Real author and CTEC number in the author box — on a post about credentials, an unsigned
+   article undercuts its own argument
+3. Confirm the California Board of Accountancy licensing details are current before printing them
+4. Read the post once looking only for defensiveness. If any sentence reads as arguing against
+   CPAs rather than explaining them, cut it.

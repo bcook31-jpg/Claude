@@ -2,8 +2,13 @@
 
 **Map row:** 6 · Service page · **Hub** · spokes: 9 · 10
 **Primary:** small business tax preparer near me · 1,000/mo · difficulty 24
-**Secondaries:** business tax preparer near me (720/26) · cpa for llc taxes (320/16) · filing business taxes for llc for the first time (1,600/26) · small business tax preparation lakewood ca
+**Secondaries:** business tax preparer near me (720/26) · filing business taxes for llc for the first time (1,600/26) · small business tax preparation lakewood ca
 **Status:** Draft — needs proof before it goes to Hibu
+
+**Changed 2026-09-07.** The secondary `cpa for llc taxes` (320/mo, difficulty 16) was removed
+from this page. It is a good keyword and it is the wrong keyword for a money page here: a service
+page ranking for it implies the service is provided by a CPA. It moves to blog page 24, where it
+can be answered honestly as information rather than claimed as a service.
 
 **Seasonality:** 33x swing, the sharpest on the map. This page has a hard deadline. Live and
 indexed well before January or it misses the year.
@@ -111,8 +116,10 @@ they change and a stale date on a live page costs a client money.]
 [NEEDS FROM YOU]
 
 **Do I need a CPA for an S corp return?**
-No. An S corporation return can be prepared by any qualified preparer with a PTIN. [Then state
-what your team holds — see page 5's credential note.]
+No. An S corporation return can be prepared by any preparer holding a valid PTIN and, in
+California, the required credential or registration. We are CTEC-registered tax preparers. A CPA
+is required for audited or reviewed financial statements, which is a separate thing from filing
+the return.
 
 **Do you do the personal return too?**
 Yes, and for most owners they are prepared together. [Link page 7.]

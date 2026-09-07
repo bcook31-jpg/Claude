@@ -3,7 +3,14 @@
 **Map row:** 19 · Blog post · **Spoke** · hub: 17
 **Primary:** how much do tax preparers charge · 720/mo · difficulty 11
 **Secondaries:** how much does a tax preparer cost (390/3) · how much should a tax preparer charge (320/7) · how much can a tax preparer charge legally (320/11) · how much does it cost to prepare taxes (320/17)
-**Status:** Draft — needs the firm's own pricing before it publishes
+**Status:** Draft — needs pricing before it publishes.
+**Credential confirmed 2026-09-07: CTEC-registered tax preparers, no CPA on staff.**
+
+**⭐ This is now the most important blog post on the map for you.** Every other article ranking
+for this keyword is written by a CPA firm or a software company explaining what tax preparers
+charge from the outside. You are the thing being described. Write it from inside the work —
+what actually drives a fee, what the rules genuinely are, and what you charge — and it becomes
+the strongest credibility asset you have.
 
 **The distinct angle.** Page 17 is the general price article and page 18 is about CPAs. This one
 is about everyone else — the CTEC-registered preparers and enrolled agents who file most returns
@@ -137,15 +144,24 @@ Search the CTEC verification page at ctec.org, or the IRS directory for credenti
 
 ## Bridge CTA (mid-text, after "What you should expect for your money")
 
-**[NEEDS FROM YOU: your pricing, your credential, and your notice policy.** This post's argument
-is transparency. Ending it with a vague call to action undercuts everything above it.]
+**We are CTEC-registered tax preparers in Lakewood, and we publish our prices.**
+
+[NEEDS FROM YOU: the actual prices, and your CTEC number.]
+
+Every rule above applies to us too. We sign every return we prepare. Your refund goes to your
+account, never ours. We do not charge a percentage of anything.
+
+[Link page 7 for individual returns, page 6 for business returns.]
+
+*A post that lists red flags and then fails to demonstrate the opposite has argued itself out of
+the sale. The prices and the CTEC number are what make this ending land.*
 
 ---
 
 ## ⛔ Before this publishes
 
 1. Your own pricing, or at least a starting fee
-2. Your credential, stated plainly
+2. Your CTEC number, published on the page
 3. Your policy on IRS notices after filing
 4. **Have someone confirm the Circular 230 contingent-fee characterization before publishing.**
    I have stated it carefully and it is correct in general terms, but this post makes claims

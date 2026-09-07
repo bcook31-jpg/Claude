@@ -192,7 +192,7 @@ and will not rank.
   "@type": "Service",
   "serviceType": "Bookkeeping cleanup and catch-up",
   "provider": {
-    "@type": "AccountingService",
+    "@type": "ProfessionalService",
     "name": "Top Tax Pros",
     "address": {
       "@type": "PostalAddress",
@@ -214,6 +214,10 @@ and will not rank.
 ```
 
 Do not add an `aggregateRating` block unless real reviews exist on the page.
+
+**Note on the schema type.** `ProfessionalService`, not `AccountingService`. Schema is a public,
+machine-readable claim about what this business is, and California restricts unlicensed use of
+accounting titles. See page 5 for the full reasoning.
 
 ---
 

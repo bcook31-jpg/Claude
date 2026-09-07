@@ -3,7 +3,8 @@
 **Map row:** 17 · Blog post · **Hub** · spokes: 18 · 19
 **Primary:** tax preparation fees · 1,600/mo · difficulty 9
 **Secondaries:** cost of tax preparation (1,300/23) · tax prep charges (1,000/17) · tax prep fees (720/17) · average tax preparation fees (320/18) · cost for tax preparation (320/8)
-**Status:** Draft — needs the firm's own pricing before it publishes
+**Status:** Draft — needs pricing before it publishes.
+**Credential confirmed 2026-09-07: CTEC-registered tax preparers, no CPA on staff.**
 
 **This is a hub.** It is a short router. Each spoke gets one H2 with a real passage and a link,
 and it gains a section the day a new spoke ships.
@@ -157,18 +158,21 @@ No.
 
 ## Bridge CTA (mid-text, after "How to tell whether a quote is fair")
 
-**[NEEDS FROM YOU: your actual pricing.** This post ranks for people comparing prices. Publishing
-it without your own numbers sends them to a competitor who published theirs. A starting price and
+**We are CTEC-registered tax preparers in Lakewood, and we publish our prices.**
+
+[NEEDS FROM YOU: your actual pricing. This post ranks for people comparing prices. Publishing it
+without your own numbers sends them to a competitor who published theirs. A starting price and
 what moves it is enough.]
 
-We publish our prices. [Link to page 7 and page 6.]
+[Link to page 7 for individual returns and page 6 for business returns.]
 
 ---
 
 ## Author box
 
-**[NEEDS FROM YOU: real author, real credential.** On a post about credentials, an unsigned or
-vaguely attributed article undercuts its own argument.]
+**[NEEDS FROM YOU: real author name and CTEC number.** On a post about credentials, an unsigned
+or vaguely attributed article undercuts its own argument. The CTEC number is verifiable in
+seconds and almost nobody publishes theirs.]
 
 ---
 
@@ -182,6 +186,6 @@ vaguely attributed article undercuts its own argument.]
 ## ⛔ Before this publishes
 
 1. Your own pricing
-2. Real author and credential
+2. Real author name and CTEC number
 3. Update the year in the title each season
 4. The ranges in the quick answer are national. If your local pricing differs, use yours.
