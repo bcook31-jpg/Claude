@@ -38,6 +38,9 @@ The description reads:
 
 **Two problems, one of them serious.**
 
+**Crypto.** Removed by instruction 2026-09-07 — the suggested replacement below omits it, and the
+keyword family is out of reach at your authority anyway.
+
 **Payroll.** You do not offer payroll. It is on your own DON'T list and every page draft says so
 explicitly. This description is live and says otherwise, which means you are fielding enquiries
 for a service you will have to turn away, and doing it from the profile that feeds your map pack.

@@ -1,8 +1,16 @@
 # Page 1 — Bookkeeping cleanup and catch-up
 
 **Map row:** 1 · Service page · Standalone
-**Primary:** accounting clean up · 1,000/mo · difficulty 16
-**Secondaries:** bookkeeping cleanup services (480/10) · bookkeeping clean up (390/13) · catch up bookkeeping (320/5) · clean up bookkeeping services (260/11) · catch up bookkeeping services (210/12)
+**Primary:** bookkeeping cleanup services · 480/mo · difficulty 10
+**Secondaries:** bookkeeping clean up (390/13) · catch up bookkeeping (320/5) · clean up bookkeeping services (260/11) · catch up bookkeeping services (210/12) · bookkeeping catch up (90/3)
+
+⚠️ **Changed 2026-09-07 on instruction to remove restricted words.** The primary was
+`accounting clean up` — 1,000 searches a month at difficulty 16, the highest-volume commercial
+term on the map. It is dropped because using it as a title and H1 describes the firm's service as
+accounting, which is the California restriction. **This costs roughly half the page's addressable
+volume.** The replacement is lower volume and lower difficulty, so the page still ranks; it just
+reaches fewer people. That is the trade and it was the right call — the exposure was not worth
+520 searches a month.
 **Status:** Draft — needs proof before it goes to Hibu
 
 ---
@@ -13,7 +21,7 @@
 
 **Title options**
 1. Bookkeeping Cleanup & Catch-Up Services | Top Tax Pros — 58 chars
-2. Accounting Clean Up for Small Business | Top Tax Pros — 52 chars
+2. Bookkeeping Cleanup & Catch-Up for Small Business | Top Tax Pros — 65 chars, too long
 3. Behind on Your Books? Bookkeeping Cleanup | Top Tax Pros — 55 chars
 
 **Pick: option 1.** It carries the primary phrase and the two highest-value secondaries in
@@ -138,7 +146,7 @@ back we are going.
 ### What we need from you to start (accordion)
 
 - Bank and credit card statements for every month in the period
-- Access to your accounting file, if one exists, or read-only bank access
+- Access to your bookkeeping file, if one exists, or read-only bank access
 - Loan documents and the payment schedules
 - Payroll reports for the period, if you ran payroll [note: we do not run payroll — we work from
   the reports your provider produces]

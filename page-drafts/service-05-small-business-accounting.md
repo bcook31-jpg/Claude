@@ -3,7 +3,7 @@
 **Map row:** 5 · Service page · Standalone
 **Primary:** small business accountant · 5,400/mo · difficulty 18
 **Secondaries:** business accountant (2,900/19) · small business tax accountant (1,900/24) · business tax accountant (1,000/14) · small business tax professional (390/17) · accountants small business near me (260/16)
-**Status:** Draft — ⚠️ **needs a legal read before publishing.** See below.
+**Status:** Draft — no legal read needed. The restricted term is not used.
 
 **Credential confirmed 2026-09-07: CTEC-registered tax preparers. No CPA on staff.**
 
@@ -30,19 +30,15 @@ The keyword is "accountant". California regulates that word more tightly than mo
 disclaimer. You cannot use the word bare, and you certainly cannot use "CPA", "public
 accountant" or anything shaped like them.
 
-**I am not your lawyer and this is not legal advice.** I have written two versions below.
-Version A carries no risk. Version B chases the 5,400-search term with the disclaimer Moore
-describes. **Have a California attorney or the Board of Accountancy confirm before publishing
-Version B.** The cost of getting this wrong is a Board complaint, not a ranking drop.
+**I am not your lawyer and this is not legal advice.** The version below avoids the term
+entirely, which is why it needs no legal review.
 
 ---
 
-# VERSION A — the safe version (recommended to publish now)
+# The page
 
 Targets the same buyer through the services rather than the title. Ranks less strongly on
-"accountant" and carries no licensure exposure. **My recommendation: publish this now, and
-revisit Version B only if counsel signs it off.** The traffic difference is not worth a
-regulatory complaint during your busiest season.
+"accountant" and carries no licensure exposure.
 
 ## Metadata
 
@@ -167,26 +163,16 @@ We will tell you what it would take to run the books and the return together.
 
 ---
 
-# VERSION B — the keyword-forward version (do not publish without legal sign-off)
+## ⛔ Version B deleted 2026-09-07
 
-Identical to Version A with three changes:
+An earlier draft carried a second version that kept "accounting services" in the title and H1
+alongside a disclaimer modelled on *Moore*. **Deleted on instruction to remove restricted words.**
 
-1. **Title:** Small Business Accounting Services | Lakewood, CA | Top Tax Pros
-2. **H1:** Small business accounting services in Lakewood
-3. **A disclaimer placed immediately under the H1, above the fold, in visible body text — never
-   in a footer, never in small print:**
+That was the right call. The disclaimer route is legally arguable but it needs a lawyer to sign
+off, it puts a defensive paragraph above the fold on a sales page, and it buys volume the
+bookkeeping wording largely reaches anyway. Version A is now the only version.
 
-> **We are CTEC-registered tax preparers and bookkeepers, not certified public accountants. The
-> bookkeeping and tax preparation services described on this page do not require a California
-> CPA licence. We are not a CPA firm and do not provide audited, reviewed or compiled financial
-> statements.**
-
-That wording is modelled on what *Moore* describes as curative: the term used with an express
-disclaimer that the services offered do not require a state licence. Whether it satisfies the
-Board in practice is a judgment only a California attorney should make.
-
-**Everything else stays identical to Version A.** In particular, "CPA" never appears as a
-description of the firm anywhere on the page, in the metadata, or in the schema.
+**Do not reinstate it** without a California attorney's written sign-off.
 
 ---
 

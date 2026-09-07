@@ -20,7 +20,7 @@ targets a 6,600-a-month bookkeeping near-me query, and category is the biggest i
 eligibility.
 
 **Action: add "Bookkeeping service" as an additional category.** Two minutes, and worth more than
-the page copy. Two service entries also need renaming off the restricted word "accounting". Full
+the page copy. Two service entries and the profile description also need the restricted word removed. Full
 detail in `GOOGLE-BUSINESS-PROFILE.md`.
 
 ---

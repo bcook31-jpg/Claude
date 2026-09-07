@@ -71,14 +71,13 @@ Strong success criteria let you loop independently. Weak criteria ("make it work
 Used by `/keyword-research` (and any later SEO command) so these are never asked twice.
 
 - **Business:** Top Tax Pros — tax preparation, bookkeeping, business entity setup.
-- **Do NOT map:** ITIN applications, payroll, IRS resolution / audit representation, standalone tax planning or advisory. Confirmed 2026-09-07.
+- **Do NOT map:** crypto tax preparation, ITIN applications, payroll, IRS resolution / audit representation, standalone tax planning or advisory. Confirmed 2026-09-07.
 - **Market:** Lakewood, CA and neighboring cities (Long Beach, Cerritos, Bellflower, Downey and nearby). Customers search from the US.
 - **Semrush database:** `us`.
 - **Business type:** local brand. Service × city is the map's axis; national volume is never their addressable demand.
 - **Domain:** toptaxpros.com. Authority Score 9 (2026-09-07), so the difficulty ceiling is a flat 30.
 - **Owner / author byline:** Brian Cook, CTEC A045646, registered since 2003. Firm founded 2000. **Standard tenure claim in copy: "over 20 years of service."** Blog posts are bylined to him, not to the company — CTEC registers individuals, and the credential posts argue for checking a named preparer.
 - **Proof line (confirmed 2026-09-07):** 4.9 stars across 684 Google reviews. Cite Google, not Yelp.
-- **Also sells, not on the map:** crypto tax preparation. The keyword family sits above the difficulty ceiling and is held by software companies — revisit as Authority Score climbs.
 - **Contact:** (562) 600-7072 · 5261 Paramount Blvd, Lakewood, CA 90712 · Mon–Fri 9am–8pm, Sat 10am–3pm (confirm hours). Two stale phone numbers are still live in third-party directories.
 - **Pricing (confirmed 2026-09-07):** monthly bookkeeping in three flat tiers, no hourly overages — Essentials $350/mo (2 accounts, 100 transactions), Standard $550/mo (4 accounts, 250 transactions, payroll import, quarterly call), Full $750/mo (6 accounts, 450 transactions, inventory, monthly call); above that, quoted. Client pays for their own QuickBooks subscription, in their name. Cleanup and catch-up $250/hour, one hour minimum. Personal returns typically $295 (from $250). Self-employed/single-member LLC from $445. Corporate/S-corp from $950. Non-profit returns $500. Non-profit formation $750. Statement of Information filing $100 plus the state fee. **Invoicing runs through GoHighLevel, not QuickBooks — QuickBooks has no sales data.** QuickBooks file review free. Turnaround: every cleanup finished in 14 business days or less — a ceiling, not an average. This is a premium position — pages argue outcome, speed and continuity, never price.
 - **Platform:** Hibu. No repo, no file-based publishing, no deploy step. Pages are drafted to `page-drafts/` and built inside Hibu's editor or handed to Hibu support.

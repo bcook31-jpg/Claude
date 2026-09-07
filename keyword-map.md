@@ -326,16 +326,17 @@ building the page in the editor or handing the draft to Hibu support, and it is 
 **Demand:** swings roughly 5x across the year, and the family includes "books clean-up for tax season" — this is work people buy on their way into filing season.
 
 **Primary keyword**
-- accounting clean up · 1,000 searches a month · Easy to rank for (16 out of 100)
+- bookkeeping cleanup services · 480 searches a month · Easy to rank for (10 out of 100)
 
 **Secondary keywords**
-- bookkeeping cleanup services · 480 a month · Easy (10)
 - bookkeeping clean up · 390 a month · Easy (13)
 - catch up bookkeeping · 320 a month · Easy (5)
 - clean up bookkeeping services · 260 a month · Easy (11)
 - catch up bookkeeping services · 210 a month · Easy (12)
 
 **Also ranks for:** cleanup bookkeeping, catchup bookkeeping, bookkeeping clean-up, catch-up bookkeeping — same query, one page answers all of them.
+
+**Never targeted:** "accounting clean up" (1,000/mo, difficulty 16). Higher volume than the primary, restricted wording, deliberately left alone 2026-09-07.
 
 **Why first:** the strongest page on the map and the fastest to rank, at difficulty 5 to 16.
 Advertisers pay between $15 and $47 a click here, which is the market pricing one of these
@@ -837,24 +838,14 @@ services you already sell.
 **Opens up as your Authority Score climbs past about 40 · 10 keywords**
 tax preparer near me (46) · tax preparation near me (51) · cpa near me (49) · bookkeeper near me (33) · bookkeeping services (51) · what documents do i need to file my taxes (50) · what does a bookkeeper do (44) · s corp tax deadline 2026 (48) · business tax extension deadline (44) · bookkeeping services for small business (38)
 
-**Crypto tax — a service you sell, priced out of reach for now · 12 keywords**
-Your Google profile lists crypto tax preparation and it is not on this map, because the family is
-almost entirely above your ceiling: crypto tax accountant (57) · crypto tax service (67) · crypto
-tax filing (73) · crypto tax help (77) · crypto tax software (75) · how to report crypto on taxes
-(66) · crypto capital gains tax (65) · crypto tax preparation (50) · crypto tax preparer (47) ·
-crypto tax preparer near me (45) · crypto tax cpa (34) · cryptocurrency tax services (35).
-The whole space is held by crypto tax software companies with real budgets. Three sit near the
-edge and reopen first: crypto tax loss harvesting (210/mo, 31), form 8949 crypto (50/mo, 32) and
-defi taxes (40/mo, 23). Keep selling it, keep it in the profile and on the homepage, but do not
-spend a page slot on it this season.
-
 **Opens up around 55 · 1 keyword**
 tax preparation services (100)
 
 **Just above the ceiling, worth re-checking first · 8 keywords**
 llc formation service (36) · how to start an llc in california (36) · bookkeeping vs accounting (36) · cpa vs tax preparer (37) · what is an enrolled agent (37) · monthly bookkeeping services (35) · california llc statement of information (34) · virtual bookkeeping services (32)
 
-**Services you told me you do not offer · not mapped**
+**Services not mapped, by instruction**
+crypto tax preparation and the whole crypto family — removed 2026-09-07
 itin application · itin renewal · payroll services · back taxes help · irs audit representation · tax resolution · offer in compromise · business tax advisor · small business tax advisor · business tax planning services
 
 **Google shows something else for these**
