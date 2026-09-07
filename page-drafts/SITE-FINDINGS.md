@@ -66,10 +66,16 @@ to supply. It goes on pages 1, 4, 6 and 7.
 
 ## ⚠️ Conflicting claims on your own materials
 
-One listing says **20+ years**. Another says **over 30 years**. Established 2000 makes it 26.
+One listing says **20+ years**. Another says **over 30 years**.
 
-Pick one number and use it everywhere. Two different claims in two places is the kind of thing a
-sceptical reader notices, and on a page about honest pricing it costs more than it looks.
+**Resolved 2026-09-07: the firm was founded in 2000 (26 years) and Brian Cook has been
+CTEC-registered since 2003 (23 years).** Neither figure supports "over 30 years", so that listing
+is overstated and should be corrected wherever it appears. On a site whose blog posts argue for
+checking a preparer's credentials, an inflated tenure claim is the single easiest thing for a
+competitor to screenshot.
+
+Use "serving Lakewood since 2000" and "CTEC-registered since 2003" everywhere. Both are specific,
+both are verifiable, and specific beats round numbers.
 
 ---
 

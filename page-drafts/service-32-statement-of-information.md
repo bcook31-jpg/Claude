@@ -58,7 +58,7 @@ blog, including this draft. https://bizfileonline.sos.ca.gov/]
 
 ## One proof line (visible)
 
-**Serving Lakewood since 2000. 4.5 stars across 80+ reviews. CTEC A045646.**
+**Serving Lakewood since 2000. CTEC-registered since 2003, A045646. 4.5 stars across 80+ reviews.**
 
 ## Service area line (visible)
 
