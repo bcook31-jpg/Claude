@@ -1,6 +1,7 @@
 # Your keyword map
 
-31 pages, ordered for an off-season build. Nothing here is harder than your site can rank for
+35 pages, ordered for an off-season build. Pages 32 to 35 were added on 2026-09-07 from real
+invoice data — service lines the firm already sells that the first pass missed entirely. Nothing here is harder than your site can rank for
 today (difficulty ceiling 30, from your Authority Score of 9). Pages 1 to 19 are the ones that
 have a deadline: they must be live and aged before the January ramp, so they get written now.
 Pages 20 to 31 hold flat demand all year and can wait. City terms are ordered by revenue per
@@ -17,7 +18,7 @@ which, so no block claims a specific month.
 
 ---
 
-# To build · 12
+# To build · 16
 
 ## 20. Service page: Bookkeeping services, Long Beach
 
@@ -266,7 +267,9 @@ it is a blog post that links down to page 23.
 - when is the 800 franchise tax due · too few searches to report · not scored
 
 **Why here:** the $800 franchise tax blindsides new owners every year. Specific, answerable,
-and almost nobody writes it for a local audience. Note that "how to start an llc in california"
+and almost nobody writes it for a local audience. **It also links straight into page 32** — the
+Statement of Information is one of the costs this post explains, and it is a filing you already
+sell at $50 to $100. Note that "how to start an llc in california"
 is 3,600 searches at difficulty 36 — above your ceiling, so it belongs in the copy, never in
 the title.
 
@@ -292,6 +295,89 @@ the title.
 numbers is deciding on a change that needs a professional to execute, which is page 23.
 
 ---
+
+---
+
+## 32. Service page: California Statement of Information filing
+
+**Standalone**
+
+**Demand:** deadline-driven, filed every two years per entity, so steady rather than seasonal.
+
+**Primary keyword**
+- california statement of information · 4,400 searches a month · Medium (21 out of 100)
+
+**Secondary keywords**
+- file statement of information california · 880 a month · Medium (24)
+- llc statement of information california · 140 a month · Medium (23)
+- statement of information due date · 140 a month · Medium (20)
+- california llc statement of information · above your ceiling at 34 — covered here, never targeted
+
+**Why here:** 4,400 searches a month at difficulty 21 for a filing you already do and already
+invoice at $50 to $100. That combination does not appear anywhere else on this map. The ticket is
+small, and that is not the point — everyone searching this owns a California entity, which means
+they file a business return every year. This is the cheapest qualified lead source available to
+you, and blog post 30 already covers the same ground and can route straight into it.
+
+---
+
+## 33. Service page: Non-profit bookkeeping
+
+**Standalone**
+
+**Primary keyword**
+- nonprofit bookkeeping · 1,600 searches a month · Medium (26 out of 100)
+
+**Secondary keywords**
+- non profit tax preparation · 140 a month · Easy (6)
+- nonprofit tax preparation · 110 a month · Easy (12)
+- form 990 due date · above your ceiling at 37 — covered here, never targeted
+- form 990 preparation · above your ceiling at 43 — covered here, never targeted
+
+**Why here:** you already file non-profit returns — six invoices at $500, plus a formation at
+$750 — and the map had no page for it. 1,600 searches at difficulty 26, with advertisers paying
+$12 a click. Non-profits need bookkeeping year-round and they are unusually loyal once placed.
+
+⚠️ **`nonprofit accountant` (320/mo, difficulty 9, commercial) is deliberately excluded.** Same
+restriction as page 5 — you cannot hold out as an accountant in California without the disclaimer,
+and difficulty 9 is not worth the exposure.
+
+---
+
+## 34. Service page: Non-profit formation
+
+**Standalone**
+
+**Primary keyword**
+- nonprofit formation services · 390 searches a month · Medium (27 out of 100)
+
+**Secondary keywords**
+- nonprofit incorporation california · too few searches to report · not scored
+- 501c3 application service · too few searches to report · not scored
+- 501c3 tax filing · above your ceiling at 47 — covered here, never targeted
+
+**Why here:** you invoiced a non-profit formation at $750, so this is a service you sell with a
+proven price. Narrow family — three is everything with this buyer's intent. It also feeds page 33,
+because a new non-profit needs books kept from day one.
+
+---
+
+## 35. Blog post: How to start a non-profit in California
+
+**Standalone**
+
+**Primary keyword**
+- how to start a nonprofit in california · 1,000 searches a month · Medium (21 out of 100)
+
+**Secondary keywords**
+- nonprofit incorporation california · too few searches to report · not scored
+- 501c3 application service · too few searches to report · not scored
+- form 990 due date · above your ceiling at 37 — covered here, never targeted
+
+**Why here:** 1,000 searches at difficulty 21, and unlike the general LLC formation family this
+one is not swamped by national filing services. It routes into pages 34 and 33, which are both
+services you already sell.
+
 
 ---
 
