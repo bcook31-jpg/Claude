@@ -42,9 +42,15 @@ That is fixable, and it is more common than you think. We rebuild neglected book
 you have — bank statements, a shoebox of receipts, a QuickBooks file nobody has opened in
 eighteen months — and hand you back financials you can file from and actually use.
 
-**[NEEDS FROM YOU: the offer line.** Something concrete and true. A starting price, a flat rate
-per year of books, or a free assessment. This is the single most load-bearing line on the page
-and I will not invent it.]
+**Free books assessment. Cleanup from $250/hour. Most clients have clean books back within
+14 business days.**
+
+⚠️ **[HOLD — confirm the rate before publishing.** You gave $250/hour for cleanup. That is roughly
+two to five times the going rate for bookkeeping cleanup, and the competitors ranking for this
+term advertise flat packages from about $299. If $250/hour is correct, this page needs to sell an
+outcome rather than a rate, and I would lead with the 14-day turnaround and put the rate behind
+the assessment. If you meant something else — a flat fee, a minimum, or $250/month — tell me and
+I will rewrite the offer line.]
 
 **Primary action:** Get a free books assessment → form
 **Secondary action:** Call [NEEDS FROM YOU: phone number]
@@ -83,9 +89,11 @@ Every engagement is different, but the work is usually some combination of these
 
 ### How long it takes (accordion)
 
-**[NEEDS FROM YOU: your real turnaround.** Per year of books, and what makes it faster or
-slower. Do not publish this section without it — turnaround is the question every one of these
-buyers asks first.]
+**Most cleanups are finished within 14 business days.**
+
+That is genuinely competitive. A national provider ranking for these terms advertises 30 days for
+a year of books, so this is roughly half. It belongs in the hero, the meta description and the
+FAQ, not buried here.
 
 What genuinely changes the timeline: how many accounts and how many transactions, whether the
 bank feeds still connect, whether receipts exist for the large deductions, and how many years

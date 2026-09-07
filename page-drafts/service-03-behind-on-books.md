@@ -48,8 +48,11 @@ you whether it can be done in time.
 
 ## One proof line (visible)
 
-**[NEEDS FROM YOU: fastest realistic turnaround, stated honestly.** Not a best case dressed as
-typical. This reader will hold you to it.]
+**Most catch-up work is finished within 14 business days.**
+
+⚠️ [Confirm: is 14 business days your standard turnaround, or your fastest? This page is read by
+someone with a deadline, and it needs the honest standard figure, not a best case they will hold
+you to.]
 
 ---
 
@@ -89,7 +92,8 @@ else can follow while work is underway.
 ## FAQ (questions visible, answers collapsed)
 
 **How fast can you actually do this?**
-[NEEDS FROM YOU]
+Most catch-up work is finished within 14 business days of receiving your statements. How far back
+we are going and how many accounts are involved move that.
 
 **I have years, not months. Is that too far gone?**
 No. It changes the price and the timeline, not whether it is possible.

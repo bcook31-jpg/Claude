@@ -42,10 +42,17 @@ returns for LLCs, S corporations, partnerships and sole proprietors — and wher
 books, the return is built from real reconciled numbers instead of a spreadsheet assembled in
 April.
 
-**[NEEDS FROM YOU: starting price by return type.** Buyers on this term are comparing. A range
-per entity type is enough. For context, the National Society of Accountants' last published fee
-survey (2020-2021 edition, the last one they produced) put an itemized 1040 with a Schedule C
-and a state return at roughly $457 — dated, but it is the figure the market anchors on.]
+**Business returns start at $950.**
+
+⚠️ **[Confirm the breakdown by entity type.** You gave $950 as the starting figure. Buyers compare
+by entity, so "from $950 for a single-member LLC, from $X for an S corp, from $X for a
+partnership" converts better than one number.]
+
+**On the number itself:** $950 sits well above the commonly cited benchmark. The National Society
+of Accountants' last published fee survey, the 2020-2021 edition, put an itemized 1040 with a
+Schedule C and a state return at roughly $457. That figure is dated and it is national, but it is
+what the market anchors on, so this page has to justify the gap rather than just state the price.
+The 14-day turnaround and doing the books and the return together are the two arguments available.
 
 **Primary action:** Get a quote → form
 

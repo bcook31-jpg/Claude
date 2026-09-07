@@ -45,7 +45,10 @@ We go into the file and fix it — reconcile every account, clear the duplicates
 transactions where they belong, and rebuild the chart of accounts if it has grown past
 usefulness. You get a file you can run reports from.
 
-**[NEEDS FROM YOU: the offer.** A flat file-review price, a free review, or a starting rate.]
+**The file review is free. Cleanup work is quoted from the review, and most files are finished
+within 14 business days.**
+
+⚠️ [Same rate hold as page 1 — see that page before publishing a number here.]
 
 **Primary action:** Get a free file review → form
 

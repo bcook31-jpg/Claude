@@ -83,8 +83,17 @@ whether something counts, bring it.
 
 ### What it costs (accordion)
 
-**[NEEDS FROM YOU: real pricing.** A flat fee for a simple return and what moves it up. This is
-the most-asked question and the pages beating you answer it.]
+**Individual returns start at $250.**
+
+⚠️ **[Confirm what moves it up.** A starting price without the escalators invites a phone call
+that ends in disappointment. Self-employment income, rentals, multiple states and investment
+sales are the usual ones.]
+
+**Context worth knowing:** $250 is above the national average for a simple return, which the last
+published National Society of Accountants survey put around $273 in February 2025 dollars for a
+standard-deduction 1040 — so you are roughly at market there, not above it. But two national
+chains with offices within a few miles compete hard on price. This page wins on the office, the
+people and the explanation, not on the number.
 
 ### Hours and appointments (accordion)
 
