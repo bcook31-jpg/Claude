@@ -50,12 +50,11 @@ When the return comes due, the numbers are already there.
 
 **Monthly bookkeeping starts at $250 a month.**
 
-⚠️ **[CONFIRM ONE THING BEFORE THIS PUBLISHES: is $250 a month a price a real client can actually
-pay?** If yes, publish it as written and this page becomes competitive overnight. If $250 is an
-entry point that almost everyone exceeds, the page must say what moves it up and roughly where a
-typical client lands, because a starting price nobody pays is the kind of thing that shows up in
-reviews. "Starts at $250 a month, most clients run $X" is both honest and stronger than a bare
-number.]
+*Confirmed 2026-09-07: real clients pay $250 a month. It is a genuine entry price, not a teaser,
+so it can be stated plainly and defended.*
+
+Reconciled accounts, coded transactions, and a profit and loss statement and balance sheet
+delivered on a set date every month. When the return comes due, the numbers are already there.
 
 **Primary action:** Get a quote → form
 
@@ -91,9 +90,11 @@ carry inventory, and whether payroll reports need bringing in.
 We look at your accounts and quote your monthly figure before you commit, so the first invoice is
 never a surprise.
 
-⚠️ [If work outside the monthly scope is billed hourly at $250, say so here plainly. A monthly
-price with unstated hourly overages is the single most common complaint about bookkeeping
-services and it is easy to avoid by saying it up front.]
+⚠️ **[ONE THING LEFT: is work outside the monthly scope billed hourly at $250?** If yes, say it
+here in one sentence. A monthly price with unstated hourly overages is the most common complaint
+about bookkeeping services, and disclosing it costs nothing while hiding it costs a review. If
+there are no overages and $250 covers everything in scope, say that instead — it is a stronger
+line than most competitors can write.]
 
 ---
 
@@ -102,9 +103,10 @@ services and it is easy to avoid by saying it up front.]
 This is the page where the premium rate is hardest, and it needs saying plainly rather than
 discovering it in the numbers later.
 
-**At $250 a month you are now inside the competitive bracket**, not above it. Competitors ranking
-for these keywords advertise flat monthly bookkeeping from $150 to $299, so this page can compete
-on price where the cleanup pages cannot.
+**At $250 a month you are inside the competitive bracket**, not above it. Competitors ranking for
+these keywords advertise flat monthly bookkeeping from $150 to $299, so this page can compete on
+price where the cleanup pages cannot. And because $250 is a figure real clients actually pay, the
+page can say it without hedging — which most competitors publishing a "from" price cannot.
 
 That is a real change in this page's prospects. It was the weakest of the top four; it is now
 arguably the strongest, because it targets 6,600 searches a month at a price the market

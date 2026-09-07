@@ -50,9 +50,8 @@ $250/hour with a one hour minimum, which is right for work that is genuinely var
 
 **16. Two things left on the monthly price:**
 
-- **Is $250 a month a figure a real client actually pays**, or an entry point almost everyone
-  exceeds? If the latter, the page needs to say what moves it up and roughly where a typical
-  client lands. A starting price nobody pays ends up in reviews.
+- ✅ **Confirmed 2026-09-07: $250 a month is a figure real clients actually pay.** Stated plainly
+  on page 4, no hedging needed.
 - **Is work outside the monthly scope billed hourly at $250?** If so, say it on the page. A
   monthly price with unstated hourly overages is the most common complaint about bookkeeping
   services and it is easy to avoid.
