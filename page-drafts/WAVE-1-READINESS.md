@@ -14,11 +14,14 @@ built.
 profile and Google Business Profile and give me one number, or say "80+" and I will use that
 everywhere.
 
-**2. Is the Google Business Profile claimed, and is the primary category set?** Page 4 targets
-"bookkeeping services near me" at 6,600 searches a month. That query is answered from the map
-pack, which the Business Profile drives — not the page. **If the profile is not right, page 4
-underperforms no matter how good the copy is.** This is worth more than any single page on the
-slate.
+**2. ✅ Answered — and it found the constraint on page 4.** The profile is claimed, primary
+category "Tax preparation", additional "Tax consultant", **no bookkeeping category**. Page 4
+targets a 6,600-a-month bookkeeping near-me query, and category is the biggest input into map pack
+eligibility.
+
+**Action: add "Bookkeeping service" as an additional category.** Two minutes, and worth more than
+the page copy. Two service entries also need renaming off the restricted word "accounting". Full
+detail in `GOOGLE-BUSINESS-PROFILE.md`.
 
 ---
 
