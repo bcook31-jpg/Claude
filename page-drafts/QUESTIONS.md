@@ -80,7 +80,7 @@ What it actually permits, stated precisely, because overstating it is the risk:
   Taxpayer Advocate Service
 - **Only** on a return he personally prepared and signed
 - **Requires** a Record of Completion for both the year the return was prepared and each year the
-  representation happens
+  representation happens — ✅ confirmed current for each filing year
 - **Cannot** represent before appeals officers, settlement officers, revenue officers, collections
   or Counsel
 - **Cannot** represent on a return he did not prepare
@@ -91,6 +91,12 @@ verification page, and almost no competing local firm mentions being in it.
 
 Blog 18 previously described three credential tiers and now describes four, because the programme
 is the tier most readers have never heard of and it is exactly where this firm sits.
+
+⚠️ **This is the one claim on the site with an expiry date.** The Record of Completion has to be
+renewed annually. If it ever lapses, the representation language has to come off pages 3, 5, 6, 7
+and blogs 18 and 19, and the IRS directory listing goes with it. Worth a calendar reminder each
+year alongside the CTEC renewal, since the two run on similar cycles and the pages depend on
+both.
 
 **One follow-up the wording creates:** is reviewing a notice and preparing an amendment included
 in the original fee, or billed separately? The paragraph promises the work, and a reader will
