@@ -63,3 +63,16 @@ Strong success criteria let you loop independently. Weak criteria ("make it work
 ---
 
 **These guidelines are working if:** fewer unnecessary changes in diffs, fewer rewrites due to overcomplication, and clarifying questions come before implementation rather than after mistakes.
+
+---
+
+## My setup
+
+Used by `/keyword-research` (and any later SEO command) so these are never asked twice.
+
+- **Business:** Top Tax Pros — tax preparation, bookkeeping, business entity setup.
+- **Do NOT map:** ITIN applications, payroll, IRS resolution / audit representation, standalone tax planning or advisory. Confirmed 2026-09-07.
+- **Market:** Lakewood, CA and neighboring cities (Long Beach, Cerritos, Bellflower, Downey and nearby). Customers search from the US.
+- **Semrush database:** `us`.
+- **Business type:** local brand. Service × city is the map's axis; national volume is never their addressable demand.
+- **Domain:** toptaxpros.com — pull its Authority Score to set the difficulty ceiling.
