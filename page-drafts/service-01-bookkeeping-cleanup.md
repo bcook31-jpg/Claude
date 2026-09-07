@@ -43,7 +43,7 @@ you have — bank statements, a shoebox of receipts, a QuickBooks file nobody ha
 eighteen months — and hand you back financials you can file from and actually use.
 
 **Free assessment. A fixed quote before any work starts. Most clients have clean books back
-within 14 business days.**
+within 14 days.**
 
 *Rate confirmed 2026-09-07: $250 an hour, one hour minimum. Deliberately not in the hero — see
 the pricing note below.*
@@ -104,7 +104,7 @@ $250 an hour is a premium rate. Competitors ranking for these keywords advertise
 packages from around $299 and monthly bookkeeping from $150. **This page cannot win on price and
 must not try.** Three things it wins on instead, all of them true:
 
-1. **14 business days.** A national competitor ranking on this term advertises 30 days for a year
+1. **14 days.** A national competitor ranking on this term advertises 30 days for a year
    of books. You are roughly half.
 2. **The same firm files the return.** A cleanup from a bookkeeper who does not prepare returns
    gets handed to a preparer who did not build the file. Yours does not.
@@ -116,7 +116,16 @@ argument is that you are the trustworthy option. Just do not lead with it.
 
 ### How long it takes (accordion)
 
-**Most cleanups are finished within 14 business days.**
+**Every cleanup is finished in 14 days or less.**
+
+⚠️ **[ONE WORD TO PIN DOWN, and it governs this promise on pages 1, 2, 3 and 4: calendar days or
+business days?** You said "up to 14 days". I had written "14 business days" throughout and have
+changed it all to "14 days". Those are not the same promise — 14 calendar days is about 10
+working days, which is materially tighter.
+
+This is a published commitment that a client with a deadline will hold you to, so it needs to be
+the one you can actually meet in your busiest week, not your quietest. If it is business days,
+say so on the page; it is still faster than a national competitor advertising 30 days.]
 
 That is genuinely competitive. A national provider ranking for these terms advertises 30 days for
 a year of books, so this is roughly half. It belongs in the hero, the meta description and the

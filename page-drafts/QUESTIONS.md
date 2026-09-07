@@ -28,7 +28,7 @@ answer is "it depends", in which case say what it depends on.
 
 ## Three more that came up while drafting
 
-13. **Is 14 business days your standard turnaround or your fastest?** — pages 1, 2, 3.
+13. **Is 14 days your standard turnaround or your fastest?** — pages 1, 2, 3.
     This reader has a deadline and will hold you to whatever is printed.
 14. **What languages are spoken in the office?** — page 7. In this service area this is a genuine
     differentiator and most competitors do not state it.
@@ -63,7 +63,9 @@ accounts and monthly transaction volume. Now a pricing table on page 4. Full rea
 
 - ✅ **Confirmed 2026-09-07: the client pays Intuit directly** and the subscription stays in their
   name. On page 4, framed as file ownership — the books are theirs and leave with them.
-- **Do the transaction thresholds match your real delivery time?** They land at roughly one, two
-  and three and a half hours at your $250 rate, which I inferred from your pricing rather than
-  from how long the work actually takes you. If Essentials really takes ninety minutes, the
-  threshold is wrong, not the price.
+- **Do the transaction thresholds match the real work?** Still open — and note this is a
+  different question from turnaround. Not "how fast does it come back" but "how many hours does a
+  100-transaction month actually take your team". The tiers assume roughly one, two and three and
+  a half hours, inferred from your hourly rate. If Essentials really takes ninety minutes, the
+  threshold is wrong rather than the price, and with no overages you absorb the difference every
+  month.

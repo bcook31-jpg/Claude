@@ -149,8 +149,7 @@ recognises.
 ### If your books are behind right now (accordion)
 
 Most businesses that come to us for monthly bookkeeping are behind by a few months or a few years.
-That gets caught up first, as a separate piece of work billed at $250 an hour, and most cleanups
-are finished within 14 business days. Then the monthly plan starts from clean books.
+That gets caught up first, as a separate piece of work billed at $250 an hour, and most cleanups are finished in 14 days or less. Then the monthly plan starts from clean books.
 
 We will tell you what the catch-up looks like before you commit to either. [Link page 1.]
 
