@@ -42,13 +42,19 @@ returns for LLCs, S corporations, partnerships and sole proprietors — and wher
 books, the return is built from real reconciled numbers instead of a spreadsheet assembled in
 April.
 
-**Business returns start at $950.**
+**Priced by entity, because they are not the same job.**
 
-⚠️ **[Confirm the breakdown by entity type.** You gave $950 as the starting figure. Buyers compare
-by entity, so "from $950 for a single-member LLC, from $X for an S corp, from $X for a
-partnership" converts better than one number.]
+- **Self-employed or single-member LLC** — from $445, filed with your personal return
+- **Partnership or multi-member LLC** — [NEEDS FROM YOU: your figure. No clean example in the
+  invoice data.]
+- **S corporation or C corporation** — from $950
 
-**On the number itself:** $950 sits well above the commonly cited benchmark. The National Society
+⚠️ **[Revised 2026-09-07 against 200 real invoices.** The draft previously led with $950 for all
+business returns. Your invoice data shows a personal return with a Schedule C or single-member LLC
+runs $422 median, less than half that, and those are 32 invoices against 27 corporate. Leading
+with $950 would have turned away the larger group. See `ACTUAL-PRICING.md`.]
+
+**On the corporate number:** $950 sits well above the commonly cited benchmark. The National Society
 of Accountants' last published fee survey, the 2020-2021 edition, put an itemized 1040 with a
 Schedule C and a state return at roughly $457. That figure is dated and it is national, but it is
 what the market anchors on, so this page has to justify the gap rather than just state the price.

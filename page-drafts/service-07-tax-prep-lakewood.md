@@ -87,15 +87,19 @@ whether something counts, bring it.
 
 ### What it costs (accordion)
 
-**Individual returns start at $250.**
+**Most personal returns are $295. Simple returns start at $250.**
+
+*From 163 invoiced returns, Jan 2025 to Aug 2026: median $295. "From $250" alone under-sold you by
+about 15% on your highest-volume service, and a specific number reads as a real price where a
+"from" reads as a teaser.*
 
 ⚠️ **[Confirm what moves it up.** A starting price without the escalators invites a phone call
 that ends in disappointment. Self-employment income, rentals, multiple states and investment
 sales are the usual ones.]
 
-**Context worth knowing:** $250 is above the national average for a simple return, which the last
-published National Society of Accountants survey put around $273 in February 2025 dollars for a
-standard-deduction 1040 — so you are roughly at market there, not above it. But two national
+**Context worth knowing:** $295 sits right at the national benchmark. The last published National
+Society of Accountants survey put a standard-deduction 1040 at roughly $273 in February 2025
+dollars, so you are at market, not above it — which is worth saying on the page. But two national
 chains with offices within a few miles compete hard on price. This page wins on the office, the
 people and the explanation, not on the number.
 

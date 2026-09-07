@@ -86,7 +86,8 @@ Every engagement is different, but the work is usually some combination of these
 
 ### What it costs (accordion)
 
-Cleanup is billed at **$250 an hour, with a one hour minimum**. Nobody can quote this work
+Cleanup is billed at **$250 an hour, with a one hour minimum**. A full initial cleanup for a
+business that is badly behind has run to $2,000. Nobody can quote this work
 without looking at the books first, which is why the assessment is free and why you get a fixed
 estimate of hours before anything starts.
 

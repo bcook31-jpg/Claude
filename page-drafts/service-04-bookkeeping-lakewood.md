@@ -48,13 +48,14 @@ That is what monthly bookkeeping buys. Your accounts get reconciled every month,
 transactions get categorized properly, and you get financial statements you can actually read.
 When the return comes due, the numbers are already there.
 
-**Monthly bookkeeping from $250 a month. Flat. No hourly overages.**
+**Monthly bookkeeping from $350 a month. Flat. No hourly overages.**
 
 Reconciled accounts, coded transactions, and a profit and loss statement and balance sheet
 delivered on a set date every month. When the return comes due, the numbers are already there.
 
-*Pricing structure agreed 2026-09-07: three transaction-based tiers, entry at $250. Real clients
-pay the entry price, so it is stated without hedging.*
+*Revised 2026-09-07 against 200 real invoices. Your two live bookkeeping clients pay $350 and
+$750 a month — $250 would have been below any price you have ever charged. See
+`ACTUAL-PRICING.md`.*
 
 **Primary action:** Get a quote → form
 
@@ -88,9 +89,9 @@ Lakewood, Long Beach, Cerritos, Bellflower, Downey, Paramount and Norwalk.
 
 | | Essentials | Standard | Full |
 |---|---|---|---|
-| **Per month** | $250 | $500 | $850 |
+| **Per month** | $350 | $550 | $750 |
 | **Accounts** | Up to 2 | Up to 4 | Up to 6 |
-| **Transactions a month** | Up to 75 | Up to 200 | Up to 400 |
+| **Transactions a month** | Up to 100 | Up to 250 | Up to 450 |
 | **Monthly reconciliation and categorization** | Yes | Yes | Yes |
 | **Profit and loss and balance sheet** | Yes | Yes | Yes |
 | **Payroll reports imported** | — | Yes | Yes |
@@ -102,13 +103,13 @@ Larger than the Full tier, we quote it after looking at the accounts.
 **No hourly overages and no surprise invoices.** If your volume grows past your tier, we tell you
 before anything changes, never after.
 
-*Thresholds revised 2026-09-07. The first set (100/300/750) scaled volume faster than price and
-would have made the top tier roughly half-priced against the work. Reasoning and the suggested
-setup fee are in `TIER-THRESHOLDS.md`.*
+*Prices now match what you actually bill. Your two live clients sit at the bottom and top of this
+ladder, which suggests the shape is right. At $350 the entry tier buys about ninety minutes at
+your hourly rate, which fits 100 transactions comfortably — the earlier concern about it being one
+hour of work is resolved.*
 
-⚠️ **[Validate against three real client months before publishing.** These are inferred from
-general bookkeeping throughput, not measured on your team. With no overages, a threshold set too
-high is a monthly loss for the life of the client.]
+⚠️ **[Still validate the transaction thresholds against three real client months.** The prices are
+now real; the volume boundaries are still inferred.]
 
 **Your QuickBooks subscription is separate and stays in your name.** You pay Intuit directly,
 which means the file is yours — if you ever leave, your books leave with you rather than living
@@ -141,10 +142,9 @@ That is still a far better offer than a competitor billing hourly overages, and 
 This is the page where the premium rate is hardest, and it needs saying plainly rather than
 discovering it in the numbers later.
 
-**At $250 a month you are inside the competitive bracket**, not above it. Competitors ranking for
-these keywords advertise flat monthly bookkeeping from $150 to $299, so this page can compete on
-price where the cleanup pages cannot. And because $250 is a figure real clients actually pay, the
-page can say it without hedging — which most competitors publishing a "from" price cannot.
+**At $350 a month you sit just above the advertised bracket**, not inside it. Competitors ranking for these
+keywords advertise from $150 to $299, so this page is a little above them and cannot win on price
+alone. What it can do that they cannot is publish a flat figure with no overages and mean it.
 
 That is a real change in this page's prospects. It was the weakest of the top four; it is now
 arguably the strongest, because it targets 6,600 searches a month at a price the market
