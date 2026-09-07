@@ -89,8 +89,8 @@ Lakewood, Long Beach, Cerritos, Bellflower, Downey, Paramount and Norwalk.
 | | Essentials | Standard | Full |
 |---|---|---|---|
 | **Per month** | $250 | $500 | $850 |
-| **Accounts** | Up to 2 | Up to 4 | Up to 8 |
-| **Transactions a month** | Up to 100 | Up to 300 | Up to 750 |
+| **Accounts** | Up to 2 | Up to 4 | Up to 6 |
+| **Transactions a month** | Up to 75 | Up to 200 | Up to 400 |
 | **Monthly reconciliation and categorization** | Yes | Yes | Yes |
 | **Profit and loss and balance sheet** | Yes | Yes | Yes |
 | **Payroll reports imported** | — | Yes | Yes |
@@ -102,9 +102,13 @@ Larger than the Full tier, we quote it after looking at the accounts.
 **No hourly overages and no surprise invoices.** If your volume grows past your tier, we tell you
 before anything changes, never after.
 
-⚠️ **[Sanity-check the transaction thresholds against how long that work actually takes your
-team.** These land at roughly one, two and three and a half hours at your $250 rate. You know your
-delivery time and I inferred it from your pricing.]
+*Thresholds revised 2026-09-07. The first set (100/300/750) scaled volume faster than price and
+would have made the top tier roughly half-priced against the work. Reasoning and the suggested
+setup fee are in `TIER-THRESHOLDS.md`.*
+
+⚠️ **[Validate against three real client months before publishing.** These are inferred from
+general bookkeeping throughput, not measured on your team. With no overages, a threshold set too
+high is a monthly loss for the life of the client.]
 
 **Your QuickBooks subscription is separate and stays in your name.** You pay Intuit directly,
 which means the file is yours — if you ever leave, your books leave with you rather than living
