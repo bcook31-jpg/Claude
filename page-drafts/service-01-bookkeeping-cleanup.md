@@ -43,7 +43,7 @@ you have — bank statements, a shoebox of receipts, a QuickBooks file nobody ha
 eighteen months — and hand you back financials you can file from and actually use.
 
 **Free assessment. A fixed quote before any work starts. Most clients have clean books back
-within 14 days.**
+within 14 business days.**
 
 *Rate confirmed 2026-09-07: $250 an hour, one hour minimum. Deliberately not in the hero — see
 the pricing note below.*
@@ -116,16 +116,11 @@ argument is that you are the trustworthy option. Just do not lead with it.
 
 ### How long it takes (accordion)
 
-**Every cleanup is finished in 14 days or less.**
+**Every cleanup is finished in 14 business days or less.**
 
-⚠️ **[ONE WORD TO PIN DOWN, and it governs this promise on pages 1, 2, 3 and 4: calendar days or
-business days?** You said "up to 14 days". I had written "14 business days" throughout and have
-changed it all to "14 days". Those are not the same promise — 14 calendar days is about 10
-working days, which is materially tighter.
-
-This is a published commitment that a client with a deadline will hold you to, so it needs to be
-the one you can actually meet in your busiest week, not your quietest. If it is business days,
-say so on the page; it is still faster than a national competitor advertising 30 days.]
+*Confirmed 2026-09-07: 14 business days, as a ceiling not an average. Write it as "14 business
+days" on the page, never as "two weeks" — a client counting calendar days will believe you
+promised ten working days and be right to be annoyed.*
 
 That is genuinely competitive. A national provider ranking for these terms advertises 30 days for
 a year of books, so this is roughly half. It belongs in the hero, the meta description and the

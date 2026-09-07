@@ -48,7 +48,7 @@ you whether it can be done in time.
 
 ## One proof line (visible)
 
-**Catch-up work is finished in 14 days or less.**
+**Catch-up work is finished in 14 business days or less.**
 
 ⚠️ [Confirm: is 14 days your standard turnaround, or your fastest? This page is read by
 someone with a deadline, and it needs the honest standard figure, not a best case they will hold
@@ -99,7 +99,7 @@ else can follow while work is underway.
 ## FAQ (questions visible, answers collapsed)
 
 **How fast can you actually do this?**
-Catch-up work is finished in 14 days or less from receiving your statements. How far back
+Catch-up work is finished in 14 business days or less from receiving your statements. How far back
 we are going and how many accounts are involved move that.
 
 **I have years, not months. Is that too far gone?**

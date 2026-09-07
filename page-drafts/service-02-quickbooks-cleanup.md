@@ -45,7 +45,7 @@ We go into the file and fix it — reconcile every account, clear the duplicates
 transactions where they belong, and rebuild the chart of accounts if it has grown past
 usefulness. You get a file you can run reports from.
 
-**The file review is free. You get a fixed estimate before any work starts, and most files are finished in 14 days or less.**
+**The file review is free. You get a fixed estimate before any work starts, and most files are finished in 14 business days or less.**
 
 *Cleanup is billed at $250 an hour, one hour minimum. State it in the "how the review works"
 section, not the hero — same reasoning as page 1.*
