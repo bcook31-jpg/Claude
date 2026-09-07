@@ -105,7 +105,8 @@ protections in this industry and most people never learn it is there.
 - Both the federal and the California return, e-filed
 - A complete copy of what was filed
 - The preparer's signature and PTIN on it
-- A clear answer on what happens if a notice arrives later, and whether that costs extra
+- A clear answer on what happens if a notice arrives later, whether that costs extra, and whether
+  they can actually represent you if it escalates
 
 That last one catches people out. Ask before you engage, not after the letter arrives.
 
@@ -167,7 +168,8 @@ the sale. The published number and the published prices are what make this endin
 
 ## Author box
 
-**Brian Cook**, CTEC-registered tax preparer since 2003, CTEC A045646.
+**Brian Cook**, CTEC-registered tax preparer since 2003, CTEC A045646. IRS Annual Filing Season
+Program participant, listed in the IRS Directory of Federal Tax Return Preparers.
 Top Tax Pros, 5261 Paramount Blvd, Lakewood, CA. Over 20 years preparing returns in Lakewood.
 
 *Verify any California preparer, including this one, at ctec.org.*

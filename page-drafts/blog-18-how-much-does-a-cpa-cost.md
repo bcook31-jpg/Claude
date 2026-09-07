@@ -93,8 +93,18 @@ of qualifying education, a $5,000 surety bond, a background check, a PTIN, and a
 with 20 hours of continuing education.
 [https://www.ftb.ca.gov/tax-pros/california-tax-education-council.html]
 
-The practical difference is representation, not preparation. All three can prepare and file the
-same return. Only the first two can represent you before the IRS without limitation.
+**Annual Filing Season Program participant.** A fourth tier most people have never heard of. It is
+a voluntary IRS programme for preparers who are not CPAs, enrolled agents or attorneys. Completing
+it earns a Record of Completion and **limited representation rights**: the preparer can represent
+you before IRS revenue agents, customer service and the Taxpayer Advocate Service, but only on a
+return they personally prepared and signed, and not before appeals or collections. Participants
+are listed in the IRS public directory of preparers alongside CPAs and enrolled agents.
+[https://www.irs.gov/tax-professionals/annual-filing-season-program]
+
+The practical difference is representation, not preparation. All four can prepare and file the
+same return. CPAs, enrolled agents and attorneys can represent you before any IRS office without
+limitation. An Annual Filing Season Program participant can represent you in a narrower set of
+situations. A registered preparer without that Record of Completion cannot represent you at all.
 
 ### So when do you actually need a CPA?
 
@@ -125,7 +135,8 @@ who will not sign the return.
 ### How to check anyone's credential in two minutes
 
 - **CPA:** search the California Board of Accountancy licence lookup
-- **Enrolled agent or CPA:** the IRS maintains a public directory of preparers with credentials
+- **Enrolled agent, CPA, or Annual Filing Season Program participant:** the IRS maintains a public
+  directory that lists all of them
   [https://www.irs.gov/tax-professionals/faqs-directory-of-federal-tax-return-preparers-with-credentials-and-select-qualifications]
 - **CTEC registered:** search the CTEC verification page [https://ctec.org/]
 
@@ -160,7 +171,9 @@ particular credential.
 
 **We are not a CPA firm, and for most returns you do not need one.**
 
-We are CTEC-registered tax preparers in Lakewood, CTEC A045646. We file returns for individuals and small
+We are CTEC-registered tax preparers in Lakewood, CTEC A045646, and an IRS Annual Filing Season
+Program participant — which means you can find us in the IRS's own public directory, and we can
+represent you on a return we prepared in the situations described above. We file returns for individuals and small
 businesses across Lakewood, Long Beach, Cerritos and Downey, and we keep the books behind them.
 
 If your situation genuinely calls for a CPA — audited or reviewed financial statements, a complex

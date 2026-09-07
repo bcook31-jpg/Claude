@@ -64,7 +64,9 @@ The 14-day turnaround and doing the books and the return together are the two ar
 
 ## One proof line (visible)
 
-**Over 20 years serving Lakewood. CTEC-registered since 2003. 4.5 stars across roughly 80 reviews.**
+**Over 20 years serving Lakewood. CTEC A045646, registered since 2003. IRS Annual Filing Season
+Program participant, listed in the IRS public preparer directory. 4.5 stars across roughly 80
+reviews.**
 
 ⚠️ **[One live inaccuracy to fix off-site.** A directory listing claims "over 30 years". Founded
 2000 is 26 years and CTEC registration since 2003 is 23. Neither supports 30, so that listing
@@ -145,10 +147,15 @@ the return.
 Yes, and for most owners they are prepared together. [Link page 7.]
 
 **What if the IRS sends a notice after filing?**
-If the IRS sends you a notice about a return we prepared, send it to us. We will read it, check it
-against what was filed, and tell you plainly whether it is right. If it is, we will prepare the
-amendment or help you put the response together. If the matter needs someone with representation
-rights before the IRS, we will tell you that too, and point you to someone who has them.
+If the IRS sends you a notice about a return we prepared and signed, send it to us. We will read
+it, check it against what was filed, and tell you plainly whether it is right. If it is, we will
+prepare the amendment or help you put the response together.
+
+Brian Cook holds an IRS Annual Filing Season Program Record of Completion, which carries limited
+representation rights: we can represent you before IRS revenue agents, customer service and the
+Taxpayer Advocate Service on a return we prepared and signed. We cannot represent you before
+appeals or collections, and we cannot represent you on a return we did not prepare. Where the
+matter needs someone with unlimited rights, we will say so and point you to them.
 
 ---
 

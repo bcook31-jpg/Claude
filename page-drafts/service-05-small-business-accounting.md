@@ -111,9 +111,10 @@ Said plainly, because being clear saves everyone a phone call.
 
 - Audited, reviewed or compiled financial statements. These require a CPA.
 - Payroll processing. We work from your provider's reports.
-- IRS representation, audit defense and back-tax resolution. If a notice arrives about a return
-  we prepared, we will read it, check it against what was filed and help you respond — but we
-  cannot act for you before the IRS.
+- **Unlimited** IRS representation, audit defense and back-tax resolution. Brian Cook's Annual
+  Filing Season Program Record of Completion carries limited rights — revenue agents, customer
+  service and the Taxpayer Advocate Service, on returns we prepared and signed. Appeals and
+  collections need someone with unlimited rights and we will tell you when that is the case.
 - ITIN applications.
 - Standalone financial planning or investment advice.
 

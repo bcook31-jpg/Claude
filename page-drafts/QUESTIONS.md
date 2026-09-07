@@ -71,10 +71,26 @@ this site's argument rests on credentials, and given that CTEC already requires 
 continuing education a year that likely overlaps, it may be close to free to obtain.
 https://www.irs.gov/tax-professionals/annual-filing-season-program
 
-**The Annual Filing Season Program question stays open and is worth answering.** If Brian Cook
-completes it, the wording above can be strengthened to say we can represent you on a return we
-prepared, before revenue agents and customer service. That is a real differentiator on a page
-about credentials, and CTEC's existing 20 hours a year likely overlaps most of the requirement.
+✅ **Confirmed 2026-09-07: Brian Cook does participate in the IRS Annual Filing Season Program.**
+
+That is the single most valuable credential fact in this whole batch and it changes five pages.
+What it actually permits, stated precisely, because overstating it is the risk:
+
+- **Can** represent a client before IRS revenue agents, customer service representatives and the
+  Taxpayer Advocate Service
+- **Only** on a return he personally prepared and signed
+- **Requires** a Record of Completion for both the year the return was prepared and each year the
+  representation happens
+- **Cannot** represent before appeals officers, settlement officers, revenue officers, collections
+  or Counsel
+- **Cannot** represent on a return he did not prepare
+
+He is also listed in the **IRS Directory of Federal Tax Return Preparers with Credentials and
+Select Qualifications**, alongside CPAs and enrolled agents. That is a third-party, government-run
+verification page, and almost no competing local firm mentions being in it.
+
+Blog 18 previously described three credential tiers and now describes four, because the programme
+is the tier most readers have never heard of and it is exactly where this firm sits.
 
 **One follow-up the wording creates:** is reviewing a notice and preparing an amendment included
 in the original fee, or billed separately? The paragraph promises the work, and a reader will

@@ -170,7 +170,8 @@ what moves it is enough.]
 
 ## Author box
 
-**Brian Cook**, CTEC-registered tax preparer since 2003, CTEC A045646.
+**Brian Cook**, CTEC-registered tax preparer since 2003, CTEC A045646. IRS Annual Filing Season
+Program participant, listed in the IRS Directory of Federal Tax Return Preparers.
 Top Tax Pros, 5261 Paramount Blvd, Lakewood, CA. Over 20 years preparing returns in Lakewood.
 
 *Verify any California preparer, including this one, at ctec.org.*
