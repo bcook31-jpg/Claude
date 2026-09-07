@@ -67,8 +67,7 @@ Say so when you call. What we can usually do at short notice:
 - File an extension where one is available, so the rest of the cleanup happens without a clock
   on it
 
-**[NEEDS FROM YOU: confirm you file extensions.** If not, remove that bullet — do not imply a
-service you do not provide.]
+*Confirmed: we file extensions.*
 
 An extension moves the filing date, not the payment date. Interest and penalties still accrue on
 tax owed from the original due date, and anyone who tells you otherwise is costing you money.
@@ -78,9 +77,10 @@ tax owed from the original due date, and anyone who tells you otherwise is costi
 Still fixable, and still worth doing quickly, because most late-filing penalties accrue monthly.
 The books get caught up, the return gets prepared from real numbers, and you stop the meter.
 
-[NEEDS FROM YOU: confirm you prepare prior-year and late returns. This whole section depends on
-it. Note also that IRS notice response and penalty abatement are on your DON'T list, so this page
-must not offer to deal with the IRS on the client's behalf.]
+*Confirmed: we prepare prior-year and late returns.*
+
+⚠️ [This page must still not offer to deal with the IRS on a client's behalf — see the note on
+question 14 in `QUESTIONS.md`.]
 
 ### What it costs (accordion)
 

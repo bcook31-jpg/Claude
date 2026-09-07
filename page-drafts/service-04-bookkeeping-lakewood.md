@@ -216,10 +216,14 @@ serve. A real list converts; a generic one reads as a template.]
 ## FAQ
 
 **What software do you use?**
-QuickBooks Online for most clients. [NEEDS FROM YOU: confirm, and name any alternative.]
+QuickBooks Online, exclusively.
 
 **Do I have to switch software?**
-[NEEDS FROM YOU]
+Yes. We work in QuickBooks Online only, so clients on other systems move across when they start
+with us. We handle the migration as part of onboarding.
+
+⚠️ [Confirm the last sentence. If migration is billed separately at $250 an hour, say that instead
+— it is a real cost and it belongs in the answer rather than on the first invoice.]
 
 **Do you do my taxes too?**
 Yes, and doing both is the point — the books feed the return. [Link to pages 6 and 7.]
@@ -228,10 +232,11 @@ Yes, and doing both is the point — the books feed the return. [Link to pages 6
 No. We work from your payroll provider's reports.
 
 **Am I locked into a contract?**
-[NEEDS FROM YOU]
+[NEEDS FROM YOU — one of the last two open questions on this page.]
 
 **How do I get my documents to you?**
-[NEEDS FROM YOU: portal, email, drop-off. Say which, because this is a real friction point.]
+Drop off at the Lakewood office, or send them digitally. [NEEDS FROM YOU: name the digital route —
+portal or email — because "send them digitally" is not an instruction.]
 
 ---
 

@@ -146,10 +146,11 @@ or transaction work. [Link page 18.]
 [Short answer, then link page 18 and the blog cluster at 25 and 26.]
 
 **Can you handle an S corp return?**
-[NEEDS FROM YOU]
+Yes. We file S corporation, C corporation and partnership returns as well as sole proprietor and
+single-member LLC returns.
 
 **Do you work with businesses outside California?**
-[NEEDS FROM YOU: are you comfortable preparing multi-state returns?]
+Yes. We prepare multi-state returns.
 
 **How much does it cost?**
 [NEEDS FROM YOU]

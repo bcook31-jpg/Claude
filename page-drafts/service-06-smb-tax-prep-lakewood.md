@@ -82,7 +82,7 @@ Lakewood, Long Beach, Cerritos, Bellflower, Downey and the surrounding area.
 
 ### Returns we prepare (accordion)
 
-**[NEEDS FROM YOU: confirm every line before publishing. Remove anything you do not file.]**
+*All confirmed 2026-09-07.*
 
 - Sole proprietors and single-member LLCs — Schedule C with the personal return
 - Multi-member LLCs and partnerships — Form 1065 with K-1s
@@ -126,13 +126,14 @@ confirm your dates in writing when you engage. [Do not print specific 2027 dates
 they change and a stale date on a live page costs a client money.]
 
 **Do you file the extension if we need one?**
-[NEEDS FROM YOU]
+Yes. Note that an extension moves the filing date, not the payment date — tax owed still accrues
+interest from the original due date.
 
 **Can you file a prior-year business return?**
-[NEEDS FROM YOU]
+Yes, current and prior years.
 
 **Do you handle multi-state?**
-[NEEDS FROM YOU]
+Yes.
 
 **Do I need a CPA for an S corp return?**
 No. An S corporation return can be prepared by any preparer holding a valid PTIN and, in

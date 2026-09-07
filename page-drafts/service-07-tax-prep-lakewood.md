@@ -43,11 +43,14 @@ and a preparer who explains your return before you sign." (143)
 
 A local office, a preparer who sits with you, and a return you understand before you sign it.
 
-**Open weeknights until 8pm and Saturdays. In person or virtual. Returns from $250. On
-Paramount Boulevard since 2000.**
+**Open weeknights until 8pm and Saturdays, year-round. Walk in, book ahead, or drop off.
+Se habla español. Most personal returns $295.**
 
-⚠️ [Confirm the hours and the year. The hours are the differentiator — most independent preparers
-nearby close at 5pm, and this is what lets someone come after work.]
+*Four real differentiators in one line, all confirmed. Most independent preparers nearby close at
+5pm and disappear in May. Spanish in the office matters in this service area and almost none of
+the competing pages state it.*
+
+⚠️ [Confirm the published hours are current.]
 
 **Primary action:** Book an appointment
 **Secondary action:** Call (562) 600-7072
@@ -107,10 +110,12 @@ people and the explanation, not on the number.
 
 ### Hours and appointments (accordion)
 
-**Monday to Friday, 9am to 8pm. Saturday, 10am to 3pm. Closed Sunday.**
-**In-person and virtual appointments both available.**
+**Monday to Friday, 9am to 8pm. Saturday, 10am to 3pm. Closed Sunday. Open year-round.**
+**Appointments or walk-ins. Drop-off available. In-person or virtual.**
+**English and Spanish.**
 
-⚠️ [Confirm, and confirm whether these extend during the season.]
+⚠️ [Confirm the hours themselves, and whether they extend during the season. Everything else on
+these three lines is confirmed.]
 
 **Move this out of the accordion and into the hero.** Weeknights until 8pm and Saturday hours beat
 most independent preparers nearby and match the national chains. It is one of the strongest true
@@ -128,24 +133,25 @@ Bellflower (13), Norwalk (14) and Paramount (15). Do not pre-write these.]*
 ## FAQ
 
 **Do I need an appointment?**
-[NEEDS FROM YOU]
+No. We take appointments and walk-ins both. An appointment means less waiting during the season.
 
 **Can I drop off my documents?**
-[NEEDS FROM YOU]
+Yes. Drop them at the Lakewood office and we will call you with any questions.
 
 **Do you e-file?**
-[NEEDS FROM YOU — assume yes, but confirm.]
+[NEEDS FROM YOU — the last open one on this page. Assume yes, but do not assume it in print.]
 
 **What languages do you speak in the office?**
-[NEEDS FROM YOU. In this service area this is a genuine differentiator and worth stating.]
+English and Spanish.
 
 **Are you open year-round?**
-[NEEDS FROM YOU. Year-round availability separates you from seasonal storefronts and is worth a
-line on the page if true.]
+Yes. We are here in July as well as April, which is not true of the seasonal storefronts.
 
 **Can you help if I owe and cannot pay?**
-We can prepare and file the return accurately. Negotiating with the IRS is not a service we
-offer, and we will say so rather than take it on.
+We prepare and file the return accurately, and we will explain what you owe and why.
+
+⚠️ **[HOLD — see question 14 in `QUESTIONS.md`. This answer's wording depends on a credential
+question that is not settled.]**
 
 ---
 
@@ -186,8 +192,9 @@ restricts unlicensed use of accounting titles. See page 5.
 
 1. **The differentiator line.** Without it this page cannot beat the national chains ranking
    above it.
-2. Real hours and appointment policy
+2. ✅ Appointments, walk-ins and drop-off all available. Hours still to confirm as current.
 3. Pricing
-4. Languages spoken
-5. Year-round or seasonal
+4. ✅ English and Spanish
+5. ✅ Year-round
 6. Real office photos and street address
+7. E-filing — confirm

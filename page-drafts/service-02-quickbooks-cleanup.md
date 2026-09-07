@@ -7,8 +7,10 @@
 
 ⚠️ **Trademark note:** QuickBooks is Intuit's mark. Use it descriptively ("QuickBooks cleanup",
 "we work in QuickBooks Online"). Never imply endorsement, partnership or certification.
-[NEEDS FROM YOU: is anyone on staff a certified QuickBooks ProAdvisor? If yes, say so — it is a
-real differentiator and competitors on this term lead with it. If no, the page must not suggest it.]
+*Confirmed 2026-09-07: nobody on staff is a certified QuickBooks ProAdvisor. The page must not
+suggest otherwise — several competitors ranking for this term lead with the certification, so the
+temptation to imply it is real. Compete on the 14 business day turnaround and on the fact that the
+same firm files the return instead.*
 
 ---
 
@@ -79,9 +81,12 @@ QuickBooks Online clients anywhere in the US remotely.
 
 ### QuickBooks Online or Desktop (accordion)
 
-[NEEDS FROM YOU: which do you support? Online only, or Desktop as well? This is a real filter
-for buyers and the page should answer it plainly. Desktop support is increasingly rare and
-worth saying out loud if you offer it.]
+**QuickBooks Online only.**
+
+We work in QuickBooks Online. We do not take on Desktop files.
+
+*Say it plainly and early. A Desktop user who reads three sections before discovering this is a
+wasted visit for both of you, and Desktop is a meaningful share of the remaining install base.*
 
 ### How the review works (accordion)
 
@@ -123,7 +128,7 @@ Yes, that is monthly bookkeeping. [Link to page 4.] Most cleanup clients move on
 the file drifts again within a year otherwise.
 
 **Do you also file the return once the file is clean?**
-[NEEDS FROM YOU: confirm.] If yes, link to page 6.
+Yes — business and personal, current year and prior years. [Link page 6.]
 
 ---
 

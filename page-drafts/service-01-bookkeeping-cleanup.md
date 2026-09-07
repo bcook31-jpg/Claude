@@ -166,7 +166,8 @@ We are not going to ask why it happened. We are going to ask for the statements.
 ## FAQ (questions visible, answers collapsed)
 
 **How many years behind can you go?**
-[NEEDS FROM YOU: your actual limit.] As a rule, the further back you go the more the work is
+As far back as you need. We prepare prior-year and late returns, so the books and the filings can
+be brought current together. As a rule, the further back you go the more the work is
 reconstruction from statements rather than cleanup of existing records, and the cost reflects
 that.
 
@@ -182,9 +183,8 @@ path when the file has years of compounding errors, and we will tell you which o
 looking at before any work starts.
 
 **Will this help me file a late return?**
-Clean books are what a late return gets prepared from, so yes, and the two are usually done
-together. [NEEDS FROM YOU: confirm whether you prepare late and prior-year returns. If not, this
-answer changes and the page should not imply it.]
+Yes, and the two are usually done together. Clean books are what a late return gets prepared from,
+and we prepare prior-year and late returns as well as current ones.
 
 **What if I am not sure how far behind I am?**
 That is normal, and finding out is the first thing we do. Send what you have.
