@@ -82,7 +82,7 @@ say "4.5 stars on Yelp" and it is accurate everywhere.
 8pm and Saturdays beats most independent preparers in the area and matches the national chains.
 It belongs on page 7 in the hero, not in a collapsed section.
 
-**4.5 stars across roughly 80 reviews is your proof line.** It is better than anything I asked you
+**4.9 stars across 684 Google reviews is your proof line.** It is better than anything I asked you
 to supply. It goes on pages 1, 4, 6 and 7.
 
 ---

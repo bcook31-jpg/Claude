@@ -61,9 +61,9 @@ $750 a month — $250 would have been below any price you have ever charged. See
 
 ## One proof line (visible)
 
-**Over 20 years serving Lakewood. CTEC A045646, registered since 2003. IRS Annual Filing Season
-Program participant, listed in the IRS public preparer directory. 4.5 stars on Yelp across roughly 80
-reviews.**
+**4.9 stars across 684 Google reviews. Over 20 years serving Lakewood. CTEC A045646, registered
+since 2003. IRS Annual Filing Season Program participant, listed in the IRS public preparer
+directory.**
 
 ⚠️ **[One live inaccuracy to fix off-site.** A directory listing claims "over 30 years". Founded
 2000 is 26 years and CTEC registration since 2003 is 23. Neither supports 30, so that listing
@@ -172,7 +172,7 @@ Price still should not carry the page alone. What it argues alongside, all of it
 
 1. **One firm does the books and the return.** For a business owner this is the whole pitch. The
    cheap monthly providers hand you a file in March and wish you luck.
-2. **26 years in Lakewood, 4.5 stars across roughly 80 reviews.** The $150 providers are
+2. **26 years in Lakewood, 4.9 stars across 684 Google reviews.** The $150 providers are
    offshore-staffed subscription services. You are a person on Paramount Boulevard.
 3. **You can walk in.** Weeknights until 8pm and Saturdays.
 4. **Nothing gets estimated in April**, because the books were closed monthly by the people

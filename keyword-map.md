@@ -837,6 +837,17 @@ services you already sell.
 **Opens up as your Authority Score climbs past about 40 · 10 keywords**
 tax preparer near me (46) · tax preparation near me (51) · cpa near me (49) · bookkeeper near me (33) · bookkeeping services (51) · what documents do i need to file my taxes (50) · what does a bookkeeper do (44) · s corp tax deadline 2026 (48) · business tax extension deadline (44) · bookkeeping services for small business (38)
 
+**Crypto tax — a service you sell, priced out of reach for now · 12 keywords**
+Your Google profile lists crypto tax preparation and it is not on this map, because the family is
+almost entirely above your ceiling: crypto tax accountant (57) · crypto tax service (67) · crypto
+tax filing (73) · crypto tax help (77) · crypto tax software (75) · how to report crypto on taxes
+(66) · crypto capital gains tax (65) · crypto tax preparation (50) · crypto tax preparer (47) ·
+crypto tax preparer near me (45) · crypto tax cpa (34) · cryptocurrency tax services (35).
+The whole space is held by crypto tax software companies with real budgets. Three sit near the
+edge and reopen first: crypto tax loss harvesting (210/mo, 31), form 8949 crypto (50/mo, 32) and
+defi taxes (40/mo, 23). Keep selling it, keep it in the profile and on the homepage, but do not
+spend a page slot on it this season.
+
 **Opens up around 55 · 1 keyword**
 tax preparation services (100)
 

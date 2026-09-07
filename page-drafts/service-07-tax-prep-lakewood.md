@@ -63,9 +63,9 @@ the competing pages state it.*
 
 ## One proof line (visible)
 
-**Over 20 years serving Lakewood. CTEC A045646, registered since 2003. IRS Annual Filing Season
-Program participant, listed in the IRS public preparer directory. 4.5 stars on Yelp across roughly 80
-reviews.**
+**4.9 stars across 684 Google reviews. Over 20 years serving Lakewood. CTEC A045646, registered
+since 2003. IRS Annual Filing Season Program participant, listed in the IRS public preparer
+directory.**
 
 ⚠️ **[One live inaccuracy to fix off-site.** A directory listing claims "over 30 years". Founded
 2000 is 26 years and CTEC registration since 2003 is 23. Neither supports 30, so that listing

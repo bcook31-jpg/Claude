@@ -8,6 +8,51 @@
 | Primary category | Tax preparation |
 | Additional category | Tax consultant |
 | Services listed | Tax Preparation Services · Bookkeeping · Business Accounting · Income Tax Preparation · Accounting |
+| Google rating | **4.9 stars across 684 reviews** |
+| Customer interactions | 856 |
+| Profile strength | "Looks good" |
+| Description | "Personal, small-business and crypto-related tax prepping services along with payroll, bookkeeping and accounting services." |
+
+---
+
+## ⭐ First, the good news — and it changes every page
+
+**4.9 stars across 684 Google reviews.**
+
+That is exceptional for a local tax firm, and it is far stronger than the Yelp figure I had been
+using (4.5 across roughly 80). Every service page proof line has been changed to cite Google
+instead. 684 reviews is not a supporting detail, it is the most persuasive single fact about this
+business and it should sit high on every page.
+
+It also reframes the review-count question from the readiness list. Ignore Yelp's 77-versus-81
+discrepancy. Cite Google.
+
+---
+
+## ⛔ 0. Your profile description claims payroll
+
+The description reads:
+
+> "Personal, small-business and crypto-related tax prepping services along with **payroll**,
+> bookkeeping and **accounting** services."
+
+**Two problems, one of them serious.**
+
+**Payroll.** You do not offer payroll. It is on your own DON'T list and every page draft says so
+explicitly. This description is live and says otherwise, which means you are fielding enquiries
+for a service you will have to turn away, and doing it from the profile that feeds your map pack.
+
+**"Accounting services."** Same California restriction as everywhere else, and a profile
+description has nowhere to put the disclaimer.
+
+**Suggested replacement:**
+
+> Tax preparation for individuals and small businesses in Lakewood, California. Bookkeeping,
+> business tax returns, entity formation and bookkeeping cleanup. CTEC-registered, over 20 years
+> in Lakewood. Open weeknights and Saturdays, year-round. Se habla español.
+
+That drops the two problems, adds four confirmed differentiators, and names the services you are
+actually building pages for.
 
 ---
 

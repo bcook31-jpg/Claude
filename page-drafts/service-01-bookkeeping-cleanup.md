@@ -53,9 +53,9 @@ the pricing note below.*
 
 ## One proof line (visible)
 
-**Over 20 years serving Lakewood. CTEC A045646, registered since 2003. IRS Annual Filing Season
-Program participant, listed in the IRS public preparer directory. 4.5 stars on Yelp across roughly 80
-reviews.**
+**4.9 stars across 684 Google reviews. Over 20 years serving Lakewood. CTEC A045646, registered
+since 2003. IRS Annual Filing Season Program participant, listed in the IRS public preparer
+directory.**
 
 ⚠️ **[One live inaccuracy to fix off-site.** A directory listing claims "over 30 years". Founded
 2000 is 26 years and CTEC registration since 2003 is 23. Neither supports 30, so that listing
@@ -113,7 +113,7 @@ must not try.** Three things it wins on instead, all of them true:
    of books. You are roughly half.
 2. **The same firm files the return.** A cleanup from a bookkeeper who does not prepare returns
    gets handed to a preparer who did not build the file. Yours does not.
-3. **26 years and 4.5 stars across roughly 80 reviews.** At this rate the buyer is paying for
+3. **26 years and 4.9 stars across 684 Google reviews.** At this rate the buyer is paying for
    judgment, and that is the evidence of it.
 
 Keep the rate honest and visible — burying it entirely reads as evasive on a page whose whole
