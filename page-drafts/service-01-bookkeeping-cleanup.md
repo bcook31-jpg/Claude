@@ -53,7 +53,7 @@ the pricing note below.*
 
 ## One proof line (visible)
 
-**4.5 stars across roughly 80 reviews. Serving Lakewood since 2000, CTEC-registered since 2003.**
+**Over 20 years serving Lakewood. CTEC-registered since 2003. 4.5 stars across roughly 80 reviews.**
 
 ⚠️ **[One live inaccuracy to fix off-site.** A directory listing claims "over 30 years". Founded
 2000 is 26 years and CTEC registration since 2003 is 23. Neither supports 30, so that listing

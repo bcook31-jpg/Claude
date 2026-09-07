@@ -183,7 +183,7 @@ the office and the home and your preparer can run it.
 ## Author box
 
 **Brian Cook**, CTEC-registered tax preparer since 2003, CTEC A045646.
-Top Tax Pros, 5261 Paramount Blvd, Lakewood, CA. Preparing returns in Lakewood since 2000.
+Top Tax Pros, 5261 Paramount Blvd, Lakewood, CA. Over 20 years preparing returns in Lakewood.
 
 *Verify any California preparer, including this one, at ctec.org.*
 

@@ -74,8 +74,14 @@ is overstated and should be corrected wherever it appears. On a site whose blog 
 checking a preparer's credentials, an inflated tenure claim is the single easiest thing for a
 competitor to screenshot.
 
-Use "serving Lakewood since 2000" and "CTEC-registered since 2003" everywhere. Both are specific,
-both are verifiable, and specific beats round numbers.
+**Standard claim, agreed 2026-09-07: "over 20 years of service."** Use that phrasing everywhere,
+paired with "CTEC-registered since 2003" where there is room. Correct the "over 30 years" listing
+to match.
+
+*One note, take it or leave it: "since 2000" is a stronger claim than "over 20 years", because it
+is 26 years rather than 20 and a founding year never needs updating. "Over 20 years" will read as
+understated by 2030 unless someone remembers to change it. Your call — the agreed line is applied
+throughout.*
 
 ---
 
