@@ -212,8 +212,14 @@ that precedes buying page 4.
 - tax preparer credentials explained · too few searches to report · not scored
 - do i need a cpa to file my taxes · too few searches to report · not scored
 
-**Why here:** 1,300 searches at difficulty 21 that hold steady in every month of the year, and
-it is the page that explains why an enrolled agent can do everything these searchers need.
+**Reframed 2026-09-07.** The firm holds neither credential, so this cannot be a post arguing for
+enrolled agents. Write it as all three credentials explained plainly — CPA, enrolled agent and
+CTEC-registered preparer — including which one prepares most California returns and which one
+this firm holds. Same honest-explainer mechanism as page 18. Conversion is thinner here than on
+18, because neither credential in the title is yours; it earns its place on volume and on being
+the page that makes the firm look like it knows the landscape.
+
+**Why here:** 1,300 searches at difficulty 21 that hold steady in every month of the year.
 Narrow family — the bigger phrasings around it are above your ceiling and belong in the copy,
 not the title.
 

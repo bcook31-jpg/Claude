@@ -33,10 +33,18 @@ All affected pages are rewritten. What changed:
 It is verifiable in seconds at ctec.org, it is a genuine trust signal, and almost no competitor
 bothers.
 
-**One question left open.** Is anyone on staff an enrolled agent? You said tax preparers, so I
-have written everything for CTEC registration. If an EA credential exists, say so — an enrolled
-agent holds the same unlimited IRS representation rights as a CPA, and three pages get materially
-stronger.
+**Closed 2026-09-07: no enrolled agent either. CTEC-registered tax preparers, full stop.**
+Everything is written for that and nothing further needs changing on credential grounds.
+
+**One consequence worth knowing.** "Bookkeeper" and "bookkeeping" are not restricted terms in
+California — no licence or registration is required to use them, and CTEC registration governs
+paid tax return preparation, not bookkeeping. That means the entire bookkeeping side of the map,
+pages 1, 2, 3, 4, 20, 21, 22, 25, 26 and 27, uses vocabulary you can claim without qualification
+or disclaimer. Page 5 was the only page the credential constraint ever touched.
+
+That is a better position than it sounds. Your four highest-priority pages are all bookkeeping,
+they are the lowest difficulty on the map, they carry the highest cost-per-click, and none of
+them needs a legal read.
 
 ## 2. Pricing — blocks 9 pages
 
