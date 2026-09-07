@@ -61,8 +61,8 @@ accounts and monthly transaction volume. Now a pricing table on page 4. Full rea
 
 **17. Two follow-ups the tiers create:**
 
-- **Who pays for the QuickBooks subscription?** Say it on the page. Buyers comparing you against a
-  $199 provider will ask, and an unstated software cost sours a good first call.
+- ✅ **Confirmed 2026-09-07: the client pays Intuit directly** and the subscription stays in their
+  name. On page 4, framed as file ownership — the books are theirs and leave with them.
 - **Do the transaction thresholds match your real delivery time?** They land at roughly one, two
   and three and a half hours at your $250 rate, which I inferred from your pricing rather than
   from how long the work actually takes you. If Essentials really takes ninety minutes, the

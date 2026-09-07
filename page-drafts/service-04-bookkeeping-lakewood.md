@@ -106,9 +106,16 @@ before anything changes, never after.
 team.** These land at roughly one, two and three and a half hours at your $250 rate. You know your
 delivery time and I inferred it from your pricing.]
 
-⚠️ **[TWO THINGS TO DECIDE: who pays for the QuickBooks subscription?** Say it on the page —
-buyers comparing you against a $199 provider will ask, and an unstated software cost is the kind
-of thing that turns a good first call bad.]
+**Your QuickBooks subscription is separate and stays in your name.** You pay Intuit directly,
+which means the file is yours — if you ever leave, your books leave with you rather than living
+inside someone else's account.
+
+*Confirmed 2026-09-07: client pays for QuickBooks. Stated up front deliberately. It is a real cost
+on top of the monthly fee and a buyer will find out either way; saying it on the page costs one
+sentence, while discovering it on the first invoice costs the client.*
+
+*The ownership framing is honest and it is worth making. Several subscription bookkeeping
+providers hold the file in their own account, which makes leaving them painful. Yours does not.*
 
 *Confirmed 2026-09-07. This is the strongest single line on the page and it should be visible,
 not collapsed. The most common complaint about bookkeeping services is a monthly price that grows
