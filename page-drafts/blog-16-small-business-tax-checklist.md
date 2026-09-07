@@ -180,6 +180,19 @@ the office and the home and your preparer can run it.
 
 ---
 
+## Author box
+
+**Brian Cook**, CTEC-registered tax preparer, CTEC A045646.
+Top Tax Pros, 5261 Paramount Blvd, Lakewood, CA. Preparing returns in Lakewood since 2000.
+
+*Verify any California preparer, including this one, at ctec.org.*
+
+⚠️ [Confirm Brian Cook wrote or reviewed the post. If someone else writes it, use "Written by
+[name], reviewed by Brian Cook, CTEC A045646" — attributing to a person who did not touch it is
+worse than no byline.]
+
+---
+
 ## Internal links
 
 **Out:** pages 1, 6, 4.
@@ -193,4 +206,4 @@ be linked from the service pages prominently, not buried in a blog index.
 1. **Build the PDF.** Without it, half the keyword cluster is unaddressed.
 2. Decide gated or ungated
 3. Confirm your capitalization threshold before printing it, or leave it general
-4. Real author and credential
+4. ✅ Author: Brian Cook, CTEC A045646

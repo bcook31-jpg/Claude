@@ -149,7 +149,14 @@ CTEC-registered tax preparers in Lakewood, CTEC A045646, serving California sinc
 
 ## Author box
 
-**[AUTHOR NAME NEEDED]**, CTEC-registered tax preparer, CTEC A045646. Top Tax Pros, Lakewood, CA.
+**Brian Cook**, CTEC-registered tax preparer, CTEC A045646.
+Top Tax Pros, 5261 Paramount Blvd, Lakewood, CA. Preparing returns in Lakewood since 2000.
+
+*Verify any California preparer, including this one, at ctec.org.*
+
+⚠️ [Confirm Brian Cook is the right name and that he wrote or reviewed the post. If someone else
+writes it, use "Written by [name], reviewed by Brian Cook, CTEC A045646" — attributing to a person
+who did not touch it is worse than no byline.]
 
 ---
 
@@ -166,5 +173,5 @@ CTEC-registered tax preparers in Lakewood, CTEC A045646, serving California sinc
    Franchise Tax Board and the Attorney General. This post's advantage is accuracy on the two
    California steps others omit — getting those wrong loses more than not writing it.
 2. Realistic IRS timelines
-3. Author name
+3. ✅ Author: Brian Cook, CTEC A045646
 4. Build the cost table. It is the most linkable asset in the post.

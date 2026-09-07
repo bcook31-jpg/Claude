@@ -159,6 +159,19 @@ the sale. The published number and the published prices are what make this endin
 
 ---
 
+## Author box
+
+**Brian Cook**, CTEC-registered tax preparer, CTEC A045646.
+Top Tax Pros, 5261 Paramount Blvd, Lakewood, CA. Preparing returns in Lakewood since 2000.
+
+*Verify any California preparer, including this one, at ctec.org.*
+
+⚠️ [Confirm Brian Cook wrote or reviewed the post. If someone else writes it, use "Written by
+[name], reviewed by Brian Cook, CTEC A045646" — attributing to a person who did not touch it is
+worse than no byline.]
+
+---
+
 ## ⛔ Before this publishes
 
 1. Your own pricing, or at least a starting fee

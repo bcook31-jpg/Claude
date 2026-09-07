@@ -176,8 +176,7 @@ because it names the cases where you are the wrong answer. Do not soften it into
 ## ⛔ Before this publishes
 
 1. Verify the price ranges against real local rates
-2. Author name for the author box — on a post about credentials, an unsigned article undercuts
-   its own argument (CTEC number confirmed: A045646)
+2. ✅ Author: Brian Cook, CTEC A045646
 3. Confirm the California Board of Accountancy licensing details are current before printing them
 4. Read the post once looking only for defensiveness. If any sentence reads as arguing against
    CPAs rather than explaining them, cut it.
