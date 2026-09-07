@@ -48,13 +48,13 @@ That is what monthly bookkeeping buys. Your accounts get reconciled every month,
 transactions get categorized properly, and you get financial statements you can actually read.
 When the return comes due, the numbers are already there.
 
-**Monthly bookkeeping starts at $250 a month.**
-
-*Confirmed 2026-09-07: real clients pay $250 a month. It is a genuine entry price, not a teaser,
-so it can be stated plainly and defended.*
+**Monthly bookkeeping from $250 a month. Flat. No hourly overages.**
 
 Reconciled accounts, coded transactions, and a profit and loss statement and balance sheet
 delivered on a set date every month. When the return comes due, the numbers are already there.
+
+*Pricing structure agreed 2026-09-07: three transaction-based tiers, entry at $250. Real clients
+pay the entry price, so it is stated without hedging.*
 
 **Primary action:** Get a quote → form
 
@@ -84,13 +84,31 @@ Lakewood, Long Beach, Cerritos, Bellflower, Downey, Paramount and Norwalk.
 
 ### What it costs (accordion)
 
-**From $250 a month.** What moves it: number of accounts, monthly transaction volume, whether you
-carry inventory, and whether payroll reports need bringing in.
+**Three tiers. Pick the one that fits, or we will tell you which one does.**
 
-We look at your accounts and quote your monthly figure before you commit, so the first invoice is
-never a surprise.
+| | Essentials | Standard | Full |
+|---|---|---|---|
+| **Per month** | $250 | $500 | $850 |
+| **Accounts** | Up to 2 | Up to 4 | Up to 8 |
+| **Transactions a month** | Up to 100 | Up to 300 | Up to 750 |
+| **Monthly reconciliation and categorization** | Yes | Yes | Yes |
+| **Profit and loss and balance sheet** | Yes | Yes | Yes |
+| **Payroll reports imported** | — | Yes | Yes |
+| **Inventory or class tracking** | — | — | Yes |
+| **Review call** | — | Quarterly | Monthly |
 
-**$250 a month covers everything in scope. No hourly overages, no surprise invoices.**
+Larger than the Full tier, we quote it after looking at the accounts.
+
+**No hourly overages and no surprise invoices.** If your volume grows past your tier, we tell you
+before anything changes, never after.
+
+⚠️ **[Sanity-check the transaction thresholds against how long that work actually takes your
+team.** These land at roughly one, two and three and a half hours at your $250 rate. You know your
+delivery time and I inferred it from your pricing.]
+
+⚠️ **[TWO THINGS TO DECIDE: who pays for the QuickBooks subscription?** Say it on the page —
+buyers comparing you against a $199 provider will ask, and an unstated software cost is the kind
+of thing that turns a good first call bad.]
 
 *Confirmed 2026-09-07. This is the strongest single line on the page and it should be visible,
 not collapsed. The most common complaint about bookkeeping services is a monthly price that grows
@@ -120,6 +138,16 @@ page can say it without hedging — which most competitors publishing a "from" p
 That is a real change in this page's prospects. It was the weakest of the top four; it is now
 arguably the strongest, because it targets 6,600 searches a month at a price the market
 recognises.
+
+### If your books are behind right now (accordion)
+
+Most businesses that come to us for monthly bookkeeping are behind by a few months or a few years.
+That gets caught up first, as a separate piece of work billed at $250 an hour, and most cleanups
+are finished within 14 business days. Then the monthly plan starts from clean books.
+
+We will tell you what the catch-up looks like before you commit to either. [Link page 1.]
+
+---
 
 **And "no overages" is a sharper differentiator than the price itself.** The $150-a-month
 providers almost all bill extra by the hour or by transaction volume, which is why their advertised

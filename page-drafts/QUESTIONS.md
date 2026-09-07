@@ -55,8 +55,15 @@ $250/hour with a one hour minimum, which is right for work that is genuinely var
 - ✅ **Confirmed 2026-09-07: $250 covers everything in scope, no overages.** Now the headline line
   on page 4.
 
-**17. What is "in scope"?** This is the one new question the answer above creates. "No overages"
-is a strong promise and it needs a boundary, or it reads as unlimited bookkeeping for $250 a
-month. Give me the limits — how many accounts, roughly what transaction volume, what is excluded —
-and the page states them as part of the offer. With a stated boundary the promise is safer than a
-competitor's hourly overages and still reads as the better deal.
+✅ **Scope resolved 2026-09-07: three transaction-based tiers**, $250 / $500 / $850, bounded by
+accounts and monthly transaction volume. Now a pricing table on page 4. Full reasoning in
+`SCOPE-OPTIONS.md`.
+
+**17. Two follow-ups the tiers create:**
+
+- **Who pays for the QuickBooks subscription?** Say it on the page. Buyers comparing you against a
+  $199 provider will ask, and an unstated software cost sours a good first call.
+- **Do the transaction thresholds match your real delivery time?** They land at roughly one, two
+  and three and a half hours at your $250 rate, which I inferred from your pricing rather than
+  from how long the work actually takes you. If Essentials really takes ninety minutes, the
+  threshold is wrong, not the price.
