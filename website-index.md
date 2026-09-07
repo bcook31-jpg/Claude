@@ -10,6 +10,7 @@ Status: **Draft** (written, in `page-drafts/`) → **Sent to Hibu** (handed over
 All 19 below are **Draft**, and every one is gated on proof the business still has to supply.
 The consolidated list is in `page-drafts/NEEDS-FROM-YOU.md`.
 
+
 ---
 
 ## 1. Bookkeeping cleanup and catch-up
@@ -48,10 +49,10 @@ The consolidated list is in `page-drafts/NEEDS-FROM-YOU.md`.
 
 ---
 
-## 5. Small business accounting
+## 5. Small business bookkeeping and tax services
 
 **Type:** Service page
-**Proposed URL:** `/services/small-business-accounting`
+**Proposed URL:** `/services/small-business-bookkeeping-and-tax`
 **Status:** Draft
 **Draft:** `page-drafts/service-05-small-business-accounting.md`
 
@@ -180,3 +181,39 @@ The consolidated list is in `page-drafts/NEEDS-FROM-YOU.md`.
 **Proposed URL:** `/blog/how-much-do-tax-preparers-charge`
 **Status:** Draft
 **Draft:** `page-drafts/blog-19-how-much-do-tax-preparers-charge.md`
+
+---
+
+## 32. California Statement of Information filing
+
+**Type:** Service page
+**Proposed URL:** `/services/statement-of-information`
+**Status:** Draft
+**Draft:** `page-drafts/service-32-statement-of-information.md`
+
+---
+
+## 33. Non-profit bookkeeping
+
+**Type:** Service page
+**Proposed URL:** `/services/nonprofit-bookkeeping`
+**Status:** Draft
+**Draft:** `page-drafts/service-33-nonprofit-bookkeeping.md`
+
+---
+
+## 34. Non-profit formation
+
+**Type:** Service page
+**Proposed URL:** `/services/nonprofit-formation`
+**Status:** Draft
+**Draft:** `page-drafts/service-34-nonprofit-formation.md`
+
+---
+
+## 35. How to start a non-profit in California
+
+**Type:** Blog post
+**Proposed URL:** `/blog/how-to-start-a-nonprofit-in-california`
+**Status:** Draft
+**Draft:** `page-drafts/blog-35-start-a-nonprofit-california.md`

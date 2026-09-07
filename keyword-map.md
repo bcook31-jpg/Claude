@@ -18,7 +18,7 @@ which, so no block claims a specific month.
 
 ---
 
-# To build · 16
+# To build · 12
 
 ## 20. Service page: Bookkeeping services, Long Beach
 
@@ -44,6 +44,7 @@ genuinely Long Beach content, not page 4 with the city swapped.
 ---
 
 
+
 ## 21. Service page: Bookkeeping services, Cerritos
 
 **Spoke** · hub: 4 (Bookkeeping services, Lakewood)
@@ -67,6 +68,7 @@ clearest evidence on this map that the pattern works in this city.
 ---
 
 
+
 ## 22. Service page: Bookkeeping services, Downey
 
 **Spoke** · hub: 4 (Bookkeeping services, Lakewood)
@@ -85,6 +87,7 @@ clearest evidence on this map that the pattern works in this city.
 **Why here:** the recurring service in the third-largest market you serve.
 
 ---
+
 
 
 ## 23. Service page: Business entity formation, Lakewood
@@ -112,6 +115,7 @@ cheapest filing service, which is a different buyer from someone hiring you.
 ---
 
 
+
 ## 24. Blog post: Filing business taxes for an LLC for the first time
 
 **Standalone**
@@ -132,6 +136,7 @@ cheapest filing service, which is a different buyer from someone hiring you.
 than expected. Routes straight into page 6.
 
 ---
+
 
 
 ## 25. Blog post: How much does a bookkeeper cost
@@ -156,6 +161,7 @@ pages 1, 2, 4, 20, 21 and 22.
 ---
 
 
+
 ## 26. Blog post: Bookkeeper or CPA — which one do you need
 
 **Spoke** · hub: 25 (How much does a bookkeeper cost)
@@ -177,6 +183,7 @@ the answer is both, from one firm. Difficulty 5 and it never goes quiet.
 ---
 
 
+
 ## 27. Blog post: When to hire a bookkeeper
 
 **Spoke** · hub: 25 (How much does a bookkeeper cost)
@@ -196,6 +203,7 @@ the answer is both, from one firm. Difficulty 5 and it never goes quiet.
 that precedes buying page 4.
 
 ---
+
 
 
 ## 28. Blog post: Enrolled agent or CPA — what is the difference
@@ -227,6 +235,7 @@ not the title.
 ---
 
 
+
 ## 29. Blog post: LLC or S corp in California
 
 **Hub** · spokes: 30 · 31
@@ -249,6 +258,7 @@ owner rather than a student. Semrush labels this commercial; the live results ar
 it is a blog post that links down to page 23.
 
 ---
+
 
 
 ## 30. Blog post: What a California LLC actually costs each year
@@ -276,6 +286,7 @@ the title.
 ---
 
 
+
 ## 31. Blog post: Would an S corp election actually save you money
 
 **Spoke** · hub: 29 (LLC or S corp in California)
@@ -298,91 +309,9 @@ numbers is deciding on a change that needs a professional to execute, which is p
 
 ---
 
-## 32. Service page: California Statement of Information filing
-
-**Standalone**
-
-**Demand:** deadline-driven, filed every two years per entity, so steady rather than seasonal.
-
-**Primary keyword**
-- california statement of information · 4,400 searches a month · Medium (21 out of 100)
-
-**Secondary keywords**
-- file statement of information california · 880 a month · Medium (24)
-- llc statement of information california · 140 a month · Medium (23)
-- statement of information due date · 140 a month · Medium (20)
-- california llc statement of information · above your ceiling at 34 — covered here, never targeted
-
-**Why here:** 4,400 searches a month at difficulty 21 for a filing you already do and already
-invoice at $50 to $100. That combination does not appear anywhere else on this map. The ticket is
-small, and that is not the point — everyone searching this owns a California entity, which means
-they file a business return every year. This is the cheapest qualified lead source available to
-you, and blog post 30 already covers the same ground and can route straight into it.
-
 ---
 
-## 33. Service page: Non-profit bookkeeping
-
-**Standalone**
-
-**Primary keyword**
-- nonprofit bookkeeping · 1,600 searches a month · Medium (26 out of 100)
-
-**Secondary keywords**
-- non profit tax preparation · 140 a month · Easy (6)
-- nonprofit tax preparation · 110 a month · Easy (12)
-- form 990 due date · above your ceiling at 37 — covered here, never targeted
-- form 990 preparation · above your ceiling at 43 — covered here, never targeted
-
-**Why here:** you already file non-profit returns — six invoices at $500, plus a formation at
-$750 — and the map had no page for it. 1,600 searches at difficulty 26, with advertisers paying
-$12 a click. Non-profits need bookkeeping year-round and they are unusually loyal once placed.
-
-⚠️ **`nonprofit accountant` (320/mo, difficulty 9, commercial) is deliberately excluded.** Same
-restriction as page 5 — you cannot hold out as an accountant in California without the disclaimer,
-and difficulty 9 is not worth the exposure.
-
----
-
-## 34. Service page: Non-profit formation
-
-**Standalone**
-
-**Primary keyword**
-- nonprofit formation services · 390 searches a month · Medium (27 out of 100)
-
-**Secondary keywords**
-- nonprofit incorporation california · too few searches to report · not scored
-- 501c3 application service · too few searches to report · not scored
-- 501c3 tax filing · above your ceiling at 47 — covered here, never targeted
-
-**Why here:** you invoiced a non-profit formation at $750, so this is a service you sell with a
-proven price. Narrow family — three is everything with this buyer's intent. It also feeds page 33,
-because a new non-profit needs books kept from day one.
-
----
-
-## 35. Blog post: How to start a non-profit in California
-
-**Standalone**
-
-**Primary keyword**
-- how to start a nonprofit in california · 1,000 searches a month · Medium (21 out of 100)
-
-**Secondary keywords**
-- nonprofit incorporation california · too few searches to report · not scored
-- 501c3 application service · too few searches to report · not scored
-- form 990 due date · above your ceiling at 37 — covered here, never targeted
-
-**Why here:** 1,000 searches at difficulty 21, and unlike the general LLC formation family this
-one is not swamped by national filing services. It routes into pages 34 and 33, which are both
-services you already sell.
-
-
----
-
-# Written · 19
-
+# Written · 23
 Drafted into `page-drafts/`. Every one is gated on proof the business still has to supply —
 see `page-drafts/NEEDS-FROM-YOU.md`. Nothing here is published. On Hibu, publishing means
 building the page in the editor or handing the draft to Hibu support, and it is tracked in
@@ -813,6 +742,93 @@ what you charge instead of a CPA firm's rate.
 cluster sits under difficulty 20. Last of the deadline pages.
 
 ---
+
+---
+
+---
+
+## 32. Service page: California Statement of Information filing
+
+**Standalone**
+
+**Demand:** deadline-driven, filed every two years per entity, so steady rather than seasonal.
+
+**Primary keyword**
+- california statement of information · 4,400 searches a month · Medium (21 out of 100)
+
+**Secondary keywords**
+- file statement of information california · 880 a month · Medium (24)
+- llc statement of information california · 140 a month · Medium (23)
+- statement of information due date · 140 a month · Medium (20)
+- california llc statement of information · above your ceiling at 34 — covered here, never targeted
+
+**Why here:** 4,400 searches a month at difficulty 21 for a filing you already do and already
+invoice at $50 to $100. That combination does not appear anywhere else on this map. The ticket is
+small, and that is not the point — everyone searching this owns a California entity, which means
+they file a business return every year. This is the cheapest qualified lead source available to
+you, and blog post 30 already covers the same ground and can route straight into it.
+
+---
+
+
+## 33. Service page: Non-profit bookkeeping
+
+**Standalone**
+
+**Primary keyword**
+- nonprofit bookkeeping · 1,600 searches a month · Medium (26 out of 100)
+
+**Secondary keywords**
+- non profit tax preparation · 140 a month · Easy (6)
+- nonprofit tax preparation · 110 a month · Easy (12)
+- form 990 due date · above your ceiling at 37 — covered here, never targeted
+- form 990 preparation · above your ceiling at 43 — covered here, never targeted
+
+**Why here:** you already file non-profit returns — six invoices at $500, plus a formation at
+$750 — and the map had no page for it. 1,600 searches at difficulty 26, with advertisers paying
+$12 a click. Non-profits need bookkeeping year-round and they are unusually loyal once placed.
+
+⚠️ **`nonprofit accountant` (320/mo, difficulty 9, commercial) is deliberately excluded.** Same
+restriction as page 5 — you cannot hold out as an accountant in California without the disclaimer,
+and difficulty 9 is not worth the exposure.
+
+---
+
+
+## 34. Service page: Non-profit formation
+
+**Standalone**
+
+**Primary keyword**
+- nonprofit formation services · 390 searches a month · Medium (27 out of 100)
+
+**Secondary keywords**
+- nonprofit incorporation california · too few searches to report · not scored
+- 501c3 application service · too few searches to report · not scored
+- 501c3 tax filing · above your ceiling at 47 — covered here, never targeted
+
+**Why here:** you invoiced a non-profit formation at $750, so this is a service you sell with a
+proven price. Narrow family — three is everything with this buyer's intent. It also feeds page 33,
+because a new non-profit needs books kept from day one.
+
+---
+
+
+## 35. Blog post: How to start a non-profit in California
+
+**Standalone**
+
+**Primary keyword**
+- how to start a nonprofit in california · 1,000 searches a month · Medium (21 out of 100)
+
+**Secondary keywords**
+- nonprofit incorporation california · too few searches to report · not scored
+- 501c3 application service · too few searches to report · not scored
+- form 990 due date · above your ceiling at 37 — covered here, never targeted
+
+**Why here:** 1,000 searches at difficulty 21, and unlike the general LLC formation family this
+one is not swamped by national filing services. It routes into pages 34 and 33, which are both
+services you already sell.
 
 ---
 
