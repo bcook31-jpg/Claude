@@ -28,8 +28,8 @@ answer is "it depends", in which case say what it depends on.
 
 ## Three more that came up while drafting
 
-13. **Is 14 days your standard turnaround or your fastest?** — pages 1, 2, 3.
-    This reader has a deadline and will hold you to whatever is printed.
+13. ✅ **Resolved: 14 business days, as a ceiling.** ~~Is 14 days your standard turnaround or your fastest?** — pages 1, 2, 3.
+    or your fastest?~~ Written as "finished in 14 business days or less" on pages 1, 2, 3 and 4.
 14. **What languages are spoken in the office?** — page 7. In this service area this is a genuine
     differentiator and most competitors do not state it.
 15. **If the IRS sends a client a notice after filing, what do you do?** — pages 7, 19.
@@ -41,23 +41,29 @@ answer is "it depends", in which case say what it depends on.
 
 ## ✅ Pricing resolved — one follow-up
 
-**$250 an hour, one hour minimum. Confirmed 2026-09-07.** Pages 1, 2, 3 and 4 are repositioned
-around it: the rate is stated honestly in a costs section, never in the hero, and each page now
-argues outcome, speed and continuity instead of price.
+**Superseded 2026-09-07 by the GoHighLevel invoice pull.** The figures below were corrected
+against 200 real invoices — see `ACTUAL-PRICING.md`.
 
-**Resolved for monthly bookkeeping 2026-09-07: from $250 a month.** Cleanup and catch-up stay at
-$250/hour with a one hour minimum, which is right for work that is genuinely variable.
+- **Cleanup and catch-up:** $250 an hour, one hour minimum. A full initial cleanup has run to
+  $2,000.
+- **Monthly bookkeeping:** three tiers at **$350 / $550 / $750**, not $250. Your two live clients
+  pay $350 and $750, so $250 was below any price ever charged.
+- **Personal returns:** typically **$295**, not $250.
+- **Business returns:** priced by entity. Self-employed or single-member LLC from $445; corporate
+  or S corp from $950.
+- **Non-profit returns $500. Non-profit formation $750. Statement of Information $100.**
 
 **16. Two things left on the monthly price:**
 
-- ✅ **Confirmed 2026-09-07: $250 a month is a figure real clients actually pay.** Stated plainly
-  on page 4, no hedging needed.
-- ✅ **Confirmed 2026-09-07: $250 covers everything in scope, no overages.** Now the headline line
-  on page 4.
+- ✅ **Flat pricing confirmed: no hourly overages inside a tier.** The headline line on page 4.
+- ✅ **Client pays for their own QuickBooks subscription**, in their name.
+- ⚠️ **Still open:** whether 100 / 250 / 450 transactions match your team's real hours per month.
+  Time three client months to check.
 
-✅ **Scope resolved 2026-09-07: three transaction-based tiers**, $250 / $500 / $850, bounded by
-accounts and monthly transaction volume. Now a pricing table on page 4. Full reasoning in
-`SCOPE-OPTIONS.md`.
+✅ **Scope resolved: three transaction-based tiers**, **$350 / $550 / $750**, bounded by accounts
+(2 / 4 / 6) and monthly transactions (100 / 250 / 450). Now a pricing table on page 4. Reasoning
+in `SCOPE-OPTIONS.md` and `TIER-THRESHOLDS.md`; the prices themselves come from
+`ACTUAL-PRICING.md`.
 
 **17. Two follow-ups the tiers create:**
 
