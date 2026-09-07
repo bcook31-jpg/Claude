@@ -336,7 +336,7 @@ building the page in the editor or handing the draft to Hibu support, and it is 
 
 **Also ranks for:** cleanup bookkeeping, catchup bookkeeping, bookkeeping clean-up, catch-up bookkeeping — same query, one page answers all of them.
 
-**Never targeted:** "accounting clean up" (1,000/mo, difficulty 16). Higher volume than the primary, restricted wording, deliberately left alone 2026-09-07.
+**Body copy only:** "accounting clean up" (1,000/mo, difficulty 16). Higher volume than the primary, but restricted wording — it appears in one H2 and natural body mentions, never in the title, H1, URL, meta description or schema. Decided 2026-09-07.
 
 **Why first:** the strongest page on the map and the fastest to rank, at difficulty 5 to 16.
 Advertisers pay between $15 and $47 a click here, which is the market pricing one of these

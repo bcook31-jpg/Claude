@@ -4,13 +4,23 @@
 **Primary:** bookkeeping cleanup services · 480/mo · difficulty 10
 **Secondaries:** bookkeeping clean up (390/13) · catch up bookkeeping (320/5) · clean up bookkeeping services (260/11) · catch up bookkeeping services (210/12) · bookkeeping catch up (90/3)
 
-⚠️ **Changed 2026-09-07 on instruction to remove restricted words.** The primary was
-`accounting clean up` — 1,000 searches a month at difficulty 16, the highest-volume commercial
-term on the map. It is dropped because using it as a title and H1 describes the firm's service as
-accounting, which is the California restriction. **This costs roughly half the page's addressable
-volume.** The replacement is lower volume and lower difficulty, so the page still ranks; it just
-reaches fewer people. That is the trade and it was the right call — the exposure was not worth
-520 searches a month.
+**Resolved 2026-09-07: `accounting clean up` (1,000/mo, difficulty 16) stays in body copy, and
+never in the title, H1, URL, meta description or schema.**
+
+The distinction that makes this work: in the title it is a *self-description* — this firm provides
+accounting. In body copy describing a client's situation it is a *noun for the records being
+fixed* — your accounting records are a mess. The first is what B&P 5058 and the Board's regulation
+reach. The second is ordinary English about the work.
+
+*Moore v. California State Bd. of Accountancy* (1992) held the ban is constitutional only where
+the use could mislead about licence status, and that use alongside a modifier or express
+disclaimer dispelling confusion cannot be enjoined. This page already carries the credential
+statement, which is exactly that modifier.
+
+**Expect to recover some of the volume, not all of it.** A term in body copy and one H2 ranks less
+well than one in the title. At difficulty 10 for the primary and 16 for this, the page can
+plausibly hold both. **This is my reading and not legal advice** — the zero-risk option remains
+leaving it out entirely, and that costs you around 1,000 searches a month.
 **Status:** Draft — needs proof before it goes to Hibu
 
 ---
@@ -80,7 +90,11 @@ Downey and the surrounding area, and remotely with clients anywhere in the US.
 
 ## Collapsed sections
 
-### What cleanup actually involves (accordion)
+### What an accounting clean up involves (accordion)
+
+*This H2 is where the body-copy use of the term lives. One H2 and a few natural mentions below —
+do not seed it further, and do not let it migrate into the title on a later edit.*
+
 
 Every engagement is different, but the work is usually some combination of these.
 
@@ -92,6 +106,8 @@ Every engagement is different, but the work is usually some combination of these
   mixed into the business, and transactions posted to the wrong year.
 - **Rebuilding the chart of accounts** when the existing one has grown into something nobody
   can read.
+- **Bringing the accounting records back into a state your return can actually be prepared from**,
+  which is the point of the whole exercise.
 - **Untangling the balance sheet.** Undeposited funds, uncleared checks and mystery balances
   that have been carried forward for years.
 - **Producing the year-end financials** your tax return is prepared from.
