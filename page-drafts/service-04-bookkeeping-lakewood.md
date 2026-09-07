@@ -48,15 +48,14 @@ That is what monthly bookkeeping buys. Your accounts get reconciled every month,
 transactions get categorized properly, and you get financial statements you can actually read.
 When the return comes due, the numbers are already there.
 
-**Bookkeeping is billed at $250 an hour, one hour minimum, and we quote your expected monthly
-hours before you start.**
+**Monthly bookkeeping starts at $250 a month.**
 
-⚠️ **[ONE QUESTION LEFT: how many hours does a typical monthly client actually run?** This is the
-most important unanswered thing on this page. The buyer searching "bookkeeping services near me"
-is comparing monthly figures, and an hourly rate with no typical monthly total does not let them
-compare. If a typical client is 2 hours, say "most clients run about $500 a month". If it is 5,
-say that. A real typical figure converts far better than an hourly rate alone, and it costs you
-nothing to state.]
+⚠️ **[CONFIRM ONE THING BEFORE THIS PUBLISHES: is $250 a month a price a real client can actually
+pay?** If yes, publish it as written and this page becomes competitive overnight. If $250 is an
+entry point that almost everyone exceeds, the page must say what moves it up and roughly where a
+typical client lands, because a starting price nobody pays is the kind of thing that shows up in
+reviews. "Starts at $250 a month, most clients run $X" is both honest and stronger than a bare
+number.]
 
 **Primary action:** Get a quote → form
 
@@ -86,11 +85,15 @@ Lakewood, Long Beach, Cerritos, Bellflower, Downey, Paramount and Norwalk.
 
 ### What it costs (accordion)
 
-**$250 an hour, one hour minimum.** What drives your monthly hours: number of accounts, monthly
-transaction volume, whether you carry inventory, and whether payroll reports need bringing in.
+**From $250 a month.** What moves it: number of accounts, monthly transaction volume, whether you
+carry inventory, and whether payroll reports need bringing in.
 
-We quote your expected monthly hours after looking at the accounts, so you know the number before
-you commit.
+We look at your accounts and quote your monthly figure before you commit, so the first invoice is
+never a surprise.
+
+⚠️ [If work outside the monthly scope is billed hourly at $250, say so here plainly. A monthly
+price with unstated hourly overages is the single most common complaint about bookkeeping
+services and it is easy to avoid by saying it up front.]
 
 ---
 
@@ -99,11 +102,15 @@ you commit.
 This is the page where the premium rate is hardest, and it needs saying plainly rather than
 discovering it in the numbers later.
 
-Competitors ranking for these keywords advertise flat monthly bookkeeping from $150 to $299. At
-$250 an hour, a client running three hours a month is at $750. **You are not competing in the same
-price bracket, so do not write a page that invites the comparison.**
+**At $250 a month you are now inside the competitive bracket**, not above it. Competitors ranking
+for these keywords advertise flat monthly bookkeeping from $150 to $299, so this page can compete
+on price where the cleanup pages cannot.
 
-What this page should argue instead, all of it true:
+That is a real change in this page's prospects. It was the weakest of the top four; it is now
+arguably the strongest, because it targets 6,600 searches a month at a price the market
+recognises.
+
+Price still should not carry the page alone. What it argues alongside, all of it true:
 
 1. **One firm does the books and the return.** For a business owner this is the whole pitch. The
    cheap monthly providers hand you a file in March and wish you luck.
@@ -113,10 +120,14 @@ What this page should argue instead, all of it true:
 4. **Nothing gets estimated in April**, because the books were closed monthly by the people
    filing the return.
 
-**And be realistic about this page's conversion rate.** It targets 6,600 searches a month at a
-price point well above what most of that traffic is shopping for. It will convert a smaller
-fraction than the cleanup pages, which is another reason cleanup leads the build order. The
-buyers who do convert here are worth more and stay longer.
+**Build-order note.** At $250 an hour this page was the weakest of the top four and I had it
+converting poorly. At $250 a month that reverses. It is worth reconsidering whether this page,
+rather than the cleanup cluster, should be built first — it holds the largest search volume on the
+map, flat year-round demand, recurring revenue, and now a competitive price. The counter-argument
+is still difficulty: 24 here against 5 to 16 on the cleanup pages, so cleanup ranks sooner.
+
+My call: keep cleanup first because it ranks fastest and earns in your quiet months, but build
+this second rather than fourth.
 
 We do not run payroll. Where you have a payroll provider, we work from their reports.
 
