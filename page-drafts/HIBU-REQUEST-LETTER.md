@@ -60,19 +60,22 @@ Our correct phone number is **(562) 600-7072**. Please check every page, includi
 footer and contact page, and correct any other number. Two older numbers, (562) 379-3716 and
 (562) 602-8880, are still circulating and should not appear anywhere on the site.
 
-**6. A question about new pages**
+**6. Scheduling the new pages**
 
-We are planning a set of new service pages and blog posts for the coming filing season. Could you
-tell me:
+I understand we have 19 new pages available. I am planning to use all of them before the end of
+December, ahead of tax season, and I would like to schedule it around your build times rather
+than send everything at once.
 
-- How many new pages our current package includes per service year
-- How many we have already used this year
-- What additional pages cost, and how many we can add
-- Whether we can add pages ourselves through the editor, or whether every new page has to come
-  through you
+Could you tell me:
 
-I would like to plan the schedule around your build times, so an idea of turnaround for a new page
-would help as well.
+- Roughly how long you need to build one new page from supplied copy
+- Whether you can work on several at once, or whether they are built one after another
+- The best way for me to send them — I will provide the finished title, meta description, page
+  copy, image direction and any links that need adding to existing pages
+- Whether there is a cut-off date in December after which new page builds would not be completed
+  before January
+
+I will send them in batches of three or four rather than all nineteen together.
 
 Thank you,
 
@@ -90,12 +93,14 @@ preferences, and support teams deprioritise preferences. Saying "this is importa
 "please do not shorten or reword it" is what gets them actioned as written rather than
 paraphrased.
 
-**Item 6 is the one that unblocks everything else.** Until you know the page budget, the plan is
-either 4 pages or 19 and I cannot tell you which. Their answer decides the whole build order.
+**Item 6 is now about pace, not budget.** 19 pages is confirmed. What you still do not know is
+Hibu's turnaround per page, and that decides whether all 19 land before January or only the first
+wave does. If they need two weeks a page and work sequentially, 19 is not achievable and the plan
+becomes Wave 1 plus whatever of Wave 2 fits. Ask before committing to the full slate.
 
-**What is deliberately not in this letter.** The new pages themselves. Send those once you know
-the budget, one at a time, with the finished copy — a support ticket asking for nineteen new pages
-at once will not go well. Also not included: schema markup changes, which most managed plans do
+**What is deliberately not in this letter.** The new pages themselves. Send those in batches of
+three or four with finished copy, following the order in `PUBLISHING-PLAN.md` — a support ticket
+asking for nineteen new pages at once will not go well. Also not included: schema markup changes, which most managed plans do
 not expose and which are not worth a ticket until the bigger items land.
 
 **Check item 1 yourself a day later.** Open the homepage and look at the browser tab. If it still
