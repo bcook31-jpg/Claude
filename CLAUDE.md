@@ -77,7 +77,7 @@ Used by `/keyword-research` (and any later SEO command) so these are never asked
 - **Business type:** local brand. Service × city is the map's axis; national volume is never their addressable demand.
 - **Domain:** toptaxpros.com. Authority Score 9 (2026-09-07), so the difficulty ceiling is a flat 30.
 - **Contact:** (562) 600-7072 · 5261 Paramount Blvd, Lakewood, CA 90712 · Mon–Fri 9am–8pm, Sat 10am–3pm (confirm hours). Two stale phone numbers are still live in third-party directories.
-- **Pricing (confirmed 2026-09-07):** bookkeeping and cleanup $250/hour, one hour minimum. Individual returns from $250. Business returns from $950. QuickBooks file review free. Turnaround 14 business days. This is a premium position — pages argue outcome, speed and continuity, never price.
+- **Pricing (confirmed 2026-09-07):** monthly bookkeeping from $250/month. Cleanup and catch-up $250/hour, one hour minimum. Individual returns from $250. Business returns from $950. QuickBooks file review free. Turnaround 14 business days. This is a premium position — pages argue outcome, speed and continuity, never price.
 - **Platform:** Hibu. No repo, no file-based publishing, no deploy step. Pages are drafted to `page-drafts/` and built inside Hibu's editor or handed to Hibu support.
 - **HIBU_PAGE_BUDGET:** unknown — Hibu's terms cap managed builds at 4 new pages per service year on most packages, with 5 or 10 more as a paid add-on, but Smart Sites customers can add pages themselves. Confirm with Hibu before drafting past the budget.
 - **Busy season:** January through May. Everything with seasonal demand must be live and aged before the January ramp, so the writing window is roughly September through December.

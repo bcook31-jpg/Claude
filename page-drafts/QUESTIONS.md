@@ -45,11 +45,14 @@ answer is "it depends", in which case say what it depends on.
 around it: the rate is stated honestly in a costs section, never in the hero, and each page now
 argues outcome, speed and continuity instead of price.
 
-**16. How many hours does a typical monthly bookkeeping client actually run?**
+**Resolved for monthly bookkeeping 2026-09-07: from $250 a month.** Cleanup and catch-up stay at
+$250/hour with a one hour minimum, which is right for work that is genuinely variable.
 
-This is now the most valuable unanswered question on the whole batch. Page 4 targets 6,600
-searches a month from people comparing monthly figures. An hourly rate alone does not let them
-compare, so most will assume the worst and leave. "Most clients run about $500 a month" converts;
-"$250 an hour" does not.
+**16. Two things left on the monthly price:**
 
-It costs you nothing to state and it is the difference between that page working and not.
+- **Is $250 a month a figure a real client actually pays**, or an entry point almost everyone
+  exceeds? If the latter, the page needs to say what moves it up and roughly where a typical
+  client lands. A starting price nobody pays ends up in reviews.
+- **Is work outside the monthly scope billed hourly at $250?** If so, say it on the page. A
+  monthly price with unstated hourly overages is the most common complaint about bookkeeping
+  services and it is easy to avoid.
