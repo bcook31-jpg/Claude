@@ -109,10 +109,24 @@ Time three real client months end to end — one small, one medium, one large �
 questions and the report review, not just the categorization. Three data points from your own
 practice beat every estimate on this page.
 
-**Faster route: your own QuickBooks.** The connector is live in this session. Your invoice and
-customer history would give the real distribution of what you already bill monthly clients, which
-replaces the estimate above with your own numbers. Say the word and I will pull it — read-only,
-and I have not touched it without asking.
+**QuickBooks was checked on 2026-09-07 and cannot answer this.** The connection works and the
+company is correct, but there is no sales data in it:
+
+| Checked | Result |
+|---|---|
+| Invoices, Jan 2023 to Sep 2026 | 0 |
+| Sales by customer, last 12 months | No data |
+| Sales by product or service, last 12 months | No data |
+| Recurring invoice templates | 0 |
+| Service items | 2 — "Services" and "Hours", neither with a price set |
+
+So the estimates above stand as the best available answer, and they remain estimates. The only way
+to replace them with fact is to time three real client months.
+
+**This has a consequence beyond pricing.** Two of the automation commands in this repo,
+`/ghl-ar-collections` and `/ghl-owner-scorecard`, read revenue and receivables from QuickBooks.
+With no invoices in the file, both will return nothing. If billing runs somewhere else — Square
+appears in this workspace but is not authorized — those plays need pointing at it instead.
 
 **These numbers are inferred from general bookkeeping throughput, not measured on your team.**
 If your rules are unusually well built or your clients unusually clean, you can carry more volume
