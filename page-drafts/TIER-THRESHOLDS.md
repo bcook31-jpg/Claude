@@ -73,11 +73,46 @@ spending is cleanup work.
 
 ---
 
+## Which tier will most clients actually land in
+
+Typical monthly transaction counts by business type:
+
+| Business type | Transactions/month | Tier |
+|---|---|---|
+| Solo consultant, freelancer, single-owner trade | 20–60 | Essentials |
+| Small service business, 1–5 staff — contractor, salon, landscaper | 75–200 | Standard |
+| Small professional practice | 50–150 | Essentials or Standard |
+| Restaurant, bar, retail with a point-of-sale system | 400–1,500+ | Above Full, quoted |
+| Ecommerce | 200–1,000+ | Full or quoted |
+
+**The likely median for your client base is 100 to 200 transactions a month, which is Standard,
+not Essentials.**
+
+That has three consequences worth planning around:
+
+1. **$250 is the advertised entry price, not the expected sale.** Essentials fits solo operators
+   and side businesses. A contractor with two employees and a work truck is already past it.
+   That is a normal and healthy shape — the low tier earns the click, the middle tier earns the
+   revenue.
+2. **Expect an average of roughly $450 to $550 a month per client**, assuming most land in
+   Standard with a tail in each direction. Against a 26-year local reputation and a 4.5-star
+   rating, that is a solid recurring base.
+3. **Restaurants and retail do not fit the ladder at all.** A point-of-sale system generates more
+   transactions in a week than Essentials allows in a month. Either quote them individually or say
+   on the page that high-volume retail and hospitality are quoted separately — otherwise you will
+   field enquiries from businesses the tiers cannot serve, and the flat-price promise makes
+   underquoting them expensive.
+
 ## How to check these cheaply
 
 Time three real client months end to end — one small, one medium, one large — including the
 questions and the report review, not just the categorization. Three data points from your own
 practice beat every estimate on this page.
+
+**Faster route: your own QuickBooks.** The connector is live in this session. Your invoice and
+customer history would give the real distribution of what you already bill monthly clients, which
+replaces the estimate above with your own numbers. Say the word and I will pull it — read-only,
+and I have not touched it without asking.
 
 **These numbers are inferred from general bookkeeping throughput, not measured on your team.**
 If your rules are unusually well built or your clients unusually clean, you can carry more volume
