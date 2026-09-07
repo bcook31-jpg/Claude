@@ -158,7 +158,7 @@ No.
 
 ## Bridge CTA (mid-text, after "How to tell whether a quote is fair")
 
-**We are CTEC-registered tax preparers in Lakewood, and we publish our prices.**
+**We are CTEC-registered tax preparers in Lakewood, CTEC A045646, and we publish our prices.**
 
 [NEEDS FROM YOU: your actual pricing. This post ranks for people comparing prices. Publishing it
 without your own numbers sends them to a competitor who published theirs. A starting price and
@@ -170,9 +170,12 @@ what moves it is enough.]
 
 ## Author box
 
-**[NEEDS FROM YOU: real author name and CTEC number.** On a post about credentials, an unsigned
-or vaguely attributed article undercuts its own argument. The CTEC number is verifiable in
-seconds and almost nobody publishes theirs.]
+**[AUTHOR NAME NEEDED]**, CTEC-registered tax preparer, CTEC A045646. Top Tax Pros, Lakewood, CA.
+
+*Verify any California preparer, including this one, at ctec.org.*
+
+[NEEDS FROM YOU: the author's name. On a post about credentials an unsigned article undercuts
+its own argument, and the number without a name attached to it does not fix that.]
 
 ---
 
@@ -186,6 +189,6 @@ seconds and almost nobody publishes theirs.]
 ## ⛔ Before this publishes
 
 1. Your own pricing
-2. Real author name and CTEC number
+2. Author name (CTEC number confirmed: A045646)
 3. Update the year in the title each season
 4. The ranges in the quick answer are national. If your local pricing differs, use yours.

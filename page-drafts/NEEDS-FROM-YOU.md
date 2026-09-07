@@ -29,9 +29,17 @@ All affected pages are rewritten. What changed:
   it. Blog 19 in particular is now your strongest article, because every competitor ranking for
   "how much do tax preparers charge" is describing you from the outside.
 
-**What is still needed: your CTEC number and how long you have been registered.** Publish it.
-It is verifiable in seconds at ctec.org, it is a genuine trust signal, and almost no competitor
-bothers.
+**✅ CTEC number confirmed 2026-09-07: A045646.** Now in place on pages 5, 17, 18 and 19.
+
+**Still needed:** the author's name for the blog author boxes, and how long you have been
+registered. "Registered since [year]" beside the number is stronger than the number alone.
+
+**Still open, and it is a compliance question rather than a marketing one:** several tax-education
+providers state the CTEC number must appear in any advertising you run, which would make your
+website mandatory rather than optional. I could not verify that against the statute. Ask CTEC
+directly. Separately, confirm your intake process delivers the written disclosure that Business
+and Professions Code section 22252 requires before services are rendered — name, address,
+telephone, evidence of bond compliance, and CTEC's website address.
 
 **Closed 2026-09-07: no enrolled agent either. CTEC-registered tax preparers, full stop.**
 Everything is written for that and nothing further needs changing on credential grounds.

@@ -160,7 +160,7 @@ particular credential.
 
 **We are not a CPA firm, and for most returns you do not need one.**
 
-We are CTEC-registered tax preparers in Lakewood. We file returns for individuals and small
+We are CTEC-registered tax preparers in Lakewood, CTEC A045646. We file returns for individuals and small
 businesses across Lakewood, Long Beach, Cerritos and Downey, and we keep the books behind them.
 
 If your situation genuinely calls for a CPA — audited or reviewed financial statements, a complex
@@ -176,8 +176,8 @@ because it names the cases where you are the wrong answer. Do not soften it into
 ## ⛔ Before this publishes
 
 1. Verify the price ranges against real local rates
-2. Real author and CTEC number in the author box — on a post about credentials, an unsigned
-   article undercuts its own argument
+2. Author name for the author box — on a post about credentials, an unsigned article undercuts
+   its own argument (CTEC number confirmed: A045646)
 3. Confirm the California Board of Accountancy licensing details are current before printing them
 4. Read the post once looking only for defensiveness. If any sentence reads as arguing against
    CPAs rather than explaining them, cut it.

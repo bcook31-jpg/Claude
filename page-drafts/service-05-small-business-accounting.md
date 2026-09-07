@@ -83,8 +83,10 @@ Identification Number, and 20 hours of continuing education renewed every year.
 **Where you do need a CPA, we will tell you.** If a bank wants audited or reviewed financial
 statements, only a CPA can issue those. We will say so rather than take the work.
 
-**[NEEDS FROM YOU: your CTEC number and years registered.** Publishing the number is a strong
-trust signal and it lets anyone verify you in seconds. Competitors rarely bother.]
+**Our CTEC registration number is A045646.** You can verify it at ctec.org before you call us.
+
+**[NEEDS FROM YOU: how long you have been registered.** "Registered since [year]" alongside the
+number is stronger than the number alone.]
 
 ## Service area line (visible)
 
@@ -204,7 +206,7 @@ be changed to `ProfessionalService` too. Same reasoning.)*
 ## ⛔ Before this goes to Hibu
 
 1. **Legal sign-off if you want Version B.** Version A needs none.
-2. CTEC number and years registered
+2. Years registered (the number itself is confirmed: A045646)
 3. Client mix
 4. Pricing
 5. S corp and multi-state confirmation

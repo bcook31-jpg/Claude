@@ -144,9 +144,10 @@ Search the CTEC verification page at ctec.org, or the IRS directory for credenti
 
 ## Bridge CTA (mid-text, after "What you should expect for your money")
 
-**We are CTEC-registered tax preparers in Lakewood, and we publish our prices.**
+**We are CTEC-registered tax preparers in Lakewood. Our CTEC number is A045646, and we publish
+our prices.**
 
-[NEEDS FROM YOU: the actual prices, and your CTEC number.]
+[NEEDS FROM YOU: the actual prices.]
 
 Every rule above applies to us too. We sign every return we prepare. Your refund goes to your
 account, never ours. We do not charge a percentage of anything.
@@ -154,14 +155,14 @@ account, never ours. We do not charge a percentage of anything.
 [Link page 7 for individual returns, page 6 for business returns.]
 
 *A post that lists red flags and then fails to demonstrate the opposite has argued itself out of
-the sale. The prices and the CTEC number are what make this ending land.*
+the sale. The published number and the published prices are what make this ending land.*
 
 ---
 
 ## ⛔ Before this publishes
 
 1. Your own pricing, or at least a starting fee
-2. Your CTEC number, published on the page
+2. ✅ CTEC number confirmed: A045646, published on the page
 3. Your policy on IRS notices after filing
 4. **Have someone confirm the Circular 230 contingent-fee characterization before publishing.**
    I have stated it carefully and it is correct in general terms, but this post makes claims
