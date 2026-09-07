@@ -22,16 +22,24 @@ the kind of claim a competitor reports.
 searcher honestly. This is a five-minute Hibu edit and I would do it before publishing anything
 new.
 
-### 2. You have three different phone numbers in public listings
+### 2. ✅ Phone confirmed — but two wrong numbers are still published
 
-- (562) 379-3716
-- (562) 602-8880
-- (562) 600-7072
+**Correct number: (562) 600-7072.** Confirmed 2026-09-07 and now in every draft.
 
-**Which is correct?** Inconsistent name, address and phone data across directories directly
-damages local pack rankings, and the map pack is what answers every "near me" search on your map,
-including the 6,600-a-month term on page 4. Whichever is right, the other listings need
-correcting. This is worth more to you than several of the pages I drafted.
+**Two other numbers are live in public listings and need removing:**
+
+- (562) 379-3716 — appeared in a Yahoo Local listing
+- (562) 602-8880 — appeared on iBegin and on a `lakewoodcaliforniadirect.us` page that
+  describes itself as your "official website"
+
+Inconsistent name, address and phone data across directories directly damages local pack
+rankings, and the map pack is what answers every "near me" search on the map, including the
+6,600-a-month term on page 4. **Chasing these down is worth more to you than several of the pages
+I drafted**, because it fixes the thing that actually decides local ranking.
+
+Where to start: your Google Business Profile first, then Yelp, then Yahoo Local, Yellow Pages and
+iBegin. The `lakewoodcaliforniadirect.us` page is a third-party directory presenting itself as
+your official site — worth a look on its own terms, since you did not put it there.
 
 ---
 

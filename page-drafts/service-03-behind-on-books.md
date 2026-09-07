@@ -36,7 +36,7 @@ businesses in Lakewood and Long Beach. Call today, start this week. (156 — tri
 ## Hero (visible)
 
 If you are reading this the week before something is due, start with the phone.
-**(562) ⚠️ THREE NUMBERS IN PUBLIC LISTINGS — confirm which is correct. See SITE-FINDINGS.md.**
+**(562) 600-7072**
 
 Here is the honest version: being months or years behind is not unusual, it is not a
 disaster, and it is almost always fixable faster than you expect. What matters right now is how
@@ -114,7 +114,7 @@ we will tell you plainly when that is what you need.
 
 ## Bridge CTA (visible)
 
-**Call [number]. Tell us the deadline and how far behind you are.**
+**Call (562) 600-7072. Tell us the deadline and how far behind you are.**
 We will tell you in one conversation whether it can be done in time.
 
 ---

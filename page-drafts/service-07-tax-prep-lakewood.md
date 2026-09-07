@@ -50,7 +50,7 @@ Paramount Boulevard since 2000.**
 nearby close at 5pm, and this is what lets someone come after work.]
 
 **Primary action:** Book an appointment
-**Secondary action:** Call [number]
+**Secondary action:** Call (562) 600-7072
 
 ## One proof line (visible)
 

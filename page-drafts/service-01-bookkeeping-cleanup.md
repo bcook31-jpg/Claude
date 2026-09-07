@@ -53,7 +53,7 @@ the assessment. If you meant something else — a flat fee, a minimum, or $250/m
 I will rewrite the offer line.]
 
 **Primary action:** Get a free books assessment → form
-**Secondary action:** Call [NEEDS FROM YOU: phone number]
+**Secondary action:** Call (562) 600-7072
 
 ## One proof line (visible)
 
