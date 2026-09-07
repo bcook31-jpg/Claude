@@ -36,7 +36,7 @@ businesses in Lakewood and Long Beach. Call today, start this week. (156 — tri
 ## Hero (visible)
 
 If you are reading this the week before something is due, start with the phone.
-**[NEEDS FROM YOU: phone number]**
+**(562) ⚠️ THREE NUMBERS IN PUBLIC LISTINGS — confirm which is correct. See SITE-FINDINGS.md.**
 
 Here is the honest version: being months or years behind is not unusual, it is not a
 disaster, and it is almost always fixable faster than you expect. What matters right now is how

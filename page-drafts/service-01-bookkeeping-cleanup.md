@@ -57,10 +57,11 @@ I will rewrite the offer line.]
 
 ## One proof line (visible)
 
-**[NEEDS FROM YOU: your strongest single number.** Years in business, number of businesses
-caught up, typical turnaround, or a review quote. One number, not a stack. Competitors on this
-term advertise turnaround openly — one national provider states 30 days for a year of books —
-so a turnaround figure is the most competitive thing you can put here if yours is real.]
+**4.5 stars across roughly 80 reviews, and serving Lakewood since 2000.**
+
+⚠️ [Confirm both. Listings show 4.5 stars with 77 reviews in one place and 81 in another, and your
+own materials claim "20+ years" in one listing and "over 30 years" in another. Established 2000
+makes it 26. Pick one number and use it everywhere.]
 
 ## Service area line (visible)
 

@@ -43,18 +43,22 @@ and a preparer who explains your return before you sign." (143)
 
 A local office, a preparer who sits with you, and a return you understand before you sign it.
 
-**[NEEDS FROM YOU: what makes yours different.** Every tax office within five miles says
-"local, friendly, accurate". Something true and specific goes here — languages spoken,
-evening or weekend hours, same-day appointments, year-round availability, a flat fee, how long
-you have been on this corner. Without it this page is interchangeable with the H&R Block and
-Jackson Hewitt pages already ranking above it.]
+**Open weeknights until 8pm and Saturdays. In person or virtual. Returns from $250. On
+Paramount Boulevard since 2000.**
+
+⚠️ [Confirm the hours and the year. The hours are the differentiator — most independent preparers
+nearby close at 5pm, and this is what lets someone come after work.]
 
 **Primary action:** Book an appointment
 **Secondary action:** Call [number]
 
 ## One proof line (visible)
 
-**[NEEDS FROM YOU: years in Lakewood, returns filed, or a real review.]**
+**4.5 stars across roughly 80 reviews, and serving Lakewood since 2000.**
+
+⚠️ [Confirm both. Listings show 4.5 stars with 77 reviews in one place and 81 in another, and your
+own materials claim "20+ years" in one listing and "over 30 years" in another. Established 2000
+makes it 26. Pick one number and use it everywhere.]
 
 ## Service area line (visible)
 
@@ -97,10 +101,14 @@ people and the explanation, not on the number.
 
 ### Hours and appointments (accordion)
 
-**[NEEDS FROM YOU: real hours, including any extended tax-season hours, and whether you take
-walk-ins. A competitor a mile away publishes Monday to Saturday 9am to 9pm and Sunday 10am to
-7pm. If your hours are shorter, that is fine — but they need to be on the page, because "call
-for hours" loses to a published schedule.]**
+**Monday to Friday, 9am to 8pm. Saturday, 10am to 3pm. Closed Sunday.**
+**In-person and virtual appointments both available.**
+
+⚠️ [Confirm, and confirm whether these extend during the season.]
+
+**Move this out of the accordion and into the hero.** Weeknights until 8pm and Saturday hours beat
+most independent preparers nearby and match the national chains. It is one of the strongest true
+differentiators you have and it was not in any draft until now.
 
 ### Areas we serve (accordion — grows with each city page)
 

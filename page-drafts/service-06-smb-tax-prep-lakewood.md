@@ -58,7 +58,11 @@ The 14-day turnaround and doing the books and the return together are the two ar
 
 ## One proof line (visible)
 
-**[NEEDS FROM YOU: business returns filed, or years doing business returns specifically.]**
+**4.5 stars across roughly 80 reviews, and serving Lakewood since 2000.**
+
+⚠️ [Confirm both. Listings show 4.5 stars with 77 reviews in one place and 81 in another, and your
+own materials claim "20+ years" in one listing and "over 30 years" in another. Established 2000
+makes it 26. Pick one number and use it everywhere.]
 
 ## Service area line (visible)
 
