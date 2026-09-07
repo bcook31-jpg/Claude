@@ -109,6 +109,12 @@ protections in this industry and most people never learn it is there.
 
 That last one catches people out. Ask before you engage, not after the letter arrives.
 
+**For the record, here is our answer to it.** If the IRS sends you a notice about a return we prepared, send it to us. We will read it, check it against what was filed, and tell you plainly whether it is right. If it is, we will prepare the amendment or help you put the response together. If the matter needs someone with representation rights before the IRS, we will tell you that too, and point you to someone who has them.
+
+⚠️ [Confirm whether reviewing a notice and preparing an amendment is included in the original fee
+or billed separately. The paragraph above promises the work; the reader will assume it is free
+unless you say otherwise.]
+
 ### Getting the fee down, legitimately
 
 Bring your records organized. The National Society of Accountants found 75.1% of preparers charge
@@ -176,7 +182,7 @@ worse than no byline.]
 
 1. Your own pricing, or at least a starting fee
 2. ✅ CTEC number confirmed: A045646, published on the page
-3. Your policy on IRS notices after filing
+3. ✅ IRS notice policy written into the post — confirm whether it is billed or included
 4. **Have someone confirm the Circular 230 contingent-fee characterization before publishing.**
    I have stated it carefully and it is correct in general terms, but this post makes claims
    about what is legally permitted and those sentences carry more risk than anything else in this

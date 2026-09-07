@@ -144,6 +144,12 @@ the return.
 **Do you do the personal return too?**
 Yes, and for most owners they are prepared together. [Link page 7.]
 
+**What if the IRS sends a notice after filing?**
+If the IRS sends you a notice about a return we prepared, send it to us. We will read it, check it
+against what was filed, and tell you plainly whether it is right. If it is, we will prepare the
+amendment or help you put the response together. If the matter needs someone with representation
+rights before the IRS, we will tell you that too, and point you to someone who has them.
+
 ---
 
 ## Bridge CTA (visible)

@@ -55,7 +55,7 @@ prepare an amended return if the notice is right, assemble the documentation to 
 the client's own response for them to sign and send. That is genuinely most of the value, and it
 is a strong answer when stated precisely.
 
-**Suggested wording:**
+**✅ Applied 2026-09-07** to pages 3, 5, 6, 7 and blog 19:
 
 > If the IRS sends you a notice about a return we prepared, send it to us. We will read it, check
 > it against what was filed, and tell you plainly whether it is right. If it is, we will prepare
@@ -71,8 +71,14 @@ this site's argument rests on credentials, and given that CTEC already requires 
 continuing education a year that likely overlaps, it may be close to free to obtain.
 https://www.irs.gov/tax-professionals/annual-filing-season-program
 
-If yes, the answer above gets stronger and page 19 gains a real differentiator. If no, use the
-wording above as written.
+**The Annual Filing Season Program question stays open and is worth answering.** If Brian Cook
+completes it, the wording above can be strengthened to say we can represent you on a return we
+prepared, before revenue agents and customer service. That is a real differentiator on a page
+about credentials, and CTEC's existing 20 hours a year likely overlaps most of the requirement.
+
+**One follow-up the wording creates:** is reviewing a notice and preparing an amendment included
+in the original fee, or billed separately? The paragraph promises the work, and a reader will
+assume it is free unless the page says otherwise.
 
 ---
 

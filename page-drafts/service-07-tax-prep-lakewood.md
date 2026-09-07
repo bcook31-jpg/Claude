@@ -147,11 +147,16 @@ English and Spanish.
 **Are you open year-round?**
 Yes. We are here in July as well as April, which is not true of the seasonal storefronts.
 
-**Can you help if I owe and cannot pay?**
-We prepare and file the return accurately, and we will explain what you owe and why.
+**What happens if the IRS sends me a notice after you file?**
+If the IRS sends you a notice about a return we prepared, send it to us. We will read it, check it
+against what was filed, and tell you plainly whether it is right. If it is, we will prepare the
+amendment or help you put the response together. If the matter needs someone with representation
+rights before the IRS, we will tell you that too, and point you to someone who has them.
 
-⚠️ **[HOLD — see question 14 in `QUESTIONS.md`. This answer's wording depends on a credential
-question that is not settled.]**
+**Can you help if I owe and cannot pay?**
+We prepare and file the return accurately and explain exactly what you owe and why. Arranging a
+payment plan or negotiating what you owe requires representation rights before the IRS, which we
+do not have. We will tell you that plainly rather than take it on.
 
 ---
 
