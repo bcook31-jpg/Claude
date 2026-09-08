@@ -11,12 +11,13 @@ All 19 below are **Draft**, and every one is gated on proof the business still h
 The consolidated list is in `page-drafts/NEEDS-FROM-YOU.md`.
 
 
+
 ---
 
 ## 1. Bookkeeping cleanup and catch-up
 
 **Type:** Service page
-**Proposed URL:** `/services/bookkeeping-cleanup`
+**Proposed URL:** `/services/accounting-clean-up`
 **Status:** Draft
 **Draft:** `page-drafts/service-01-bookkeeping-cleanup.md`
 
@@ -181,6 +182,51 @@ The consolidated list is in `page-drafts/NEEDS-FROM-YOU.md`.
 **Proposed URL:** `/blog/how-much-do-tax-preparers-charge`
 **Status:** Draft
 **Draft:** `page-drafts/blog-19-how-much-do-tax-preparers-charge.md`
+
+---
+
+## 23. Business entity formation, Lakewood
+
+**Type:** Service page
+**Proposed URL:** `/services/business-formation`
+**Status:** Draft
+**Draft:** `page-drafts/service-23-business-entity-formation.md`
+
+---
+
+## 24. Filing business taxes for an LLC for the first time
+
+**Type:** Blog post
+**Proposed URL:** `/blog/filing-llc-taxes-first-time`
+**Status:** Draft
+**Draft:** `page-drafts/blog-24-first-llc-tax-return.md`
+
+---
+
+## 25. How much does a bookkeeper cost
+
+**Type:** Blog post
+**Proposed URL:** `/blog/how-much-does-a-bookkeeper-cost`
+**Status:** Draft
+**Draft:** `page-drafts/blog-25-how-much-does-a-bookkeeper-cost.md`
+
+---
+
+## 26. Bookkeeper or CPA 
+
+**Type:** Blog post
+**Proposed URL:** `/blog/bookkeeper-vs-cpa`
+**Status:** Draft
+**Draft:** `page-drafts/blog-26-bookkeeper-or-cpa.md`
+
+---
+
+## 27. When to hire a bookkeeper
+
+**Type:** Blog post
+**Proposed URL:** `/blog/when-to-hire-a-bookkeeper`
+**Status:** Draft
+**Draft:** `page-drafts/blog-27-when-to-hire-a-bookkeeper.md`
 
 ---
 

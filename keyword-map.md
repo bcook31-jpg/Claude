@@ -18,7 +18,7 @@ which, so no block claims a specific month.
 
 ---
 
-# To build · 12
+# To build · 7
 
 ## 20. Service page: Bookkeeping services, Long Beach
 
@@ -42,6 +42,7 @@ crossed with your highest-value service, and no rush on it because the demand is
 genuinely Long Beach content, not page 4 with the city swapped.
 
 ---
+
 
 
 
@@ -69,6 +70,7 @@ clearest evidence on this map that the pattern works in this city.
 
 
 
+
 ## 22. Service page: Bookkeeping services, Downey
 
 **Spoke** · hub: 4 (Bookkeeping services, Lakewood)
@@ -88,121 +90,6 @@ clearest evidence on this map that the pattern works in this city.
 
 ---
 
-
-
-## 23. Service page: Business entity formation, Lakewood
-
-**Standalone**
-
-**Google check:** mixed — law firms hold most of the top ten, one accounting firm ranks, commercial.
-
-**Demand:** swings about 6x but erratically, with no clean seasonal shape.
-
-**Primary keyword**
-- business formation services · 2,400 searches a month · Medium (23 out of 100)
-
-**Secondary keywords**
-- company formation services · 390 a month · Medium (25)
-- llc formation lakewood ca · too few searches to report · not scored
-- s corp formation lakewood ca · too few searches to report · not scored
-- incorporation services lakewood ca · too few searches to report · not scored
-
-**Why here:** the front door to both other services, since someone who forms an entity needs
-books kept and a business return filed. Deliberately scoped to the service terms and your own
-city — the national "LLC formation" family is 8,100 searches of people hunting a free or
-cheapest filing service, which is a different buyer from someone hiring you.
-
----
-
-
-
-## 24. Blog post: Filing business taxes for an LLC for the first time
-
-**Standalone**
-
-**Demand:** swings about 4x across the year.
-
-**Primary keyword**
-- filing business taxes for llc for the first time · 1,600 searches a month · Medium (26 out of 100)
-
-**Secondary keywords**
-- cpa for llc taxes · 320 a month · Easy (16) — moved here from page 6 on 2026-09-07; answer it
-  as information ("do you need a CPA for LLC taxes?"), never as a service claim
-- llc tax filing cost · too few searches to report · not scored
-- s corp tax return cost · too few searches to report · not scored
-- partnership tax return cost · too few searches to report · not scored
-
-**Why here:** 1,600 searches from people doing this for the first time and finding it harder
-than expected. Routes straight into page 6.
-
----
-
-
-
-## 25. Blog post: How much does a bookkeeper cost
-
-**Hub** · spokes: 26 · 27
-
-**Demand:** flat all year, about 1.8x.
-
-**Primary keyword**
-- how much does a bookkeeper cost · 480 searches a month · Medium (22 out of 100)
-
-**Secondary keywords**
-- bookkeeper hourly rate · 390 a month · Medium (26)
-- bookkeeping services pricing · 390 a month · Medium (27)
-- monthly bookkeeping cost small business · too few searches to report · not scored
-- in house vs outsourced bookkeeping cost · too few searches to report · not scored
-
-**Why here:** the price question for your recurring service. Flat demand means it earns the
-same whenever you write it, which is exactly why it sits below the deadline pages. Links into
-pages 1, 2, 4, 20, 21 and 22.
-
----
-
-
-
-## 26. Blog post: Bookkeeper or CPA — which one do you need
-
-**Spoke** · hub: 25 (How much does a bookkeeper cost)
-
-**Demand:** flat all year, about 1.5x — the steadiest term on the map.
-
-**Primary keyword**
-- bookkeeper vs cpa · 210 searches a month · Easy to rank for (5 out of 100)
-
-**Secondary keywords**
-- do i need a bookkeeper or an accountant · 30 a month · Easy (9)
-- when to hire a bookkeeper · 110 a month · Easy (5)
-- do i need a cpa to file my taxes · too few searches to report · not scored
-- what does a bookkeeper do · above your ceiling at 44 — covered here, never targeted
-
-**Why here:** most small business owners genuinely do not know which they need, and for many
-the answer is both, from one firm. Difficulty 5 and it never goes quiet.
-
----
-
-
-
-## 27. Blog post: When to hire a bookkeeper
-
-**Spoke** · hub: 25 (How much does a bookkeeper cost)
-
-**Demand:** flat all year, about 2.4x.
-
-**Primary keyword**
-- when to hire a bookkeeper · 110 searches a month · Easy to rank for (5 out of 100)
-
-**Secondary keywords**
-- do i need a bookkeeper or an accountant · 30 a month · Easy (9)
-- bookkeeping maintenance · 70 a month · Easy (19)
-- up to date bookkeeping · 70 a month · Easy (10)
-- small business bookkeeper near me · 1,300 a month · Easy (11)
-
-**Why here:** narrow family — four is everything with this intent. Small, but it is the decision
-that precedes buying page 4.
-
----
 
 
 
@@ -236,6 +123,7 @@ not the title.
 
 
 
+
 ## 29. Blog post: LLC or S corp in California
 
 **Hub** · spokes: 30 · 31
@@ -258,6 +146,7 @@ owner rather than a student. Semrush labels this commercial; the live results ar
 it is a blog post that links down to page 23.
 
 ---
+
 
 
 
@@ -287,6 +176,7 @@ the title.
 
 
 
+
 ## 31. Blog post: Would an S corp election actually save you money
 
 **Spoke** · hub: 29 (LLC or S corp in California)
@@ -311,8 +201,7 @@ numbers is deciding on a change that needs a professional to execute, which is p
 
 ---
 
-# Written · 23
-Drafted into `page-drafts/`. Every one is gated on proof the business still has to supply —
+# Written · 28Drafted into `page-drafts/`. Every one is gated on proof the business still has to supply —
 see `page-drafts/NEEDS-FROM-YOU.md`. Nothing here is published. On Hibu, publishing means
 building the page in the editor or handing the draft to Hibu support, and it is tracked in
 `website-index.md`, never here.
@@ -831,6 +720,132 @@ because a new non-profit needs books kept from day one.
 **Why here:** 1,000 searches at difficulty 21, and unlike the general LLC formation family this
 one is not swamped by national filing services. It routes into pages 34 and 33, which are both
 services you already sell.
+
+---
+
+---
+
+## 23. Service page: Business entity formation, Lakewood
+
+**Standalone**
+
+**Google check:** mixed — law firms hold most of the top ten, one accounting firm ranks, commercial.
+
+**Demand:** swings about 6x but erratically, with no clean seasonal shape.
+
+**Primary keyword**
+- business formation services · 2,400 searches a month · Medium (23 out of 100)
+
+**Secondary keywords**
+- company formation services · 390 a month · Medium (25)
+- llc formation lakewood ca · too few searches to report · not scored
+- s corp formation lakewood ca · too few searches to report · not scored
+- incorporation services lakewood ca · too few searches to report · not scored
+
+**Why here:** the front door to both other services, since someone who forms an entity needs
+books kept and a business return filed. Deliberately scoped to the service terms and your own
+city — the national "LLC formation" family is 8,100 searches of people hunting a free or
+cheapest filing service, which is a different buyer from someone hiring you.
+
+---
+
+
+
+
+## 24. Blog post: Filing business taxes for an LLC for the first time
+
+**Standalone**
+
+**Demand:** swings about 4x across the year.
+
+**Primary keyword**
+- filing business taxes for llc for the first time · 1,600 searches a month · Medium (26 out of 100)
+
+**Secondary keywords**
+- cpa for llc taxes · 320 a month · Easy (16) — moved here from page 6 on 2026-09-07; answer it
+  as information ("do you need a CPA for LLC taxes?"), never as a service claim
+- llc tax filing cost · too few searches to report · not scored
+- s corp tax return cost · too few searches to report · not scored
+- partnership tax return cost · too few searches to report · not scored
+
+**Why here:** 1,600 searches from people doing this for the first time and finding it harder
+than expected. Routes straight into page 6.
+
+---
+
+
+
+
+## 25. Blog post: How much does a bookkeeper cost
+
+**Hub** · spokes: 26 · 27
+
+**Demand:** flat all year, about 1.8x.
+
+**Primary keyword**
+- how much does a bookkeeper cost · 480 searches a month · Medium (22 out of 100)
+
+**Secondary keywords**
+- bookkeeper hourly rate · 390 a month · Medium (26)
+- bookkeeping services pricing · 390 a month · Medium (27)
+- monthly bookkeeping cost small business · too few searches to report · not scored
+- in house vs outsourced bookkeeping cost · too few searches to report · not scored
+
+**Why here:** the price question for your recurring service. Flat demand means it earns the
+same whenever you write it, which is exactly why it sits below the deadline pages. Links into
+pages 1, 2, 4, 20, 21 and 22.
+
+---
+
+
+
+
+## 26. Blog post: Bookkeeper or CPA — which one do you need
+
+**Spoke** · hub: 25 (How much does a bookkeeper cost)
+
+**Demand:** flat all year, about 1.5x — the steadiest term on the map.
+
+**Primary keyword**
+- bookkeeper vs cpa · 210 searches a month · Easy to rank for (5 out of 100)
+
+**Secondary keywords**
+- do i need a bookkeeper or an accountant · 30 a month · Easy (9)
+- do i need a cpa to file my taxes · too few searches to report · not scored
+- bookkeeper vs accountant · too few searches to report · not scored
+- what does a bookkeeper do · above your ceiling at 44 — covered here, never targeted
+
+⚠️ **Collision fixed 2026-09-07.** `when to hire a bookkeeper` was listed here and is the primary
+of page 27. Two pages targeting one term split their own rankings. It belongs to 27 alone. This
+page answers *which professional*; 27 answers *at what point*.
+
+**Why here:** most small business owners genuinely do not know which they need, and for many
+the answer is both, from one firm. Difficulty 5 and it never goes quiet.
+
+---
+
+
+
+
+## 27. Blog post: When to hire a bookkeeper
+
+**Spoke** · hub: 25 (How much does a bookkeeper cost)
+
+**Demand:** flat all year, about 2.4x.
+
+**Primary keyword**
+- when to hire a bookkeeper · 110 searches a month · Easy to rank for (5 out of 100)
+
+**Secondary keywords**
+- do i need a bookkeeper or an accountant · 30 a month · Easy (9)
+- bookkeeping maintenance · 70 a month · Easy (19)
+- up to date bookkeeping · 70 a month · Easy (10)
+- small business bookkeeper near me · 1,300 a month · Easy (11)
+
+**Why here:** narrow family — four is everything with this intent. Small, but it is the decision
+that precedes buying page 4.
+
+---
 
 ---
 
