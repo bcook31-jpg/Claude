@@ -60,10 +60,10 @@ return needs it.
 
 ### What a CPA actually costs
 
-**[NEEDS FROM YOU: verify these against local market rates before publishing.** The ranges below
-are drawn from published industry sources rather than a survey of Long Beach and Lakewood firms.
-If you know the real local numbers, use those instead — local specificity is the whole advantage
-you have over the national articles ranking for this term.]
+*The ranges below come from published industry sources rather than a survey of local firms. They
+are stated as ranges for that reason. If you know what CPA firms near you actually charge, swapping
+in local figures would strengthen the post — local specificity is the advantage you have over the
+national articles ranking for this term.*
 
 - **Individual return:** roughly $200 to $600, more with self-employment or rentals
 - **Business return:** roughly $500 to $2,000 and up, by entity and complexity

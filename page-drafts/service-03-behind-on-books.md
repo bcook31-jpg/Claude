@@ -117,8 +117,8 @@ Advocate Service — but only on a return we prepared and signed, and not before
 collections. If your situation is a collections or appeals matter, we will say so and point you
 to someone with unlimited rights.
 
-**Do you work weekends during tax season?**
-[NEEDS FROM YOU. Only answer if true.]
+**When are you open?**
+Monday to Friday until 8pm, and Saturdays 10am to 3pm. Year-round, not just in season.
 
 ---
 

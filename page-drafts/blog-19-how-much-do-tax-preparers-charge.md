@@ -50,9 +50,10 @@ most returns, and any preparer who refuses to sign your return is breaking feder
 
 ### What preparers actually charge
 
-**[NEEDS FROM YOU: real local ranges, and ideally your own prices.** This post ranks for people
-price-shopping in your area. The national articles above you cannot give a Lakewood number. You
-can. That is the whole opportunity.]
+**Our own prices, since this post argues for transparency:** most personal returns are $295,
+self-employment or a single-member LLC starts at $445, and corporate or S corporation returns start
+at $950. Bookkeeping is $350 to $750 a month in three flat tiers with no hourly overages, and
+cleanup work is $250 an hour after a free assessment and a fixed estimate.
 
 Typical structures:
 
@@ -154,7 +155,7 @@ Search the CTEC verification page at ctec.org, or the IRS directory for credenti
 **We are CTEC-registered tax preparers in Lakewood. Our CTEC number is A045646, and we publish
 our prices.**
 
-[NEEDS FROM YOU: the actual prices.]
+
 
 Every rule above applies to us too. We sign every return we prepare. Your refund goes to your
 account, never ours. We do not charge a percentage of anything.

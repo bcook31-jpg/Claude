@@ -160,9 +160,9 @@ No.
 
 **We are CTEC-registered tax preparers in Lakewood, CTEC A045646, and we publish our prices.**
 
-[NEEDS FROM YOU: your actual pricing. This post ranks for people comparing prices. Publishing it
-without your own numbers sends them to a competitor who published theirs. A starting price and
-what moves it is enough.]
+Most personal returns are $295. A return with self-employment income or a single-member LLC starts
+at $445. Corporate and S corporation returns start at $950. What moves a personal return up is
+self-employment income, rental property, investment sales and additional state returns.
 
 [Link to page 7 for individual returns and page 6 for business returns.]
 
